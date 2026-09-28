@@ -1,0 +1,4828 @@
+WEBVTT
+
+3492024e-acf5-4068-8180-fccfbe64db44/347-0
+00:00:05.188 --> 00:00:09.850
+<v Claudia Pollina>Buongiorno a tutte e a tutti e benvenuti
+a questo community lab.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/347-1
+00:00:09.850 --> 00:00:14.296
+<v Claudia Pollina>Sono Claudia Pollina,
+service designer e product owner per il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/347-2
+00:00:14.296 --> 00:00:19.818
+<v Claudia Pollina>Dipartimento per la trasformazione
+digitale e oggi sono qui come moderatrice</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/347-3
+00:00:19.818 --> 00:00:21.108
+<v Claudia Pollina>di questo incontro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/357-0
+00:00:21.348 --> 00:00:25.301
+<v Claudia Pollina>dedicato alla progettazione delle API di
+qualità per servizi pubblici</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/357-1
+00:00:25.301 --> 00:00:26.148
+<v Claudia Pollina>interoperabili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/366-0
+00:00:29.468 --> 00:00:32.068
+<v Claudia Pollina>I community lab sono incontri</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/372-0
+00:00:34.548 --> 00:00:37.748
+<v Claudia Pollina>informali online.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/383-0
+00:00:39.028 --> 00:00:43.108
+<v Claudia Pollina>Chiedo magari al mio collega di passare
+anche alla slide successiva, grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/436-0
+00:00:45.188 --> 00:00:48.966
+<v Claudia Pollina>Dicevo,
+i community lab sono incontri online</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/436-1
+00:00:48.966 --> 00:00:55.849
+<v Claudia Pollina>dedicati alla condivisione di conoscenze
+e di buone pratiche per la progettazione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/436-2
+00:00:55.849 --> 00:01:02.228
+<v Claudia Pollina>e lo sviluppo di servizi pubblici
+digitali. Li organizziamo con gli esperti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/492-0
+00:01:02.468 --> 00:01:08.564
+<v Claudia Pollina>che curano l'evoluzione delle risorse di
+Designers Italia e Developers Italia e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/492-1
+00:01:08.564 --> 00:01:12.830
+<v Claudia Pollina>sono aperti a chiunque voglia
+approfondire questi temi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/492-2
+00:01:12.830 --> 00:01:18.468
+<v Claudia Pollina>L'argomento di oggi, di cosa parleremo,
+è proprio la progettazione di API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/539-0
+00:01:19.308 --> 00:01:22.950
+<v Claudia Pollina>di qualità per servizi pubblici
+interoperabili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/539-1
+00:01:22.950 --> 00:01:28.564
+<v Claudia Pollina>Un tema che può sembrare tecnico ma che
+ha ricadute molto concrete su chi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/539-2
+00:01:28.564 --> 00:01:34.708
+<v Claudia Pollina>costruisce e poi usa i servizi digitali
+della pubblica amministrazione italiana.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/583-0
+00:01:35.348 --> 00:01:40.212
+<v Claudia Pollina>Oggi parleremo proprio dei benefici
+dell'interoperabilità,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/583-1
+00:01:40.212 --> 00:01:45.900
+<v Claudia Pollina>di come progettare API di qualità e poi
+andremo proprio sul pratico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/583-2
+00:01:45.900 --> 00:01:50.846
+<v Claudia Pollina>essendo un community lab,
+molto diciamo sul pratico con dei</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/583-3
+00:01:50.846 --> 00:01:51.588
+<v Claudia Pollina>tutorial.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/605-0
+00:01:52.468 --> 00:01:59.221
+<v Claudia Pollina>Vi mostriamo due strumenti e delle buone
+pratiche per sviluppatori e sviluppatrici.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/605-1
+00:01:59.221 --> 00:02:00.748
+<v Claudia Pollina>Matteo, per favore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/641-0
+00:02:03.428 --> 00:02:08.003
+<v Claudia Pollina>Agenda: com'è organizzato questo
+pomeriggio?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/641-1
+00:02:08.003 --> 00:02:14.000
+<v Claudia Pollina>Introduciamo il tema
+dell'interoperabilità e della qualità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/641-2
+00:02:14.000 --> 00:02:16.948
+<v Claudia Pollina>delle API con Matteo Fortini.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/729-0
+00:02:17.348 --> 00:02:22.367
+<v Claudia Pollina>Al catalogo api.gov.
+it con Sara Casanova che vi parlerà anche</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/729-1
+00:02:22.367 --> 00:02:27.307
+<v Claudia Pollina>delle buone pratiche di nomina,
+cioè di come nominare le API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/729-2
+00:02:27.307 --> 00:02:33.998
+<v Claudia Pollina>quindi buone pratiche di nomenclatura per
+titolo e descrizione di API ricercabili e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/729-3
+00:02:33.998 --> 00:02:36.388
+<v Claudia Pollina>trovabili e poi anche usabili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/787-0
+00:02:36.948 --> 00:02:43.232
+<v Claudia Pollina>Avremo poi una prima sessione di domande
+e risposte se ci sono già delle domande.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/787-1
+00:02:43.232 --> 00:02:49.208
+<v Claudia Pollina>E nella seconda parte invece entriamo
+proprio negli strumenti: la correttezza</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/787-2
+00:02:49.208 --> 00:02:55.108
+<v Claudia Pollina>sintattica con Andrea Misuraca e la
+semantica delle API con Stefano Baruzzo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/837-0
+00:02:56.388 --> 00:03:00.262
+<v Claudia Pollina>Chiudiamo poi con una sessione di domande
+e risposte.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/837-1
+00:03:00.262 --> 00:03:05.713
+<v Claudia Pollina>A tal proposito le domande le potete
+inviare utilizzando la funzione D&amp;</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/837-2
+00:03:05.713 --> 00:03:10.950
+<v Claudia Pollina>R come è chiamata qui su teams,
+quindi domande e risposte che trovate in</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/837-3
+00:03:10.950 --> 00:03:11.308
+<v Claudia Pollina>alto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/898-0
+00:03:11.988 --> 00:03:16.465
+<v Claudia Pollina>nella barra degli strumenti.
+Potete anche votare le domande che sono</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/898-1
+00:03:16.465 --> 00:03:19.774
+<v Claudia Pollina>più interessanti,
+un po' per darci delle priorità,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/898-2
+00:03:19.774 --> 00:03:22.824
+<v Claudia Pollina>quindi daremo la priorità a quelle più
+votate.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/898-3
+00:03:22.824 --> 00:03:27.236
+<v Claudia Pollina>E poi potete anche usare le reaction come
+le chiamano qua su teams,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/898-4
+00:03:27.236 --> 00:03:28.468
+<v Claudia Pollina>quindi le reazioni.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/939-0
+00:03:28.628 --> 00:03:38.135
+<v Claudia Pollina>Per interagire durante l'evento -
+prossima slide - vi presento chi oggi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/939-1
+00:03:38.135 --> 00:03:44.868
+<v Claudia Pollina>farà parte del community lab. Io,
+Claudia Pollina,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1010-0
+00:03:45.188 --> 00:03:50.071
+<v Claudia Pollina>Product owner di schema govit che diciamo
+oggi non ne parleremo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1010-1
+00:03:50.071 --> 00:03:55.254
+<v Claudia Pollina>ma è il catalogo nazionale per le risorse
+semantiche per la pubblica</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1010-2
+00:03:55.254 --> 00:04:00.887
+<v Claudia Pollina>amministrazione ed è un progetto che
+seguiamo in collaborazione in stretta</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1010-3
+00:04:00.887 --> 00:04:04.868
+<v Claudia Pollina>collaborazione con Istat che è proprio un
+tatuatore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1068-0
+00:04:05.028 --> 00:04:08.698
+<v Claudia Pollina>Ci sarà Matteo Fortini,
+technical project manager del</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1068-1
+00:04:08.698 --> 00:04:13.386
+<v Claudia Pollina>Dipartimento, Sara Casanova,
+service designer presso il Dipartimento</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1068-2
+00:04:13.386 --> 00:04:16.716
+<v Claudia Pollina>per la trasformazione digitale,
+Andrea Misuraca,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1068-3
+00:04:16.716 --> 00:04:21.268
+<v Claudia Pollina>software engineer sempre del Dipartimento
+trasformazione digitale.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1116-0
+00:04:21.508 --> 00:04:27.396
+<v Claudia Pollina>E il nostro invitato, diciamo esterno,
+è Stefano Baruzzo che è fullstack</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1116-1
+00:04:27.396 --> 00:04:33.123
+<v Claudia Pollina>developer presso Par-Tec per conto di
+Istat e che è attuatore di della</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1116-2
+00:04:33.123 --> 00:04:36.268
+<v Claudia Pollina>piattaforma del catalogo schema.gov.it.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1136-0
+00:04:37.428 --> 00:04:46.588
+<v Claudia Pollina>Io passo la parola a Matteo,
+siamo siamo pronti per iniziare, prego.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1175-0
+00:04:48.628 --> 00:04:54.402
+<v Matteo Fortini>Sì, grazie Claudia, grazie a tutti.
+Partirò con un'introduzione su</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1175-1
+00:04:54.402 --> 00:04:59.745
+<v Matteo Fortini>interoperabilità e sul perché vogliamo
+una qualità delle API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1175-2
+00:04:59.745 --> 00:05:03.708
+<v Matteo Fortini>Prima di tutto il progetto del community
+lab.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1255-0
+00:05:03.988 --> 00:05:09.114
+<v Matteo Fortini>Chi ci ospita è Developers Italia,
+che è un progetto del Dipartimento per la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1255-1
+00:05:09.114 --> 00:05:13.907
+<v Matteo Fortini>trasformazione digitale e dell'AgID
+dell'Agenzia per l'Italia digitale,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1255-2
+00:05:13.907 --> 00:05:17.768
+<v Matteo Fortini>che è nato nel 2017 insieme al progetto
+Designers Italia.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1255-3
+00:05:17.768 --> 00:05:22.028
+<v Matteo Fortini>E sono due progetti che vogliono essere
+il punto di riferimento</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1301-0
+00:05:22.388 --> 00:05:25.671
+<v Matteo Fortini>per il software della pubblica
+amministrazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1301-1
+00:05:25.671 --> 00:05:30.254
+<v Matteo Fortini>Developers Italia è una community di
+sviluppatori e sviluppatrici,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1301-2
+00:05:30.254 --> 00:05:35.384
+<v Matteo Fortini>sia volontari che professionisti,
+che vogliono collaborare per il software</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1301-3
+00:05:35.384 --> 00:05:40.308
+<v Matteo Fortini>della pubblica amministrazione.
+Trovate risorse, trovate una community.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1355-0
+00:05:42.228 --> 00:05:47.039
+<v Matteo Fortini>Andiamo direttamente a parlare di quella
+che è l'interoperabilità,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1355-1
+00:05:47.039 --> 00:05:52.784
+<v Matteo Fortini>che è il focus del community lab di oggi.
+L'interoperabilità è il metodo che si</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1355-2
+00:05:52.784 --> 00:05:56.948
+<v Matteo Fortini>utilizza oggi per rendere gli enti capaci
+di collaborare.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1401-0
+00:05:57.028 --> 00:06:00.916
+<v Matteo Fortini>Quindi di creare servizi in
+collaborazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1401-1
+00:06:00.916 --> 00:06:05.952
+<v Matteo Fortini>mettendosi a disposizione reciprocamente
+dati e servizi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1401-2
+00:06:05.952 --> 00:06:13.108
+<v Matteo Fortini>però mantenendo una loro indipendenza.
+Quindi l'interoperabilità non è fondersi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1462-0
+00:06:13.428 --> 00:06:16.465
+<v Matteo Fortini>E di mantenersi indipendenti,
+ma potere collaborare,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1462-1
+00:06:16.465 --> 00:06:21.392
+<v Matteo Fortini>potere interoperare nel contesto italiano,
+come abbiamo declinato l'interoperabilità,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1462-2
+00:06:21.392 --> 00:06:26.090
+<v Matteo Fortini>l'interoperabilità è fondata sulle API,
+che sono interfacce per la programmazione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1462-3
+00:06:26.090 --> 00:06:28.668
+<v Matteo Fortini>di applicazioni,
+quindi interfacce tecniche.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1535-0
+00:06:29.188 --> 00:06:35.464
+<v Matteo Fortini>Che vanno a creare un contratto che
+permette di sapere come si potrà fruire</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1535-1
+00:06:35.464 --> 00:06:41.327
+<v Matteo Fortini>dei dati o fruire dei dei servizi,
+un contratto tecnico e le API vanno</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1535-2
+00:06:41.327 --> 00:06:47.685
+<v Matteo Fortini>sviluppate in conformità con delle linee
+guida su interoperabilità tecnica e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1535-3
+00:06:47.685 --> 00:06:48.428
+<v Matteo Fortini>semantica</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1586-0
+00:06:48.548 --> 00:06:52.100
+<v Matteo Fortini>del cosiddetto Modello di
+Interoperabilità italiano,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1586-1
+00:06:52.100 --> 00:06:56.121
+<v Matteo Fortini>che sono state adottate da AgID in
+conformità con il Codice</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1586-2
+00:06:56.121 --> 00:07:00.610
+<v Matteo Fortini>dell'Amministrazione Digitale.
+Ed è basata anche sulla piattaforma</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1586-3
+00:07:00.610 --> 00:07:04.966
+<v Matteo Fortini>digitale nazionale, detta PDND,
+di cui parleremo e del cui ruolo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1586-4
+00:07:04.966 --> 00:07:06.708
+<v Matteo Fortini>parleremo successivamente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1650-0
+00:07:08.068 --> 00:07:11.248
+<v Matteo Fortini>Quali sono i benefici
+dell'interoperabilità?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1650-1
+00:07:11.248 --> 00:07:16.546
+<v Matteo Fortini>Prima di tutto l'interoperabilità vuole
+portare a compimento il cosiddetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1650-2
+00:07:16.546 --> 00:07:20.997
+<v Matteo Fortini>principio once-only.
+Il principio once-only viene tradotto in:</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1650-3
+00:07:20.997 --> 00:07:26.578
+<v Matteo Fortini>non si devono fornire informazioni già
+comunicate in precedenza a una pubblica</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1650-4
+00:07:26.578 --> 00:07:27.708
+<v Matteo Fortini>amministrazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1709-0
+00:07:27.788 --> 00:07:33.506
+<v Matteo Fortini>Quindi superare il certificato,
+ma superare anche l'autocertificazione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1709-1
+00:07:33.506 --> 00:07:37.210
+<v Matteo Fortini>che richiede una verifica successiva.
+Perché?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1709-2
+00:07:37.210 --> 00:07:43.169
+<v Matteo Fortini>Perché vogliamo che le pubbliche
+amministrazioni siano capaci di andare a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1709-3
+00:07:43.169 --> 00:07:46.148
+<v Matteo Fortini>ricevere dati certificati alla fonte,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1747-0
+00:07:46.548 --> 00:07:51.588
+<v Matteo Fortini>da fonti autorevoli.
+Quindi si possono avere dati aggiornati</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1747-1
+00:07:51.588 --> 00:07:57.370
+<v Matteo Fortini>direttamente dalle fonti autorevoli che
+sono titolari di questi dati,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1747-2
+00:07:57.370 --> 00:08:01.748
+<v Matteo Fortini>e che sono quelle che hanno in gestione
+questi dati.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1792-0
+00:08:03.348 --> 00:08:06.351
+<v Matteo Fortini>Vogliamo servizi più semplici ed
+efficienti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1792-1
+00:08:06.351 --> 00:08:10.889
+<v Matteo Fortini>quindi che le amministrazioni possano
+semplificare i loro processi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1792-2
+00:08:10.889 --> 00:08:14.692
+<v Matteo Fortini>ridurre la burocrazia,
+rendere i servizi più efficienti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1792-3
+00:08:14.692 --> 00:08:17.628
+<v Matteo Fortini>evitare perdite sia di tempo che di
+risorse</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1846-0
+00:08:17.708 --> 00:08:23.304
+<v Matteo Fortini>per verifiche,
+per dovere andare a dimensionare i loro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1846-1
+00:08:23.304 --> 00:08:27.577
+<v Matteo Fortini>servizi,
+avendo dati più aggiornati e più</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1846-2
+00:08:27.577 --> 00:08:32.868
+<v Matteo Fortini>verificati.
+Poi vogliamo però tutto questo farlo in</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1846-3
+00:08:32.868 --> 00:08:36.428
+<v Matteo Fortini>sicurezza, e la PDND in questo caso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1905-0
+00:08:36.628 --> 00:08:42.435
+<v Matteo Fortini>ci abilita a una condivisione sicura dei
+dati rispettando quelle che sono le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1905-1
+00:08:42.435 --> 00:08:46.808
+<v Matteo Fortini>titolarità di ciascun ente.
+Lo fa in modo standardizzato.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1905-2
+00:08:46.808 --> 00:08:52.388
+<v Matteo Fortini>Chiaramente PDND non è l'unico modo per
+scambiarsi i dati in modo sicuro,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1930-0
+00:08:52.548 --> 00:08:58.613
+<v Matteo Fortini>ma la PDND ha permesso di scalare questa
+sicurezza e questa capacità di scambiarsi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/1930-1
+00:08:58.613 --> 00:09:01.828
+<v Matteo Fortini>dati a migliaia di enti
+contemporaneamente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2010-0
+00:09:03.228 --> 00:09:05.858
+<v Matteo Fortini>Quali sono le dimensioni
+dell'interoperabilità?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2010-1
+00:09:05.858 --> 00:09:08.487
+<v Matteo Fortini>Abbiamo un European Interoperability
+Framework,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2010-2
+00:09:08.487 --> 00:09:13.088
+<v Matteo Fortini>un quadro europeo di interoperabilità che
+definisce fondamentalmente cinque aspetti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2010-3
+00:09:13.088 --> 00:09:17.196
+<v Matteo Fortini>o cinque dimensioni di interoperabilità.
+Oggi ci focalizzeremo molto sulla</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2010-4
+00:09:17.196 --> 00:09:21.468
+<v Matteo Fortini>dimensione tecnica che richiede di
+potersi scambiare i dati in modo corretto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2075-0
+00:09:21.668 --> 00:09:26.128
+<v Matteo Fortini>Quindi non entro nel merito di cosa si ci
+si scambia,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2075-1
+00:09:26.128 --> 00:09:32.736
+<v Matteo Fortini>ma si fa in modo che un dato che viene
+trasmesso da un erogatore venga ricevuto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2075-2
+00:09:32.736 --> 00:09:38.848
+<v Matteo Fortini>in modo corretto da un fruitore.
+E quindi si basa soprattutto su standard</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2075-3
+00:09:38.848 --> 00:09:39.508
+<v Matteo Fortini>tecnici.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2122-0
+00:09:39.828 --> 00:09:44.904
+<v Matteo Fortini>Vogliamo un'interoperabilità semantica,
+però anche un'interoperabilità nella</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2122-1
+00:09:44.904 --> 00:09:50.045
+<v Matteo Fortini>quale il dato che viene trasmesso,
+non solo venga trasmesso in modo corretto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2122-2
+00:09:50.045 --> 00:09:54.988
+<v Matteo Fortini>ma venga compreso in modo che sia
+definito e non ambiguo da chi lo riceve.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2179-0
+00:09:55.108 --> 00:09:59.590
+<v Matteo Fortini>E quindi il dato possa mantenere il suo
+significato,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2179-1
+00:09:59.590 --> 00:10:06.270
+<v Matteo Fortini>indipendentemente da chi lo riceve.
+Vogliamo un'introverabilità organizzativa,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2179-2
+00:10:06.270 --> 00:10:12.188
+<v Matteo Fortini>questa è quella che richiede agli enti di
+allineare i propri processi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2230-0
+00:10:12.428 --> 00:10:15.897
+<v Matteo Fortini>e le loro responsabilità per poter
+collaborare efficacemente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2230-1
+00:10:15.897 --> 00:10:19.533
+<v Matteo Fortini>Perché in un servizio realizzato da più
+enti contemporaneamente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2230-2
+00:10:19.533 --> 00:10:23.057
+<v Matteo Fortini>si deve prevedere appunto
+l'interoperabilità come passaggio di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2230-3
+00:10:23.057 --> 00:10:27.588
+<v Matteo Fortini>questo servizio e si deve prevedere che
+una parte venga fatta in collaborazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2289-0
+00:10:28.188 --> 00:10:33.479
+<v Matteo Fortini>C'è poi un'interoperabilità legale che in
+Italia è stata fondata su il Codice</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2289-1
+00:10:33.479 --> 00:10:37.413
+<v Matteo Fortini>dell'Amministrazione Digitale,
+perché alla base di tutto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2289-2
+00:10:37.413 --> 00:10:42.771
+<v Matteo Fortini>chiaramente la pubblica amministrazione
+si muove chiaramente sempre sulla base</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2289-3
+00:10:42.771 --> 00:10:43.788
+<v Matteo Fortini>anche di norme.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2345-0
+00:10:44.268 --> 00:10:49.300
+<v Matteo Fortini>E per cui l'interoperabilità legale dice
+che dobbiamo creare delle norme che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2345-1
+00:10:49.300 --> 00:10:54.005
+<v Matteo Fortini>permettano un'interoperabilità,
+cioè ci dicano che possiamo usare certi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2345-2
+00:10:54.005 --> 00:10:58.906
+<v Matteo Fortini>strumenti per collaborare e poi tutte le
+linee guida che invece ci vanno a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2345-3
+00:10:58.906 --> 00:10:59.428
+<v Matteo Fortini>definire</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2390-0
+00:10:59.868 --> 00:11:03.726
+<v Matteo Fortini>come dobbiamo realizzare
+l'interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2390-1
+00:11:03.726 --> 00:11:08.183
+<v Matteo Fortini>L'ultima dimensione è quella cosiddetta
+di governo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2390-2
+00:11:08.183 --> 00:11:14.868
+<v Matteo Fortini>perché bisogna definire dei ruoli e delle
+gerarchie per cui si deve decidere,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2428-0
+00:11:15.468 --> 00:11:19.915
+<v Matteo Fortini>in ambito di enti pubblici,
+chi sono gli enti che sono titolati a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2428-1
+00:11:19.915 --> 00:11:24.900
+<v Matteo Fortini>scrivere appunto le norme e a dettare le
+regole e quali sono le gerarchie</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2428-2
+00:11:24.900 --> 00:11:25.708
+<v Matteo Fortini>decisionali.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2488-0
+00:11:27.068 --> 00:11:32.942
+<v Matteo Fortini>Perché oggi parliamo di qualità delle API?
+Abbiamo detto che l'interoperabilità in</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2488-1
+00:11:32.942 --> 00:11:37.896
+<v Matteo Fortini>Italia è fondata sulle API,
+quindi questi sono un po' i mattoncini di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2488-2
+00:11:37.896 --> 00:11:41.151
+<v Matteo Fortini>base su cui si crea tutta
+l'interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2488-3
+00:11:41.151 --> 00:11:43.628
+<v Matteo Fortini>Noi vogliamo che l'interoperabilità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2535-0
+00:11:43.668 --> 00:11:48.068
+<v Matteo Fortini>sia sempre senza attriti,
+cioè non ci siano problemi fra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2535-1
+00:11:48.068 --> 00:11:53.317
+<v Matteo Fortini>amministrazioni a interoperare,
+quindi abbiamo deciso di utilizzare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2535-2
+00:11:53.317 --> 00:11:59.028
+<v Matteo Fortini>standard riconosciuti che siano standard
+utilizzati anche nell'industria,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2590-0
+00:12:00.428 --> 00:12:04.312
+<v Matteo Fortini>quindi che qualunque sviluppatore
+sviluppatrice possa conoscere già,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2590-1
+00:12:04.312 --> 00:12:08.645
+<v Matteo Fortini>che non debba avere una competenza
+specifica nella pubblica amministrazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2590-2
+00:12:08.645 --> 00:12:12.866
+<v Matteo Fortini>ma possa utilizzare le competenze che
+utilizza quotidianamente nel proprio</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2590-3
+00:12:12.866 --> 00:12:15.343
+<v Matteo Fortini>lavoro.
+E che siano supportate da servizi e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2590-4
+00:12:15.343 --> 00:12:16.468
+<v Matteo Fortini>strumenti esistenti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2654-0
+00:12:17.068 --> 00:12:24.609
+<v Matteo Fortini>Quindi da una parte nell'interoperabilità
+tecnica abbiamo deciso di utilizzare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2654-1
+00:12:24.609 --> 00:12:30.908
+<v Matteo Fortini>OpenAPI come strumento di descrizione
+delle specifiche delle API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2654-2
+00:12:30.908 --> 00:12:36.348
+<v Matteo Fortini>Ho messo tra parentesi WSDL perché esiste
+la possibilità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2702-0
+00:12:36.588 --> 00:12:40.338
+<v Matteo Fortini>di mantenere i cosiddetti web service
+basati su SOAP,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2702-1
+00:12:40.338 --> 00:12:45.754
+<v Matteo Fortini>che sono considerati residuali - si
+preferisce superarli e andare su OpenAPI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2702-2
+00:12:45.754 --> 00:12:51.308
+<v Matteo Fortini>però chiaramente un'altra opportunità è
+quella di utilizzare uno standard WSDL.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2761-0
+00:12:51.628 --> 00:12:57.057
+<v Matteo Fortini>Ci sono le linee guida del Modello di
+Interoperabilità che descrivono,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2761-1
+00:12:57.057 --> 00:13:02.027
+<v Matteo Fortini>rispetto alle specifiche OpenAPI,
+alcuni pattern di interazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2761-2
+00:13:02.027 --> 00:13:08.067
+<v Matteo Fortini>alcuni pattern di sicurezza che vanno un
+po' di più a specificare come si deve</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2761-3
+00:13:08.067 --> 00:13:08.908
+<v Matteo Fortini>interagire.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2811-0
+00:13:09.228 --> 00:13:15.142
+<v Matteo Fortini>Le linee guida sono estensibili,
+sono state modificate nel tempo proprio</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2811-1
+00:13:15.142 --> 00:13:20.164
+<v Matteo Fortini>perché sono state pensate per essere uno
+strumento a supporto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2811-2
+00:13:20.164 --> 00:13:25.348
+<v Matteo Fortini>dell'interoperabilità e non un qualcosa
+che la vada a bloccare.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2872-0
+00:13:25.788 --> 00:13:29.919
+<v Matteo Fortini>Un altro modo di supportare
+l'interoperabilità tecnica è fare analisi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2872-1
+00:13:29.919 --> 00:13:33.636
+<v Matteo Fortini>statica delle specifiche,
+quindi per me avere degli strumenti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2872-2
+00:13:33.636 --> 00:13:37.472
+<v Matteo Fortini>che vedremo anche oggi,
+che ci permettono di sapere già da prima</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2872-3
+00:13:37.472 --> 00:13:42.074
+<v Matteo Fortini>di implementare le nostre API se queste
+API rispettano in gran parte le linee</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2872-4
+00:13:42.074 --> 00:13:42.428
+<v Matteo Fortini>guida.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2941-0
+00:13:42.828 --> 00:13:46.451
+<v Matteo Fortini>Abbiamo la richiesta appunto di
+interoperabilità semantica,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2941-1
+00:13:46.451 --> 00:13:51.340
+<v Matteo Fortini>la qualità di un API può essere aumentata
+utilizzando il catalogo schema.gov.it,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2941-2
+00:13:51.340 --> 00:13:55.083
+<v Matteo Fortini>dove troviamo ontologie,
+vocabolari controllati, schemi dati,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/2941-3
+00:13:55.083 --> 00:13:59.188
+<v Matteo Fortini>che ci permettono di sapere da parte di
+chi è titolare di quel dato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3013-0
+00:13:59.708 --> 00:14:03.070
+<v Matteo Fortini>come descrivere questo dato,
+quindi le ontologie,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3013-1
+00:14:03.070 --> 00:14:08.045
+<v Matteo Fortini>quali sono i vocabolari controllati,
+quindi quali sono alcuni elenchi che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3013-2
+00:14:08.045 --> 00:14:11.541
+<v Matteo Fortini>possiamo utilizzare per descrivere delle
+categorie,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3013-3
+00:14:11.541 --> 00:14:16.784
+<v Matteo Fortini>e gli schemi dati che ci permettono di
+migliorare anche la mappatura dei dati</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3013-4
+00:14:16.784 --> 00:14:18.868
+<v Matteo Fortini>all'interno dei nostri sistemi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3067-0
+00:14:18.908 --> 00:14:24.419
+<v Matteo Fortini>e la mappatura dei dati che trasferiamo.
+In più abbiamo creato una specifica per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3067-1
+00:14:24.419 --> 00:14:28.501
+<v Matteo Fortini>inserire la semantica all'interno delle
+specifiche OpenAPI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3067-2
+00:14:28.501 --> 00:14:34.148
+<v Matteo Fortini>per appunto accrescere semanticamente la
+descrizione che nelle open API è tecnica.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3138-0
+00:14:34.508 --> 00:14:37.523
+<v Matteo Fortini>In più anche oggi parleremo della cura
+del catalogo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3138-1
+00:14:37.523 --> 00:14:41.903
+<v Matteo Fortini>perché scrivere bene i titoli e le
+descrizioni permette di migliorare sia la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3138-2
+00:14:41.903 --> 00:14:45.259
+<v Matteo Fortini>qualità della ricerca,
+quindi di rendere le API trovabili,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3138-3
+00:14:45.259 --> 00:14:49.753
+<v Matteo Fortini>ma anche di fare in modo che chi poi
+debba utilizzarle abbia la possibilità di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3138-4
+00:14:49.753 --> 00:14:52.028
+<v Matteo Fortini>utilizzare in modo corretto dall'inizio.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3196-0
+00:14:52.468 --> 00:14:56.907
+<v Matteo Fortini>Qual è l'ecosistema interoperabilità?
+È basato appunto su PDND che autentica le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3196-1
+00:14:56.907 --> 00:14:59.959
+<v Matteo Fortini>nostre parti,
+registra gli accordi di interoperabilità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3196-2
+00:14:59.959 --> 00:15:03.676
+<v Matteo Fortini>e autorizza gli accessi.
+Quindi è una piattaforma che si occupa di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3196-3
+00:15:03.676 --> 00:15:06.117
+<v Matteo Fortini>queste parti.
+Abbiamo un catalogo pubblico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3196-4
+00:15:06.117 --> 00:15:07.948
+<v Matteo Fortini>che è sempre all'interno di PDND,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3251-0
+00:15:08.868 --> 00:15:12.052
+<v Matteo Fortini>delle API della nostra pubblica
+amministrazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3251-1
+00:15:12.052 --> 00:15:16.536
+<v Matteo Fortini>Abbiamo un catalogo di risorse per la
+semantica che è schema.gov.it.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3251-2
+00:15:16.536 --> 00:15:21.994
+<v Matteo Fortini>E poi abbiamo un catalogo di dati aperti
+della pubblica amministrazione che è dati.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3251-3
+00:15:21.994 --> 00:15:24.268
+<v Matteo Fortini>gov.it la cui titolarità è di AgID.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3301-0
+00:15:24.348 --> 00:15:31.171
+<v Matteo Fortini>Come possiamo sviluppare le API?
+La prima cosa è cercare aderire alla PDND,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3301-1
+00:15:31.171 --> 00:15:38.532
+<v Matteo Fortini>consultare le API che sono all'interno,
+valutare come integrare e prendere spunto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3301-2
+00:15:38.532 --> 00:15:39.788
+<v Matteo Fortini>da queste API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3373-0
+00:15:40.188 --> 00:15:45.167
+<v Matteo Fortini>per poi andare a realizzarne di nuove.
+Possiamo sviluppare le API studiando i</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3373-1
+00:15:45.167 --> 00:15:49.444
+<v Matteo Fortini>nostri standard e i manuali,
+utilizzando le ontologie e vocabolari</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3373-2
+00:15:49.444 --> 00:15:52.891
+<v Matteo Fortini>controllati,
+la nomenclatura e il dimensionamento dei</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3373-3
+00:15:52.891 --> 00:15:55.827
+<v Matteo Fortini>servizi. Qui abbiamo di nuovo schema.gov.
+it,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3373-4
+00:15:55.827 --> 00:15:58.508
+<v Matteo Fortini>abbiamo lo Schema Editor che vedremo oggi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3442-0
+00:15:58.748 --> 00:16:02.976
+<v Matteo Fortini>Possiamo verificare che le nostre API
+rispettino il Modello di Interoperabilità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3442-1
+00:16:02.976 --> 00:16:06.675
+<v Matteo Fortini>utilizzando uno strumento che vi
+mostreremo anche quest'oggi che è il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3442-2
+00:16:06.675 --> 00:16:10.744
+<v Matteo Fortini>Checker e di nuovo lo Schema Editor che
+permette di migliorare la semantica,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3442-3
+00:16:10.744 --> 00:16:14.760
+<v Matteo Fortini>infine pubblicare le API sia in collaudo
+che in esercizio sulla Piattaforma</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3442-4
+00:16:14.760 --> 00:16:16.028
+<v Matteo Fortini>Digitale Nazionale Dati.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3465-0
+00:16:16.268 --> 00:16:22.564
+<v Matteo Fortini>Ma e poi ascoltare e gestire i fruitori
+che possono chiederci miglioramenti o</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3465-1
+00:16:22.564 --> 00:16:25.308
+<v Matteo Fortini>dimensionamenti diversi delle API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3480-0
+00:16:26.748 --> 00:16:30.748
+<v Matteo Fortini>Io ho concluso e lascio la parola a chi
+segue.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3524-0
+00:16:32.348 --> 00:16:37.416
+<v Claudia Pollina>Grazie Matteo per questa introduzione.
+Grazie Matteo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3486-0
+00:16:33.788 --> 00:16:34.188
+<v Matteo Fortini>Grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3524-1
+00:16:37.416 --> 00:16:44.172
+<v Claudia Pollina>questa introduzione è stata molto utile
+per diciamo inoltrarci nel tema</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3524-2
+00:16:44.172 --> 00:16:47.268
+<v Claudia Pollina>dell'ecosistema interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3581-0
+00:16:48.348 --> 00:16:55.892
+<v Claudia Pollina>Ora lascio la parola a Sara Casanova che
+ci parlerà invece del catalogo pubblico</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3581-1
+00:16:55.892 --> 00:17:00.362
+<v Claudia Pollina>delle api.gov.
+it e poi delle buone pratiche di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3581-2
+00:17:00.362 --> 00:17:06.228
+<v Claudia Pollina>nomenclatura delle API degli e-service
+sulla piattaforma PDND.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3582-0
+00:17:06.468 --> 00:17:06.748
+<v Claudia Pollina>Grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3644-0
+00:17:08.668 --> 00:17:14.718
+<v Sara Casanova>Grazie Claudia, grazie Matteo. api.gov.it,
+che già ha introdotto Matteo prima di me,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3644-1
+00:17:14.718 --> 00:17:20.341
+<v Sara Casanova>è il catalogo pubblico delle API ed è
+stato progettato proprio per favorire la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3644-2
+00:17:20.341 --> 00:17:23.828
+<v Sara Casanova>comprensione e l'adozione
+dell'interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3705-0
+00:17:24.788 --> 00:17:29.197
+<v Sara Casanova>Attraverso il catalogo, infatti,
+si possono ricercare quelli che sono le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3705-1
+00:17:29.197 --> 00:17:33.364
+<v Sara Casanova>API pubblicate dagli enti sulla
+Piattaforma Digitale Nazionale Dati,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3705-2
+00:17:33.364 --> 00:17:36.142
+<v Sara Casanova>possono essere ricercate da tutte le
+persone,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3705-3
+00:17:36.142 --> 00:17:40.188
+<v Sara Casanova>anche chi non opera direttamente come
+operatore sulla piattaforma.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3737-0
+00:17:40.748 --> 00:17:45.744
+<v Sara Casanova>E scoprire anche come queste API possono
+essere utilizzate per realizzare o per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3737-1
+00:17:45.744 --> 00:17:50.988
+<v Sara Casanova>semplificare servizi ai cittadini e alle
+imprese, servizi che siano interoperabili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3793-0
+00:17:54.028 --> 00:17:57.586
+<v Sara Casanova>Il catalogo è proprio il cuore di api.gov.
+it,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3793-1
+00:17:57.586 --> 00:18:03.339
+<v Sara Casanova>qui si può accedere alle API che sono
+state pubblicate dagli enti e possono</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3793-2
+00:18:03.339 --> 00:18:08.108
+<v Sara Casanova>essere filtrate per parola chiave oppure
+per l'ente erogatore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3848-0
+00:18:08.748 --> 00:18:13.042
+<v Sara Casanova>Vi metto in evidenza anche la presenza di
+un filtro per ente fruitore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3848-1
+00:18:13.042 --> 00:18:18.062
+<v Sara Casanova>Questo consente di individuare quelle che
+sono delle API consigliate per categorie</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3848-2
+00:18:18.062 --> 00:18:21.207
+<v Sara Casanova>di enti,
+troviamo al suo interno ad esempio comuni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3848-3
+00:18:21.207 --> 00:18:23.868
+<v Sara Casanova>regioni,
+pubblica amministrazione centrali.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3893-0
+00:18:24.828 --> 00:18:30.533
+<v Sara Casanova>Filtrando per comuni si andrà a vedere ad
+esempio tutte quelle API consigliate</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3893-1
+00:18:30.533 --> 00:18:35.082
+<v Sara Casanova>proprio per i comuni,
+consigliate a seconda di quelle che sono</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3893-2
+00:18:35.082 --> 00:18:38.548
+<v Sara Casanova>i parametri di accesso definiti
+dall'erogatore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3962-0
+00:18:39.948 --> 00:18:46.164
+<v Sara Casanova>Una volta individuato un API di interesse
+si può andare a consultare la sua scheda.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3962-1
+00:18:46.164 --> 00:18:51.788
+<v Sara Casanova>Qui troviamo una serie di dettagli,
+in primis la descrizione che adesso non</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3962-2
+00:18:51.788 --> 00:18:57.486
+<v Sara Casanova>vedete tagliata via e i dettagli più
+tecnici a partire dallo Stato dell'API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/3962-3
+00:18:57.486 --> 00:18:59.188
+<v Sara Casanova>la disponibilità o meno</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4023-0
+00:18:59.228 --> 00:19:03.462
+<v Sara Casanova>della fruizione tramite delega,
+fino alle specifiche tecniche e,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4023-1
+00:19:03.462 --> 00:19:07.239
+<v Sara Casanova>molto importanti,
+quelli che sono i requisiti di accesso.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4023-2
+00:19:07.239 --> 00:19:12.385
+<v Sara Casanova>In questa che trovate a schermo vediamo
+che è un API accessibile dal Ministero</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4023-3
+00:19:12.385 --> 00:19:16.748
+<v Sara Casanova>dell'università e della ricerca.
+Naturalmente ci saranno altre API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4109-0
+00:19:16.828 --> 00:19:20.961
+<v Sara Casanova>fruibili da tutte le pubbliche
+amministrazioni oppure da categorie</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4109-1
+00:19:20.961 --> 00:19:25.834
+<v Sara Casanova>specifiche, come i comuni o le regioni.
+Ricordiamo questi requisiti di accesso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4109-2
+00:19:25.834 --> 00:19:30.584
+<v Sara Casanova>sono definiti dall'erogatore nel momento
+in cui va a pubblicare un'API sulla</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4109-3
+00:19:30.584 --> 00:19:35.086
+<v Sara Casanova>Piattaforma Digitale Nazionale Dati.
+Infine questa è la scheda pubblica,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4109-4
+00:19:35.086 --> 00:19:36.628
+<v Sara Casanova>ma a fine pagina troviamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4157-0
+00:19:36.708 --> 00:19:41.768
+<v Sara Casanova>un link per accedere alla piattaforma
+dove si potrà invece accedere alle</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4157-1
+00:19:41.768 --> 00:19:46.065
+<v Sara Casanova>specifiche delle API,
+alla documentazione e anche ai contatti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4157-2
+00:19:46.065 --> 00:19:50.016
+<v Sara Casanova>dell'erogatore,
+per poi ovviamente andare ad utilizzarla</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4157-3
+00:19:50.016 --> 00:19:51.748
+<v Sara Casanova>chiedendone la fruizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4159-0
+00:19:51.828 --> 00:19:52.908
+<v Sara Casanova></v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4217-0
+00:19:54.908 --> 00:19:59.154
+<v Sara Casanova>Dicevamo che abbiamo progettato questo
+catalogo api.gov.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4217-1
+00:19:59.154 --> 00:20:04.443
+<v Sara Casanova>it proprio per favorire l'adozione e
+l'utilizzo dell'interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4217-2
+00:20:04.443 --> 00:20:09.508
+<v Sara Casanova>E quindi troverete su api.gov.
+it anche una serie di esempi pratici</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4285-0
+00:20:09.588 --> 00:20:15.972
+<v Sara Casanova>di ispirazione e replicabili per gli enti,
+che vanno un po' a presentare come queste</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4285-1
+00:20:15.972 --> 00:20:21.980
+<v Sara Casanova>API, le tante API presenti a catalogo,
+possono essere utilizzate per realizzare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4285-2
+00:20:21.980 --> 00:20:27.462
+<v Sara Casanova>dei servizi per cittadini e imprese.
+Anche di questi esempi ne troverete</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4285-3
+00:20:27.462 --> 00:20:28.588
+<v Sara Casanova>online quattro,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4334-0
+00:20:28.988 --> 00:20:32.988
+<v Sara Casanova>ma è una raccolta in continua evoluzione.
+Ebbene,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4334-1
+00:20:32.988 --> 00:20:38.908
+<v Sara Casanova>anche questi esempi sono consultabili e
+filtrabili per tipologia di ente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4334-2
+00:20:38.908 --> 00:20:43.468
+<v Sara Casanova>Se vediamo ad esempio il primo che è
+dedicato ai comuni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4334-3
+00:20:43.468 --> 00:20:46.588
+<v Sara Casanova>raccontiamo attraverso una descrizione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4398-0
+00:20:46.708 --> 00:20:51.928
+<v Sara Casanova>un racconto di quello che è il processo,
+come i comuni possono semplificare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4398-1
+00:20:51.928 --> 00:20:57.353
+<v Sara Casanova>l'accesso e favorire l'accesso senza
+barriere tramite l'utilizzo delle API del</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4398-2
+00:20:57.353 --> 00:21:00.649
+<v Sara Casanova>CUDE.
+Qua troviamo ovviamente i vantaggi per la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4398-3
+00:21:00.649 --> 00:21:04.358
+<v Sara Casanova>pubblica amministrazione,
+i vantaggi per i cittadini,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4398-4
+00:21:04.358 --> 00:21:05.868
+<v Sara Casanova>e in fine alla pagina,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4441-0
+00:21:05.908 --> 00:21:10.124
+<v Sara Casanova>quello che stiamo vedendo adesso,
+il link molto importante alle API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4441-1
+00:21:10.124 --> 00:21:13.162
+<v Sara Casanova>utilizzate.
+Quindi utilizzando queste API si può</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4441-2
+00:21:13.162 --> 00:21:16.386
+<v Sara Casanova>andare a semplificare o realizzare questo
+servizio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4441-3
+00:21:16.386 --> 00:21:19.548
+<v Sara Casanova>che potrà essere replicato così da
+diversi comuni.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4500-0
+00:21:25.228 --> 00:21:31.207
+<v Sara Casanova>Abbiamo introdotto, anche grazie a Matteo,
+l'importanza della nomenclatura e della</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4500-1
+00:21:31.207 --> 00:21:35.313
+<v Sara Casanova>descrizione delle API,
+infatti la qualità della ricerca,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4500-2
+00:21:35.313 --> 00:21:40.931
+<v Sara Casanova>la ricerca che abbiamo visto a catalogo
+prima, dipende anche da chi pubblica.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4500-3
+00:21:40.931 --> 00:21:43.308
+<v Sara Casanova>Infatti un nome e una descrizione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4541-0
+00:21:44.428 --> 00:21:49.559
+<v Sara Casanova>ben corretta e ben fatta favoriscono non
+soltanto la ricerca,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4541-1
+00:21:49.559 --> 00:21:56.511
+<v Sara Casanova>ma anche la comprensione e poi l'adozione
+e l'utilizzo degli e-service. Per questo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4541-2
+00:21:56.511 --> 00:21:58.828
+<v Sara Casanova>sapendo quanto è importante,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4578-0
+00:21:59.228 --> 00:22:04.552
+<v Sara Casanova>abbiamo preparato una guida alla
+nomenclatura e descrizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4578-1
+00:22:04.552 --> 00:22:11.534
+<v Sara Casanova>Inseriremo in chat il link a questa guida,
+oggi però vi facciamo vedere qualche</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4578-2
+00:22:11.534 --> 00:22:12.668
+<v Sara Casanova>punto chiave.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4622-0
+00:22:14.908 --> 00:22:20.861
+<v Sara Casanova>Iniziamo dal nome dell'e-service.
+Il nome dovrebbe iniziare con un'azione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4622-1
+00:22:20.861 --> 00:22:26.814
+<v Sara Casanova>l'azione che l'e-service abilita al
+fruitore, seguita dal dato in oggetto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4622-2
+00:22:26.814 --> 00:22:29.988
+<v Sara Casanova>Vediamo negli esempi consultazione ISEE.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4631-0
+00:22:30.108 --> 00:22:35.028
+<v Sara Casanova>Oppure verifica ID unico nazionale.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4701-0
+00:22:36.588 --> 00:22:39.615
+<v Sara Casanova>A seguire,
+se necessario e quando applicabili,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4701-1
+00:22:39.615 --> 00:22:44.444
+<v Sara Casanova>possono essere aggiunte ulteriori
+informazioni come la base dato oppure il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4701-2
+00:22:44.444 --> 00:22:48.372
+<v Sara Casanova>progetto di riferimento.
+Vediamo sempre nell'esempio ANPR e,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4701-3
+00:22:48.372 --> 00:22:51.334
+<v Sara Casanova>se rilevante,
+anche un codice identificativo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4701-4
+00:22:51.334 --> 00:22:55.068
+<v Sara Casanova>Sappiamo infatti che alcuni enti
+identificano le loro API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4761-0
+00:22:55.628 --> 00:22:59.307
+<v Sara Casanova>tramite dei codici presenti nella loro
+documentazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4761-1
+00:22:59.307 --> 00:23:03.118
+<v Sara Casanova>Il consiglio è quello di inserirlo come
+ultimo elemento,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4761-2
+00:23:03.118 --> 00:23:07.666
+<v Sara Casanova>in modo che si possa mettere in risalto
+il vero contenuto del nome,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4761-3
+00:23:07.666 --> 00:23:12.748
+<v Sara Casanova>la parte più interessante che ne permette
+la comprensione, che è l'oggetto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4809-0
+00:23:14.588 --> 00:23:19.254
+<v Sara Casanova>Riguardo all'azione,
+a volte questa potrebbe anche essere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4809-1
+00:23:19.254 --> 00:23:23.438
+<v Sara Casanova>essere omessa,
+qualora ad esempio ci sono delle API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4809-2
+00:23:23.438 --> 00:23:28.908
+<v Sara Casanova>particolarmente complesse che consentono
+una serie lunga di azioni.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4858-0
+00:23:29.148 --> 00:23:33.137
+<v Sara Casanova>E in quel caso si lascia spazio
+soprattutto a quello che è l'oggetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4858-1
+00:23:33.137 --> 00:23:37.878
+<v Sara Casanova>interessante per voi sapere che la guida
+contiene anche un glossario delle azioni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4858-2
+00:23:37.878 --> 00:23:42.098
+<v Sara Casanova>consigliate, anche del loro significato,
+che aiuta un po' a capire quale</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4858-3
+00:23:42.098 --> 00:23:43.948
+<v Sara Casanova>utilizzare e quando utilizzarle.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4917-0
+00:23:46.108 --> 00:23:52.028
+<v Sara Casanova>Qualche informazione in più molto pratica
+su cosa fare o cosa non fare nel nominare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4917-1
+00:23:52.028 --> 00:23:55.410
+<v Sara Casanova>un API,
+ricordiamoci che il catalogo è visitato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4917-2
+00:23:55.410 --> 00:23:59.568
+<v Sara Casanova>da persone umane,
+quindi noi inseriamo degli spazi tra una</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4917-3
+00:23:59.568 --> 00:24:02.668
+<v Sara Casanova>parola e l'altra senza utilizzare
+trattini,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4974-0
+00:24:02.708 --> 00:24:06.818
+<v Sara Casanova>senza scrivere tutto attaccato o senza
+scrivere tutto in maiuscolo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4974-1
+00:24:06.818 --> 00:24:10.626
+<v Sara Casanova>questo per facilitarne la lettura e
+sempre per questa ragione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4974-2
+00:24:10.626 --> 00:24:14.857
+<v Sara Casanova>se non strettamente necessarie,
+evitiamo sia le abbreviazioni che gli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4974-3
+00:24:14.857 --> 00:24:17.456
+<v Sara Casanova>acronimi,
+inglesismi o termini tecnici che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/4974-4
+00:24:17.456 --> 00:24:19.148
+<v Sara Casanova>potrebbero essere fraintesi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5023-0
+00:24:19.708 --> 00:24:24.568
+<v Sara Casanova>Non è necessario ed è sconsigliato
+inserire dei termini quali "API",</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5023-1
+00:24:24.568 --> 00:24:27.666
+<v Sara Casanova>"servizi", "e-service",
+"interoperabilità",</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5023-2
+00:24:27.666 --> 00:24:33.089
+<v Sara Casanova>che di fatto vanno a togliere spazio al
+vero contenuto del nome che è quello</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5023-3
+00:24:33.089 --> 00:24:34.708
+<v Sara Casanova>dell'azione e del dato.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5070-0
+00:24:35.868 --> 00:24:40.815
+<v Sara Casanova>E non si devono utilizzare dei termini
+"new", "nuovo", "clone",</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5070-1
+00:24:40.815 --> 00:24:46.767
+<v Sara Casanova>o tutte quelle informazioni tecniche che
+sono già contenute poi nella scheda</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5070-2
+00:24:46.767 --> 00:24:50.708
+<v Sara Casanova>dell'API.
+Importante ricordiamo anche non inserire</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5117-0
+00:24:50.828 --> 00:24:54.580
+<v Sara Casanova>il nome dell'erogatore e del fruitore,
+anche questi saranno contenuti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5117-1
+00:24:54.580 --> 00:24:56.992
+<v Sara Casanova>all'interno della scheda,
+sono già visibili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5117-2
+00:24:56.992 --> 00:24:59.672
+<v Sara Casanova>E soprattutto non inserire il nome del
+fornitore.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5117-3
+00:24:59.672 --> 00:25:02.352
+<v Sara Casanova>Qui troviamo qualche esempio positivo e
+negativo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5117-4
+00:25:02.352 --> 00:25:04.388
+<v Sara Casanova>tutti questi li troverete nella guida.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5184-0
+00:25:06.668 --> 00:25:09.544
+<v Sara Casanova>Infine,
+pensando invece alla descrizione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5184-1
+00:25:09.544 --> 00:25:13.611
+<v Sara Casanova>dell'e-service,
+la cosa più importante è rendere chiaro a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5184-2
+00:25:13.611 --> 00:25:18.730
+<v Sara Casanova>un potenziale fruitore che cosa fa questo
+e-service, cosa fa questo API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5184-3
+00:25:18.730 --> 00:25:23.148
+<v Sara Casanova>Per questo consigliamo di specificare da
+subito in modo chiaro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5238-0
+00:25:23.228 --> 00:25:29.124
+<v Sara Casanova>quelli che sono l'input e l'output.
+Vediamo: dato un ID unico l'e-service ne</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5238-1
+00:25:29.124 --> 00:25:34.866
+<v Sara Casanova>restituisce la validità (sì/no),
+oppure dato un codice fiscale restituisce</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5238-2
+00:25:34.866 --> 00:25:39.230
+<v Sara Casanova>l'indirizzo di residenza.
+Qui c'è più spazio nella nella</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5238-3
+00:25:39.230 --> 00:25:40.148
+<v Sara Casanova>descrizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5294-0
+00:25:41.148 --> 00:25:45.931
+<v Sara Casanova>I caratteri che erano massimo 60 per il
+nome, sono 250 per la descrizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5294-1
+00:25:45.931 --> 00:25:50.268
+<v Sara Casanova>Quindi si possono includere riferimenti
+normativi quando rilevanti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5294-2
+00:25:50.268 --> 00:25:55.305
+<v Sara Casanova>e altre informazioni che riteniamo utile
+al fruitore per comprendere e poi per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5294-3
+00:25:55.305 --> 00:25:56.708
+<v Sara Casanova>utilizzare queste API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5343-0
+00:25:58.108 --> 00:26:03.143
+<v Sara Casanova>Ricordiamo che anche qui non vanno
+inserite delle informazioni tecniche che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5343-1
+00:26:03.143 --> 00:26:07.913
+<v Sara Casanova>sono già presenti all'interno della
+scheda API, ad esempio la versione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5343-2
+00:26:07.913 --> 00:26:12.485
+<v Sara Casanova>che è già un campo della scheda,
+e nello scrivere in modo conciso ma</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5343-3
+00:26:12.485 --> 00:26:12.948
+<v Sara Casanova>chiaro,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5391-0
+00:26:13.028 --> 00:26:20.477
+<v Sara Casanova>anche qui possiamo ad esempio dare spazio
+alla forma estesa di eventuali acronimi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5391-1
+00:26:20.477 --> 00:26:25.201
+<v Sara Casanova>utilizzati,
+soprattutto se sono degli acronimi poco</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5391-2
+00:26:25.201 --> 00:26:27.108
+<v Sara Casanova>comprensibili ai più.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5426-0
+00:26:28.268 --> 00:26:31.163
+<v Sara Casanova>Importante,
+ricordiamoci che come abbiamo visto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5426-1
+00:26:31.163 --> 00:26:35.417
+<v Sara Casanova>tutte queste informazioni vengono
+pubblicate anche a catalogo pubblico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5426-2
+00:26:35.417 --> 00:26:39.788
+<v Sara Casanova>quindi non inseriamo nella descrizione
+contatti o informazioni sensibili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5478-0
+00:26:42.428 --> 00:26:47.056
+<v Sara Casanova>Nel concludere questa parte del community
+lab,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5478-1
+00:26:47.056 --> 00:26:55.130
+<v Sara Casanova>ricordo che queste questa guida è stata
+scritta e pensata per chi va a erogare le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5478-2
+00:26:55.130 --> 00:26:57.788
+<v Sara Casanova>API nella piattaforma PDND.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5511-0
+00:26:58.348 --> 00:27:04.401
+<v Sara Casanova>Ma riteniamo che possa essere utile anche
+per developer che vanno a sviluppare le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5511-1
+00:27:04.401 --> 00:27:07.796
+<v Sara Casanova>API,
+infatti anche nell'OpenAPI sono presenti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5511-2
+00:27:07.796 --> 00:27:09.788
+<v Sara Casanova>il titolo e la descrizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5556-0
+00:27:14.588 --> 00:27:20.901
+<v Claudia Pollina>Bene, io riprendo la condivisione,
+abbiamo già un po' di domande,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5556-1
+00:27:20.901 --> 00:27:26.926
+<v Claudia Pollina>quindi farei partire questo primo Q&amp;A,
+domande e risposte.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5556-2
+00:27:26.926 --> 00:27:29.508
+<v Claudia Pollina>Ne proviamo a fare un paio.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5594-0
+00:27:32.268 --> 00:27:38.550
+<v Claudia Pollina>Le leggo e magari invito i relatori a
+rispondere in maniera breve e concisa,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5594-1
+00:27:38.550 --> 00:27:44.668
+<v Claudia Pollina>più che altro perché abbiamo vogliamo
+lasciare anche un Q&amp;A alla fine.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5651-0
+00:27:45.308 --> 00:27:49.791
+<v Claudia Pollina>Sulla prima domanda di Francesca: le
+funzioni di API management dell'Agenzia</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5651-1
+00:27:49.791 --> 00:27:52.934
+<v Claudia Pollina>delle entrate saranno rese disponibili
+anche su PDND?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5651-2
+00:27:52.934 --> 00:27:56.892
+<v Claudia Pollina>Esiste una timeline in merito
+all'argomento della platea di utenti?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5651-3
+00:27:56.892 --> 00:27:59.628
+<v Claudia Pollina>Non so se Matteo ci vuoi dare tu una
+risposta.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5653-0
+00:28:00.028 --> 00:28:00.948
+<v Claudia Pollina></v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5657-0
+00:28:02.668 --> 00:28:03.148
+<v Claudia Pollina>Grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5712-0
+00:28:02.868 --> 00:28:06.236
+<v Matteo Fortini>Allora le specifiche una parte,
+per esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5712-1
+00:28:06.236 --> 00:28:11.698
+<v Matteo Fortini>la verifica del codice fiscale della
+partita IVA si trova sul catalogo e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5712-2
+00:28:11.698 --> 00:28:17.310
+<v Matteo Fortini>effettivamente in questo momento è
+riservata a regioni, province autonome,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5712-3
+00:28:17.310 --> 00:28:20.228
+<v Matteo Fortini>autorità portuali, città metropolitane,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5757-0
+00:28:20.828 --> 00:28:25.585
+<v Matteo Fortini>università e istituzioni per la
+formazione artistica,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5757-1
+00:28:25.585 --> 00:28:30.694
+<v Matteo Fortini>oltre che per il Poligrafico. Sicuramente,
+come ho detto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5757-2
+00:28:30.694 --> 00:28:36.508
+<v Matteo Fortini>PDND e l'interoperabilità rispettano
+l'autonomia di ciascun ente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5805-0
+00:28:36.588 --> 00:28:41.109
+<v Matteo Fortini>E quindi di solito gli enti,
+nel caso in cui ci sia da allargare la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5805-1
+00:28:41.109 --> 00:28:44.698
+<v Matteo Fortini>platea o di fare modifiche appunto come
+dicevo prima,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5805-2
+00:28:44.698 --> 00:28:49.750
+<v Matteo Fortini>hanno la possibilità di poi gestire i
+loro fruitori e la community dei loro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5805-3
+00:28:49.750 --> 00:28:50.348
+<v Matteo Fortini>fruitori.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5844-0
+00:28:52.108 --> 00:28:58.864
+<v Matteo Fortini>Quindi non abbiamo delle timeline,
+però ci capita sì di ricevere queste</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5844-1
+00:28:58.864 --> 00:29:03.837
+<v Matteo Fortini>richieste.
+Quando queste richieste sono fatte spesso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5844-2
+00:29:03.837 --> 00:29:07.308
+<v Matteo Fortini>da associazioni, per esempio di enti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5879-0
+00:29:09.188 --> 00:29:14.816
+<v Matteo Fortini>magari insomma le seguiamo,
+ma c'è sempre l'indipendenza da parte</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5879-1
+00:29:14.816 --> 00:29:20.188
+<v Matteo Fortini>degli enti per le loro scelte,
+che è un criterio fondamentale.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5936-0
+00:29:23.708 --> 00:29:29.059
+<v Claudia Pollina>OK, ora ci sono due altre due domande.
+Direi che forse potremmo far rispondere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5936-1
+00:29:29.059 --> 00:29:32.785
+<v Claudia Pollina>Sara su questa.
+Bellissima la guida alla nomenclatura.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5936-2
+00:29:32.785 --> 00:29:38.339
+<v Claudia Pollina>Developers Italia contatterà i soggetti
+erogatori per chiedere di adeguare i loro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5936-3
+00:29:38.339 --> 00:29:38.948
+<v Claudia Pollina>e-service</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5945-0
+00:29:40.188 --> 00:29:43.628
+<v Claudia Pollina>alle convenzioni formalizzate?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5954-0
+00:29:47.868 --> 00:29:49.548
+<v Claudia Pollina>Sara, cosa dici su questo?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/5956-0
+00:29:48.988 --> 00:29:50.348
+<v Sara Casanova>Grazie per la domanda.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6009-0
+00:29:53.628 --> 00:29:57.990
+<v Sara Casanova>Speriamo che sempre più persone
+utilizzino la guida.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6009-1
+00:29:57.990 --> 00:30:04.409
+<v Sara Casanova>Siamo consapevoli del fatto che molte
+delle API a catalogo già pubblicate non</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6009-2
+00:30:04.409 --> 00:30:08.441
+<v Sara Casanova>la seguono,
+e per questo magari la ricerca non è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6009-3
+00:30:08.441 --> 00:30:09.428
+<v Sara Casanova>facilissima.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6045-0
+00:30:10.548 --> 00:30:16.116
+<v Sara Casanova>E stiamo per questo facendo una
+un'attività di revisione delle API per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6045-1
+00:30:16.116 --> 00:30:22.468
+<v Sara Casanova>provare a consigliare quelli che sono dei
+nomi e delle descrizioni più corrette.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6081-0
+00:30:27.948 --> 00:30:32.000
+<v Claudia Pollina>Bene, ce ne sono altre due,
+però per temi di tempo magari le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6081-1
+00:30:32.000 --> 00:30:35.654
+<v Claudia Pollina>prendiamo alla fine e proviamo a
+rispondere alla fine.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6081-2
+00:30:35.654 --> 00:30:38.908
+<v Claudia Pollina>Vediamo se anche accettano,
+cioè hanno più voti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6133-0
+00:30:42.348 --> 00:30:48.656
+<v Claudia Pollina>Allora passiamo avanti. Sara,
+se mi puoi aiutare tu girando le slide,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6133-1
+00:30:48.656 --> 00:30:53.703
+<v Claudia Pollina>giusto queste.
+Allora ora passiamo alla sessione vera e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6133-2
+00:30:53.703 --> 00:30:58.388
+<v Claudia Pollina>propria del community lab dopo questa
+introduzione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6176-0
+00:30:58.988 --> 00:31:05.446
+<v Claudia Pollina>Quindi procediamo a questa seconda parte
+del webinar dove entriamo nel vivo degli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6176-1
+00:31:05.446 --> 00:31:09.068
+<v Claudia Pollina>strumenti tecnici che vi adiamo a
+presentare.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6176-2
+00:31:09.068 --> 00:31:14.108
+<v Claudia Pollina>Per potervi far comprendere meglio - Sara
+puoi andare avanti? -</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6231-0
+00:31:16.028 --> 00:31:20.328
+<v Claudia Pollina>di cosa stiamo parlando,
+abbiamo ipotizzato un vero e proprio caso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6231-1
+00:31:20.328 --> 00:31:24.050
+<v Claudia Pollina>d'uso, da brave designer.
+Caso d'uso che tragga, diciamo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6231-2
+00:31:24.050 --> 00:31:28.735
+<v Claudia Pollina>il meglio del patrimonio dei dati aperti
+della pubblica amministrazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6231-3
+00:31:28.735 --> 00:31:30.788
+<v Claudia Pollina>Quindi abbiamo questo developer,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6285-0
+00:31:30.908 --> 00:31:37.026
+<v Claudia Pollina>io come developer voglio creare un'API
+utilizzando dati aperti per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6285-1
+00:31:37.026 --> 00:31:42.595
+<v Claudia Pollina>un'applicazione turistica sui luoghi di
+interesse in Puglia.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6285-2
+00:31:42.595 --> 00:31:47.708
+<v Claudia Pollina>Non è strettamente connessa alla
+pubblicazione su PDND,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6332-0
+00:31:47.868 --> 00:31:52.564
+<v Claudia Pollina>perché non è un'API di fatto per creare
+uno scambio amministrativo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6332-1
+00:31:52.564 --> 00:31:58.227
+<v Claudia Pollina>però per farvi comprendere l'utilizzo del
+dato aperto e di ontologie e vocabolari</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6332-2
+00:31:58.227 --> 00:32:01.680
+<v Claudia Pollina>su schema.gov.
+it era diciamo un caso d'uso molto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6332-3
+00:32:01.680 --> 00:32:02.508
+<v Claudia Pollina>comprensivo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6379-0
+00:32:04.108 --> 00:32:10.335
+<v Claudia Pollina>Quindi definendo l'obiettivo delle API:
+che cos'è? Cosa sarà utile?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6379-1
+00:32:10.335 --> 00:32:17.202
+<v Claudia Pollina>Magari utilizzando anche un canvas,
+subito dopo posso passare a cercare un</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6379-2
+00:32:17.202 --> 00:32:19.308
+<v Claudia Pollina>dataset su dati.gov.it.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6443-0
+00:32:19.388 --> 00:32:24.995
+<v Claudia Pollina>E quello trovato per il caso d'uso è
+proprio quello di luoghi pugliesi di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6443-1
+00:32:24.995 --> 00:32:29.540
+<v Claudia Pollina>interesse turistico, culturale,
+naturalistico, progressivo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6443-2
+00:32:29.540 --> 00:32:35.450
+<v Claudia Pollina>Quindi abbiamo utilizzato proprio questo
+dataset, individuato su dati.gov.it,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6443-3
+00:32:35.450 --> 00:32:35.828
+<v Claudia Pollina>e poi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6493-0
+00:32:35.948 --> 00:32:41.391
+<v Claudia Pollina>sulla base di una ricerca incrociata,
+abbiamo scelto di utilizzare ben quattro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6493-1
+00:32:41.391 --> 00:32:46.351
+<v Claudia Pollina>risorse semantiche, ontologie,
+come per esempio i l'ontologia dei punti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6493-2
+00:32:46.351 --> 00:32:50.415
+<v Claudia Pollina>di interesse di AgID,
+il CLV Location Vocabulary sempre di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6493-3
+00:32:50.415 --> 00:32:50.828
+<v Claudia Pollina>Istat,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6550-0
+00:32:51.628 --> 00:32:56.976
+<v Claudia Pollina>Social media sempre di AgID,
+inquadrandola con Cultural-ON che è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6550-1
+00:32:56.976 --> 00:33:03.228
+<v Claudia Pollina>l'antologia dei luoghi della cultura e
+degli eventi culturali del Ministero</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6550-2
+00:33:03.228 --> 00:33:07.670
+<v Claudia Pollina>della cultura.
+Di fatto poi andando a farvi vedere il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6550-3
+00:33:07.670 --> 00:33:09.068
+<v Claudia Pollina>risultato finale.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6598-0
+00:33:09.308 --> 00:33:14.688
+<v Claudia Pollina>Sara puoi andare avanti.
+Abbiamo fatto questo lavoro incrementale</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6598-1
+00:33:14.688 --> 00:33:21.372
+<v Claudia Pollina>in cui questo breve video mostra proprio
+l'implementazione di quello che poi è il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6598-2
+00:33:21.372 --> 00:33:25.773
+<v Claudia Pollina>risultato finale,
+quindi a sinistra vedete proprio il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6598-3
+00:33:25.773 --> 00:33:26.588
+<v Claudia Pollina>front-end.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6649-0
+00:33:27.868 --> 00:33:33.683
+<v Claudia Pollina>Uno tecnico di test e uno con la mappa e
+uno con l'applicazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6649-1
+00:33:33.683 --> 00:33:40.034
+<v Claudia Pollina>A destra vedete l'interazione tra
+front-end e back-end con le chiamate</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6649-2
+00:33:40.034 --> 00:33:44.148
+<v Claudia Pollina>delle API.
+Come arriviamo a questo risultato,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6691-0
+00:33:44.228 --> 00:33:51.348
+<v Claudia Pollina>con il dataset e l'annotazione semantica?
+Lo vediamo ora con i nostri due prossimi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6691-1
+00:33:51.348 --> 00:33:57.267
+<v Claudia Pollina>relatori. Andrea, il primo,
+che ci parlerà proprio della correttezza</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6691-2
+00:33:57.267 --> 00:33:59.068
+<v Claudia Pollina>sintattica delle API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6748-0
+00:33:59.388 --> 00:34:04.796
+<v Claudia Pollina>Proseguiremo poi, ma lo introduco dopo,
+con l'annotazione semantica delle API con</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6748-1
+00:34:04.796 --> 00:34:08.093
+<v Claudia Pollina>Stefano.
+Lascio la parola quindi ad Andrea che ci</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6748-2
+00:34:08.093 --> 00:34:13.302
+<v Claudia Pollina>spiegherà il ruolo dell'interoperabilità
+sintattica e come usare poi l'API OAS</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6748-3
+00:34:13.302 --> 00:34:15.148
+<v Claudia Pollina>Checker. Andrea lascio a te.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6749-0
+00:34:15.908 --> 00:34:16.188
+<v Claudia Pollina>Grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6827-0
+00:34:21.948 --> 00:34:27.442
+<v Andrea Misuraca>Grazie Claudia, e buongiorno a tutti.
+Prima di passare all'esempio pratico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6827-1
+00:34:27.442 --> 00:34:32.718
+<v Andrea Misuraca>quindi vedere direttamente come possiamo
+utilizzare il tool OAS Checker,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6827-2
+00:34:32.718 --> 00:34:38.066
+<v Andrea Misuraca>faccio giusto una breve introduzione sul
+perché la sintassi è importante.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6827-3
+00:34:38.066 --> 00:34:40.668
+<v Andrea Misuraca>Innanzitutto quando parliamo di API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6880-0
+00:34:40.828 --> 00:34:45.632
+<v Andrea Misuraca>ormai parliamo di API REST,
+che è diventato lo standard di fatto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6880-1
+00:34:45.632 --> 00:34:51.766
+<v Andrea Misuraca>nella pubblica amministrazione. Perché?
+Perché sono molto diffuse e sono semplici,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6880-2
+00:34:51.766 --> 00:34:56.348
+<v Andrea Misuraca>si basano sul protocollo HTTP,
+le risorse sono basate su URL.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6932-0
+00:34:56.668 --> 00:35:02.812
+<v Andrea Misuraca>E usano i metodi standard dell'HTTP e
+usano anche dei formati molto leggeri</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6932-1
+00:35:02.812 --> 00:35:07.258
+<v Andrea Misuraca>come il JSON.
+Quindi le API SOAP ormai le consideriamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6932-2
+00:35:07.258 --> 00:35:11.704
+<v Andrea Misuraca>come legacy.
+Perché la sintassi è importante nelle API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/6932-3
+00:35:11.704 --> 00:35:12.108
+<v Andrea Misuraca>REST?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-0
+00:35:12.428 --> 00:35:15.026
+<v Andrea Misuraca>Perché permette ai vari sistemi di
+capirsi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-1
+00:35:15.026 --> 00:35:19.630
+<v Andrea Misuraca>quindi dobbiamo trovare delle regole
+condivise tra i vari sistemi informativi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-2
+00:35:19.630 --> 00:35:23.703
+<v Andrea Misuraca>dei vari enti per facilitare sia
+l'interazione e l'interoperabilità,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-3
+00:35:23.703 --> 00:35:26.478
+<v Andrea Misuraca>ma anche per esempio la gestione degli
+errori.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-4
+00:35:26.478 --> 00:35:31.023
+<v Andrea Misuraca>Noi abbiamo tantissimi enti anche sulla
+PDND, tantissimi servizi, più di 14.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7016-5
+00:35:31.023 --> 00:35:31.908
+<v Andrea Misuraca>000 a catalogo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7075-0
+00:35:31.908 --> 00:35:38.908
+<v Andrea Misuraca>e tante piattaforme che devono comunicare,
+quindi è importante avere un'unica lingua</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7075-1
+00:35:38.908 --> 00:35:45.495
+<v Andrea Misuraca>condivisa per definire il contratto tra
+questi sistemi che sono appunto le API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7075-2
+00:35:45.495 --> 00:35:51.588
+<v Andrea Misuraca>Poi ovviamente ogni ente implementa il
+proprio client o il proprio server</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7123-0
+00:35:51.708 --> 00:35:56.358
+<v Andrea Misuraca>secondo quelle che sono le proprie
+esigenze, l'architettura esistente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7123-1
+00:35:56.358 --> 00:36:01.596
+<v Andrea Misuraca>ma anche il know-how in base al quale
+scegliere il linguaggio di programmazione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7123-2
+00:36:01.596 --> 00:36:05.591
+<v Andrea Misuraca>per l'implementazione.
+Però avere una grammatica condivisa è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7123-3
+00:36:05.591 --> 00:36:08.668
+<v Andrea Misuraca>fondamentale.
+Come gestiamo questa grammatica?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7193-0
+00:36:08.788 --> 00:36:15.618
+<v Andrea Misuraca>Attraverso le linee guida AgID che ci
+dava prima Matteo, in particolare il ModI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7193-1
+00:36:15.618 --> 00:36:21.689
+<v Andrea Misuraca>il Modello di Interoperabilità.
+E per i servizi che vengono erogati per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7193-2
+00:36:21.689 --> 00:36:26.748
+<v Andrea Misuraca>il tramite della PDND attraverso anche le
+linee guida PDND.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7265-0
+00:36:26.828 --> 00:36:32.057
+<v Andrea Misuraca>Quindi le linee guida AgID ci danno delle
+regole chiare, formali e verificabili,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7265-1
+00:36:32.057 --> 00:36:35.608
+<v Andrea Misuraca>anche automatizzabili per scrivere le
+nostre API REST.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7265-2
+00:36:35.608 --> 00:36:38.513
+<v Andrea Misuraca>Che cosa c'è scritto nelle linee guida
+AgID?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7265-3
+00:36:38.513 --> 00:36:41.740
+<v Andrea Misuraca>In pratica viene specificata appunto la
+sintassi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7265-4
+00:36:41.740 --> 00:36:46.388
+<v Andrea Misuraca>Ad esempio c'è scritto di utilizzare la
+specifica OpenAPI versione 3.0.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7321-0
+00:36:46.468 --> 00:36:51.130
+<v Andrea Misuraca>Di avere degli endpoint strutturati in un
+certo modo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7321-1
+00:36:51.130 --> 00:36:58.209
+<v Andrea Misuraca>O per esempio di utilizzare i metodi HTTP
+tipici delle API REST per le operazioni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7321-2
+00:36:58.209 --> 00:37:01.748
+<v Andrea Misuraca>crude, quindi la GET per leggere un dato,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7368-0
+00:37:01.828 --> 00:37:05.613
+<v Andrea Misuraca>e la DELETE per eliminarlo,
+la POST per crearlo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7368-1
+00:37:05.613 --> 00:37:11.328
+<v Andrea Misuraca>la PUT e la PATCH per aggiornarlo.
+Ma oltre a queste specifiche piuttosto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7368-2
+00:37:11.328 --> 00:37:17.739
+<v Andrea Misuraca>tecniche, ci sono anche delle convenzioni,
+come che nomi utilizzare per rinominare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7368-3
+00:37:17.739 --> 00:37:18.588
+<v Andrea Misuraca>le risorse?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7425-0
+00:37:18.908 --> 00:37:22.759
+<v Andrea Misuraca>O anche come gestire gli errori, no?
+Ad esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7425-1
+00:37:22.759 --> 00:37:29.359
+<v Andrea Misuraca>già dando uno sguardo ad un API riusciamo
+a capire che con 200 abbiamo una risposta</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7425-2
+00:37:29.359 --> 00:37:33.288
+<v Andrea Misuraca>positiva,
+che il 404 ci dice che la risorsa non è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7425-3
+00:37:33.288 --> 00:37:34.388
+<v Andrea Misuraca>stata trovata.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7454-0
+00:37:34.588 --> 00:37:44.827
+<v Andrea Misuraca>O che 400 sono gli errori del client,
+mentre i 500 sono gli errori del server.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7454-1
+00:37:44.827 --> 00:37:50.788
+<v Andrea Misuraca>E appunto avere un API che segue delle
+regole</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7515-0
+00:37:50.868 --> 00:37:54.872
+<v Andrea Misuraca>è importantissimo,
+sia perché ci permette per esempio di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7515-1
+00:37:54.872 --> 00:37:59.719
+<v Andrea Misuraca>generare il codice sia dei client che dei
+server in modo automatico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7515-2
+00:37:59.719 --> 00:38:04.635
+<v Andrea Misuraca>con un tool di generazione dei codici,
+sia perché può essere validata</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7515-3
+00:38:04.635 --> 00:38:08.428
+<v Andrea Misuraca>automaticamente e analizzata da strumenti
+automatici.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7560-0
+00:38:08.668 --> 00:38:16.248
+<v Andrea Misuraca>Ed è qui che vado alla prossima slide in
+cui introduciamo il tool che è stato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7560-1
+00:38:16.248 --> 00:38:24.508
+<v Andrea Misuraca>sviluppato dai colleghi del Dipartimento,
+e anche da tantissimi contributor esterni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7614-0
+00:38:24.628 --> 00:38:29.339
+<v Andrea Misuraca>perché il tool è open source,
+è su un repository dove chiunque può</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7614-1
+00:38:29.339 --> 00:38:32.925
+<v Andrea Misuraca>contribuire.
+Si tratta di una semplice web app che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7614-2
+00:38:32.925 --> 00:38:36.792
+<v Andrea Misuraca>gira lato client,
+dove è possibile inserire la propria</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7614-3
+00:38:36.792 --> 00:38:40.588
+<v Andrea Misuraca>specifica open API in formato YAML o in
+formato JSON,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7676-0
+00:38:40.628 --> 00:38:45.589
+<v Andrea Misuraca>e il tool analizza secondo quelle che
+sono le regole del ModI.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7676-1
+00:38:45.589 --> 00:38:50.076
+<v Andrea Misuraca>Abbiamo la possibilità di scegliere tra
+diversi ruleset,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7676-2
+00:38:50.076 --> 00:38:56.139
+<v Andrea Misuraca>ma noi consigliamo di utilizzare quel set
+di regole che vieni viene definito</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7676-3
+00:38:56.139 --> 00:38:58.028
+<v Andrea Misuraca>Italian Guidelines Full,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7726-0
+00:38:58.668 --> 00:39:05.856
+<v Andrea Misuraca>che rispecchia appunto le regole del ModI.
+E come ogni linter abbiamo un output che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7726-1
+00:39:05.856 --> 00:39:12.187
+<v Andrea Misuraca>definisce le diverse severità di quelle
+che sono le anomalie riscontrate,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7726-2
+00:39:12.187 --> 00:39:14.668
+<v Andrea Misuraca>quindi abbiamo per esempio...</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7758-0
+00:39:13.868 --> 00:39:17.402
+<v Claudia Pollina>Andrea, scusami,
+scusami Andrea ti interrompo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7758-1
+00:39:17.402 --> 00:39:22.590
+<v Claudia Pollina>magari togli la webcam perché ogni tanto
+ci sentiamo un po a scatti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7798-0
+00:39:21.388 --> 00:39:26.017
+<v Andrea Misuraca>Proviamo, proviamo così se va meglio. OK,
+quindi dicevo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7758-2
+00:39:22.590 --> 00:39:23.868
+<v Claudia Pollina>Grazie scusatemi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7798-1
+00:39:26.017 --> 00:39:32.188
+<v Andrea Misuraca>abbiamo in rosso quelli che sono gli
+errori che devono assolutamente essere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7762-0
+00:39:26.508 --> 00:39:26.908
+<v Claudia Pollina>Sì, grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7798-2
+00:39:32.188 --> 00:39:35.517
+<v Andrea Misuraca>corretti,
+in arancione i warning che noi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7798-3
+00:39:35.517 --> 00:39:37.628
+<v Andrea Misuraca>consigliamo di correggere,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7831-0
+00:39:38.108 --> 00:39:44.762
+<v Andrea Misuraca>E gli hint sono le possibili
+ottimizzazioni che noi suggeriamo di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7831-1
+00:39:44.762 --> 00:39:49.298
+<v Andrea Misuraca>adottare.
+Ovviamente il tool permette sia di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7831-2
+00:39:49.298 --> 00:39:53.028
+<v Andrea Misuraca>verificare un'open API già esistente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7897-0
+00:39:53.948 --> 00:39:56.865
+<v Andrea Misuraca>Sì,
+però possiamo anche scrivere altra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7897-1
+00:39:56.865 --> 00:40:02.924
+<v Andrea Misuraca>specifica open API direttamente dal tool
+e ovviamente è un verificatore e non un</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7897-2
+00:40:02.924 --> 00:40:07.935
+<v Andrea Misuraca>vero e proprio validatore,
+nel senso che avere un open API che non</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7897-3
+00:40:07.935 --> 00:40:12.348
+<v Andrea Misuraca>ha alcun errore non significa
+assolutamente che è conforme</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7939-0
+00:40:12.588 --> 00:40:19.062
+<v Andrea Misuraca>al 100% a tutte le regole del ModI,
+però è sicuramente un aiuto che ci aiuta</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7939-1
+00:40:19.062 --> 00:40:25.871
+<v Andrea Misuraca>a rimuovere gran parte degli errori che
+spesso vediamo nelle open API pubblicate</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7939-2
+00:40:25.871 --> 00:40:27.468
+<v Andrea Misuraca>da tantissimi enti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7993-0
+00:40:27.828 --> 00:40:33.580
+<v Andrea Misuraca>È importante anche dire che il tool è
+disponibile sia come web app,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7993-1
+00:40:33.580 --> 00:40:38.316
+<v Andrea Misuraca>quindi dallo screenshot che è presente in
+questa slide,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/7993-2
+00:40:38.316 --> 00:40:44.828
+<v Andrea Misuraca>ma il tool è disponibile anche come
+e-service sulla PDND è inoltre possibile</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8039-0
+00:40:44.868 --> 00:40:47.966
+<v Andrea Misuraca>integrarlo nella propria pipeline di
+CI/CD.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8039-1
+00:40:47.966 --> 00:40:53.176
+<v Andrea Misuraca>Noi abbiamo per esempio pubblicato un
+esempio di integrazione come Github</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8039-2
+00:40:53.176 --> 00:40:56.345
+<v Andrea Misuraca>Action,
+ma è possibile integrarlo anche come</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8039-3
+00:40:56.345 --> 00:41:00.428
+<v Andrea Misuraca>estensione all'interno di un proprio
+editor come VS code.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8092-0
+00:41:00.788 --> 00:41:04.498
+<v Andrea Misuraca>E ed è stato anche sviluppato un MCP
+server,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8092-1
+00:41:04.498 --> 00:41:09.279
+<v Andrea Misuraca>quindi potete chiedere al vostro MCP
+client, per esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8092-2
+00:41:09.279 --> 00:41:15.708
+<v Andrea Misuraca>di verificare la conformità rispetto alle
+linee guida AgID di una vostra API.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8120-0
+00:41:15.868 --> 00:41:22.935
+<v Andrea Misuraca>O addirittura potete chiedere di
+correggerla in modo che sia poi conforme</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8120-1
+00:41:22.935 --> 00:41:26.468
+<v Andrea Misuraca>a quelle che sono le regole del ModI.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8122-0
+00:41:27.468 --> 00:41:29.068
+<v Andrea Misuraca>Passo ora al tool.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8187-0
+00:41:34.148 --> 00:41:39.790
+<v Andrea Misuraca>Dove ho caricato già un open API che
+deriva dall'esempio che citava prima</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8187-1
+00:41:39.790 --> 00:41:43.754
+<v Andrea Misuraca>Claudia,
+quindi i luoghi di interesse della Puglia.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8187-2
+00:41:43.754 --> 00:41:49.319
+<v Andrea Misuraca>L'open API contiene volutamente degli
+errori proprio per far vedere come</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8187-3
+00:41:49.319 --> 00:41:51.148
+<v Andrea Misuraca>funziona un po' il tool.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8250-0
+00:41:51.228 --> 00:41:57.936
+<v Andrea Misuraca>È possibile sia incollarla nell'editor
+sia caricare un file YAML o JSON.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8250-1
+00:41:57.936 --> 00:42:05.287
+<v Andrea Misuraca>Come dicevo prima è disponibile un set di
+regole tra cui è possibile scegliere,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8250-2
+00:42:05.287 --> 00:42:10.708
+<v Andrea Misuraca>però noi suggeriamo di utilizzare Italian
+Guidelines Full,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8306-0
+00:42:11.388 --> 00:42:17.158
+<v Andrea Misuraca>che rispetta le regole del ModI.
+È disponibile anche un link poi al</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8306-1
+00:42:17.158 --> 00:42:22.504
+<v Andrea Misuraca>ruleset in caso in cui si vogliano
+studiare le singole regole.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8306-2
+00:42:22.504 --> 00:42:28.188
+<v Andrea Misuraca>E premendo sul bottone Check API il tool
+effettua una validazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8359-0
+00:42:28.668 --> 00:42:32.920
+<v Andrea Misuraca>ci dice che ci sono diversi errori,
+diversi warning degli hint.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8359-1
+00:42:32.920 --> 00:42:37.437
+<v Andrea Misuraca>Quindi si vede anche dal punto di vista
+visivo la diversa severity,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8359-2
+00:42:37.437 --> 00:42:41.422
+<v Andrea Misuraca>ed è possibile sia salvare l'open API che
+abbiamo caricato,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8359-3
+00:42:41.422 --> 00:42:43.348
+<v Andrea Misuraca>sia esportare in formato JSON</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8408-0
+00:42:43.548 --> 00:42:49.713
+<v Andrea Misuraca>i vari errori, i warning eccetera.
+Dal bottone Review è possibile vedere la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8408-1
+00:42:49.713 --> 00:42:55.959
+<v Andrea Misuraca>lista degli errori. Faccio un esempio,
+cliccando sull'errore direttamente il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8408-2
+00:42:55.959 --> 00:43:00.988
+<v Andrea Misuraca>cursore ci posiziona alla riga in cui ha
+trovato il problema.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8452-0
+00:43:01.228 --> 00:43:08.098
+<v Andrea Misuraca>Quindi è anche facile sistemarlo.
+E premendo per esempio sul bottone Info è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8452-1
+00:43:08.098 --> 00:43:12.346
+<v Andrea Misuraca>possibile vedere poi il dettaglio
+dell'errore,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8452-2
+00:43:12.346 --> 00:43:17.588
+<v Andrea Misuraca>in alcuni casi anche la reference all'RFC
+di riferimento.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8513-0
+00:43:18.428 --> 00:43:24.559
+<v Andrea Misuraca>Abbiamo poi un set di tool che abbiamo
+integrato sempre nel Checker,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8513-1
+00:43:24.559 --> 00:43:30.245
+<v Andrea Misuraca>quindi un Prettify che ci sistema in
+automatico l'indentazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8513-2
+00:43:30.245 --> 00:43:36.108
+<v Andrea Misuraca>un API Canvas che ci permette di
+documentare anche la nostra API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8563-0
+00:43:36.148 --> 00:43:40.345
+<v Andrea Misuraca>quindi possiamo vedere in formato
+tabellare sia una parte tecnica,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8563-1
+00:43:40.345 --> 00:43:45.418
+<v Andrea Misuraca>quelle che sono le nostre operazioni,
+ma anche dei metadati un po' meno tecnici.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8563-2
+00:43:45.418 --> 00:43:50.365
+<v Andrea Misuraca>È possibile vedere la lista degli schemi,
+quindi per esempio in questo OpenAPI</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8563-3
+00:43:50.365 --> 00:43:51.868
+<v Andrea Misuraca>abbiamo un unico schema,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8614-0
+00:43:51.988 --> 00:43:57.384
+<v Andrea Misuraca>che è il luogo che è costituito da un ID
+che è un intero e da un nome che è una</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8614-1
+00:43:57.384 --> 00:44:00.554
+<v Andrea Misuraca>stringa.
+E poi abbiamo anche riportato il link</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8614-2
+00:44:00.554 --> 00:44:05.680
+<v Andrea Misuraca>alla Github Action che citavo prima che è
+un esempio che abbiamo creato per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8614-3
+00:44:05.680 --> 00:44:08.108
+<v Andrea Misuraca>permettere l'integrazione su Github.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8680-0
+00:44:08.748 --> 00:44:14.380
+<v Andrea Misuraca>Se andiamo a vedere i vari errori,
+e possiamo anche provare a sistemarli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8680-1
+00:44:14.380 --> 00:44:17.851
+<v Andrea Misuraca>assieme,
+questi errori li abbiamo scelti tra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8680-2
+00:44:17.851 --> 00:44:23.328
+<v Andrea Misuraca>quelli più comuni che abbiamo notato che
+vengono commessi solitamente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8680-3
+00:44:23.328 --> 00:44:28.188
+<v Andrea Misuraca>soprattutto guardando gli OpenAPI che
+sono pubblicati su PDND.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8726-0
+00:44:28.228 --> 00:44:32.666
+<v Andrea Misuraca>Faccio un esempio,
+il primo errore è la versione oggi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8726-1
+00:44:32.666 --> 00:44:36.377
+<v Andrea Misuraca>come specificato poi dal ModI,
+sarebbe utile,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8726-2
+00:44:36.377 --> 00:44:42.428
+<v Andrea Misuraca>sarebbe opportuno utilizzare quella che
+viene definita semantic version...</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8727-0
+00:44:43.868 --> 00:44:44.068
+<v Andrea Misuraca></v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8735-0
+00:45:02.428 --> 00:45:03.308
+<v Claudia Pollina>Provo a salvare la situazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8781-0
+00:45:04.828 --> 00:45:10.525
+<v Claudia Pollina>Ecco Andrea, scusami,
+ti abbiamo perso perché forse la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8781-1
+00:45:10.525 --> 00:45:16.119
+<v Claudia Pollina>connessione,
+non so se è un problema di connessione o</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8781-2
+00:45:16.119 --> 00:45:18.708
+<v Claudia Pollina>altro, però riproviamoci.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8775-0
+00:45:18.268 --> 00:45:18.988
+<v Andrea Misuraca>Mi sentite?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8795-0
+00:45:19.628 --> 00:45:24.588
+<v Claudia Pollina>No, ti abbiamo sentito molto a scatti,
+sembrava una musica quasi divertente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8798-0
+00:45:26.788 --> 00:45:28.108
+<v Andrea Misuraca>Ora va meglio?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8800-0
+00:45:28.428 --> 00:45:29.628
+<v Claudia Pollina>Sì, meglio.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8806-0
+00:45:30.468 --> 00:45:31.468
+<v Andrea Misuraca>OK.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8813-0
+00:45:30.868 --> 00:45:34.348
+<v Claudia Pollina>Grazie, proviamoci,
+abbiamo perso gli ultimi due minuti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8812-0
+00:45:32.628 --> 00:45:33.508
+<v Andrea Misuraca>OK.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8874-0
+00:45:35.068 --> 00:45:40.103
+<v Andrea Misuraca>OK, sì, dicevo,
+sarebbe opportuno utilizzare il semantic</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8874-1
+00:45:40.103 --> 00:45:44.962
+<v Andrea Misuraca>versioning nella definizione della nostra
+API. Perché?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8874-2
+00:45:44.962 --> 00:45:49.290
+<v Andrea Misuraca>Perché attraverso l'uso del semantic
+versioning,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8874-3
+00:45:49.290 --> 00:45:54.148
+<v Andrea Misuraca>quindi utilizzando la convenzione MAJOR
+MINOR e PATCH,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8925-0
+00:45:54.228 --> 00:46:00.858
+<v Andrea Misuraca>è possibile immediatamente capire se ci
+sono o meno cambiamenti che impattano</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8925-1
+00:46:00.858 --> 00:46:05.023
+<v Andrea Misuraca>sulla nostra implementazione.
+Quindi ad esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8925-2
+00:46:05.023 --> 00:46:09.868
+<v Andrea Misuraca>se notiamo che è cambiata la PATCH
+version, sappiamo che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8968-0
+00:46:10.108 --> 00:46:17.861
+<v Andrea Misuraca>si tratta di correzioni di bug o di
+piccoli bug fix e quindi non è necessario</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8968-1
+00:46:17.861 --> 00:46:24.519
+<v Andrea Misuraca>intervenire, per esempio,
+sull'implementazione dei nostri client o</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/8968-2
+00:46:24.519 --> 00:46:26.308
+<v Andrea Misuraca>dei nostri server.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9013-0
+00:46:26.668 --> 00:46:34.464
+<v Andrea Misuraca>Quindi andiamo ora a correggere,
+per esempio utilizzando la versione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9013-1
+00:46:34.464 --> 00:46:40.112
+<v Andrea Misuraca>corretta.
+Abbiamo poi un'altro errore che è l'URL</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9013-2
+00:46:40.112 --> 00:46:43.388
+<v Andrea Misuraca>del server che non ha la "s".</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9058-0
+00:46:43.708 --> 00:46:49.151
+<v Andrea Misuraca>Ovviamente soprattutto quando si tratta
+di un server di produzione è necessario</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9058-1
+00:46:49.151 --> 00:46:53.437
+<v Andrea Misuraca>utilizzare il protocollo HTTPS che
+possiamo andare a definire.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9058-2
+00:46:53.437 --> 00:46:58.608
+<v Andrea Misuraca>Abbiamo poi una serie di interventi che
+riguardano non da un punto di vista</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9058-3
+00:46:58.608 --> 00:46:59.628
+<v Andrea Misuraca>tecnico le API,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9110-0
+00:46:59.668 --> 00:47:04.347
+<v Andrea Misuraca>ma più che altro da un punto di vista
+gestionale,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9110-1
+00:47:04.347 --> 00:47:11.458
+<v Andrea Misuraca>per esempio la sezione Info serve per
+documentare soprattutto la governance</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9110-2
+00:47:11.458 --> 00:47:15.388
+<v Andrea Misuraca>dell'API più che il funzionamento tecnico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9175-0
+00:47:15.508 --> 00:47:19.909
+<v Andrea Misuraca>quindi non è mportante per le chiamate
+HTTP che vengono fatte,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9175-1
+00:47:19.909 --> 00:47:25.287
+<v Andrea Misuraca>ma più che altro per dare anche un
+riferimento a quelli che sono per esempio</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9175-2
+00:47:25.287 --> 00:47:31.085
+<v Andrea Misuraca>i termini del servizio o per esempio chi
+è il punto di contatto in caso in cui sia</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9175-3
+00:47:31.085 --> 00:47:33.948
+<v Andrea Misuraca>necessario chiedere del supporto tecnico.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9240-0
+00:47:34.588 --> 00:47:39.531
+<v Andrea Misuraca>Quindi possiamo anche qui andare a
+modificare la sezione Info andando ad</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9240-1
+00:47:39.531 --> 00:47:45.015
+<v Andrea Misuraca>inserire quelli che sono i campi mancanti.
+E faccio notare che anche il tool con</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9240-2
+00:47:45.015 --> 00:47:48.332
+<v Andrea Misuraca>l'autocompletamento ci aiuta.
+Faccio un esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9240-3
+00:47:48.332 --> 00:47:53.748
+<v Andrea Misuraca>possiamo introdurre per esempio l'URL a
+quelli che sono i termini del servizio.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9241-0
+00:47:53.788 --> 00:47:54.788
+<v Andrea Misuraca></v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9283-0
+00:47:57.068 --> 00:48:04.205
+<v Andrea Misuraca>E poi anche quelli che sono i contatti
+relativi a chi si occupa di gestire da un</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9283-1
+00:48:04.205 --> 00:48:10.988
+<v Andrea Misuraca>punto di vista per esempio tecnico le API,
+quindi possiamo inserire la mail.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9292-0
+00:48:16.188 --> 00:48:18.428
+<v Andrea Misuraca>E possiamo anche inserire un nome.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9335-0
+00:48:23.388 --> 00:48:28.428
+<v Andrea Misuraca>Ovviamente l'API ha un titolo e una
+descrizione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9335-1
+00:48:28.428 --> 00:48:34.600
+<v Andrea Misuraca>però potrebbe essere utilizzata anche in
+cataloghi interni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9335-2
+00:48:34.600 --> 00:48:37.788
+<v Andrea Misuraca>per esempio ad uno stesso ente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9386-0
+00:48:37.868 --> 00:48:43.422
+<v Andrea Misuraca>e per questo è bene definire anche un
+sommario molto breve per spiegare quello</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9386-1
+00:48:43.422 --> 00:48:47.781
+<v Andrea Misuraca>che fa la nostra API.
+Quindi possiamo aggiungere degli header</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9386-2
+00:48:47.781 --> 00:48:52.702
+<v Andrea Misuraca>custom, che sono suggeriti,
+come il campo X summary - questa è un API</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9386-3
+00:48:52.702 --> 00:48:54.108
+<v Andrea Misuraca>di test per esempio.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9413-0
+00:48:54.348 --> 00:49:01.012
+<v Andrea Misuraca>E anche un identificativo univoco per la
+nostra API che può essere utilizzata per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9413-1
+00:49:01.012 --> 00:49:04.668
+<v Andrea Misuraca>esempio nei sistemi di monitoraggio
+interni.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9471-0
+00:49:10.508 --> 00:49:18.366
+<v Andrea Misuraca>E continuo con i vari fix che possiamo
+continuare a fare e possiamo per esempio</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9471-1
+00:49:18.366 --> 00:49:24.751
+<v Andrea Misuraca>dare anche uno sguardo alle varie
+convenzioni che vengono usate,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9471-2
+00:49:24.751 --> 00:49:28.188
+<v Andrea Misuraca>per esempio per le nostre operation</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9522-0
+00:49:28.308 --> 00:49:31.873
+<v Andrea Misuraca>sarebbe opportuno utilizzare il kebab
+case. Perché?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9522-1
+00:49:31.873 --> 00:49:37.151
+<v Andrea Misuraca>Perché gli URL sono case sensitive.
+Il kebab case prevede dei nomi solamente</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9522-2
+00:49:37.151 --> 00:49:40.509
+<v Andrea Misuraca>in minuscolo,
+quindi sono più facili da leggere.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9522-3
+00:49:40.509 --> 00:49:43.388
+<v Andrea Misuraca>Si riduce la possibilità di creare errori,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9536-0
+00:49:43.468 --> 00:49:49.308
+<v Andrea Misuraca>quindi possiamo anche modificare il
+nostro path andando a rinominare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9547-0
+00:49:50.428 --> 00:49:54.188
+<v Andrea Misuraca>quello che è l'operation ID.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9553-0
+00:49:56.828 --> 00:49:57.868
+<v Andrea Misuraca></v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9600-0
+00:49:59.948 --> 00:50:05.634
+<v Andrea Misuraca>Quindi da get luoghi di interesse
+possiamo rinominare in luoghi di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9600-1
+00:50:05.634 --> 00:50:09.877
+<v Andrea Misuraca>interesse,
+per rimuovere per esempio la get che è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9600-2
+00:50:09.877 --> 00:50:14.799
+<v Andrea Misuraca>una ridondanza.
+E poi possiamo anche aggiungere qui altri</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9600-3
+00:50:14.799 --> 00:50:15.308
+<v Andrea Misuraca>campi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9607-0
+00:50:15.628 --> 00:50:18.228
+<v Andrea Misuraca>come la description,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9664-0
+00:50:22.268 --> 00:50:29.367
+<v Andrea Misuraca>per specificare quello che la nostra API
+fa in maniera un po' più estesa rispetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9664-1
+00:50:29.367 --> 00:50:33.349
+<v Andrea Misuraca>a quello che è il campo summary.
+Per esempio,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9664-2
+00:50:33.349 --> 00:50:39.148
+<v Andrea Misuraca>questa API restituisce i luoghi di
+interesse della Regione Puglia,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9703-0
+00:50:39.388 --> 00:50:44.534
+<v Andrea Misuraca>per esempio, con una versione paginata.
+Possiamo andare avanti.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9703-1
+00:50:44.534 --> 00:50:50.243
+<v Andrea Misuraca>Alcuni esempi che possiamo sistemare sono
+per esempio l'header accept,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9703-2
+00:50:50.243 --> 00:50:55.388
+<v Andrea Misuraca>che è inutile perché è un header standard,
+quindi è già incluso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9721-0
+00:50:55.468 --> 00:51:03.948
+<v Andrea Misuraca>nell'OpenAPI e possiamo anche eliminare
+requestBody dalla GET.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9798-0
+00:51:05.548 --> 00:51:10.077
+<v Andrea Misuraca>Dalla get perché la get solitamente
+utilizza per convenzione dei query</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9798-1
+00:51:10.077 --> 00:51:14.669
+<v Andrea Misuraca>parameter mi fermo per non prolungarmi
+perché lo scopo non è ovviamente</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9798-2
+00:51:14.669 --> 00:51:18.879
+<v Andrea Misuraca>sistemare tutto l'open API,
+ma è più che altro far vedere il tool</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9798-3
+00:51:18.879 --> 00:51:23.663
+<v Andrea Misuraca>dopo aver sistemato appunto queste questi
+errori che venivano fuori con la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9798-4
+00:51:23.663 --> 00:51:24.428
+<v Andrea Misuraca>validazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9854-0
+00:51:24.628 --> 00:51:30.522
+<v Andrea Misuraca>Possiamo rilanciare il check e vediamo
+che sia gli errori che i warning sono</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9854-1
+00:51:30.522 --> 00:51:36.799
+<v Andrea Misuraca>diminuiti e poi possiamo iterativamente
+continuare con la correzione della nostra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9854-2
+00:51:36.799 --> 00:51:40.014
+<v Andrea Misuraca>API.
+Rest il tool ci aiuta tantissimo dal</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9854-3
+00:51:40.014 --> 00:51:43.228
+<v Andrea Misuraca>punto di vista sintattico però ovviamente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9890-0
+00:51:43.628 --> 00:51:50.625
+<v Andrea Misuraca>E abbiamo anche la necessità di validare
+la nostra API da un punto di vista</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9890-1
+00:51:50.625 --> 00:51:57.899
+<v Andrea Misuraca>semantico e per questo passo la parola
+per approfondire appunto questo aspetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9890-2
+00:51:57.899 --> 00:52:00.108
+<v Andrea Misuraca>al collega Stefano Baru.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9891-0
+00:52:00.148 --> 00:52:00.668
+<v Andrea Misuraca>Sì.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9904-0
+00:52:02.748 --> 00:52:06.988
+<v Stefano Baruzzo>Grazie Andrea,
+a questo punto faccio partire.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9913-0
+00:52:06.708 --> 00:52:09.708
+<v Claudia Pollina>Vai Stefano, grazie perfetto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9915-0
+00:52:08.548 --> 00:52:10.068
+<v Stefano Baruzzo>La condivisione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9983-0
+00:52:13.548 --> 00:52:18.489
+<v Stefano Baruzzo>Allora partiamo innanzitutto dicendo,
+perché la semantica è importante?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9983-1
+00:52:18.489 --> 00:52:23.773
+<v Stefano Baruzzo>Le linee guida sull'interoperabilità
+tecnica delle pubbliche amministrazioni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9983-2
+00:52:23.773 --> 00:52:27.615
+<v Stefano Baruzzo>citano quanto segue,
+la comunicazione tra soggetti deve</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/9983-3
+00:52:27.615 --> 00:52:29.948
+<v Stefano Baruzzo>utilizzare modelli dati condivisi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10042-0
+00:52:30.188 --> 00:52:36.253
+<v Stefano Baruzzo>In modo da razionalizzare e uniformare la
+rappresentazione dell'informazione quale</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10042-1
+00:52:36.253 --> 00:52:40.418
+<v Stefano Baruzzo>presupposto per favorire
+l'interoperabilità tra soggetti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10042-2
+00:52:40.418 --> 00:52:45.972
+<v Stefano Baruzzo>differenti. Cosa significa questo?
+Significa che l'utilizzo degli strumenti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10042-3
+00:52:45.972 --> 00:52:48.748
+<v Stefano Baruzzo>di interoperabilità semantica permette</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10091-0
+00:52:48.988 --> 00:52:55.117
+<v Stefano Baruzzo>la standardizzazione e la coerenza dei
+dati scambiati tra le diverse pubbliche</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10091-1
+00:52:55.117 --> 00:53:01.013
+<v Stefano Baruzzo>amministrazioni e permette a loro di
+comprendere e interagire facilmente le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10091-2
+00:53:01.013 --> 00:53:04.348
+<v Stefano Baruzzo>informazioni,
+superando tutta una serie di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10105-0
+00:53:04.588 --> 00:53:11.308
+<v Stefano Baruzzo>barriere linguistiche e strutturali a cui
+giornalmente facciamo riscontro.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10160-0
+00:53:12.668 --> 00:53:19.183
+<v Stefano Baruzzo>Uno degli strumenti che permette di
+creare e modificare gli schemi OpenAPI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10160-1
+00:53:19.183 --> 00:53:25.783
+<v Stefano Baruzzo>facendo sì che si vada ad utilizzare le
+risorse e gli elementi contenuti nel</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10160-2
+00:53:25.783 --> 00:53:28.268
+<v Stefano Baruzzo>catalogo nazionale dei dati è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10205-0
+00:53:28.468 --> 00:53:34.961
+<v Stefano Baruzzo>lo schema editor. Lo schema editor,
+come vedete nell'immagine qui presente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10205-1
+00:53:34.961 --> 00:53:42.138
+<v Stefano Baruzzo>è un'applicazione web che gira su browser
+che espone una serie di funzionalità e di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10205-2
+00:53:42.138 --> 00:53:44.188
+<v Stefano Baruzzo>concetti su cui si basa.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10265-0
+00:53:44.988 --> 00:53:51.567
+<v Stefano Baruzzo>Il primo è quello del JSON-LD e del RDF,
+che sono due formati di scrittura e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10265-1
+00:53:51.567 --> 00:53:58.402
+<v Stefano Baruzzo>visualizzazione dei dati con cui andremo
+ad annotare le nostre OpenAPI e quindi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10265-2
+00:53:58.402 --> 00:54:02.588
+<v Stefano Baruzzo>andremo ad agganciare quelli che sono i
+concetti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10277-0
+00:54:02.828 --> 00:54:08.628
+<v Stefano Baruzzo>sintattici scritti i concetti semantici
+presi dal catalogo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10330-0
+00:54:09.628 --> 00:54:13.304
+<v Stefano Baruzzo>Troviamo poi quello che è il Semantic
+Score,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10330-1
+00:54:13.304 --> 00:54:19.839
+<v Stefano Baruzzo>ossia una funzione che indica il grado di
+annotazione semantico espresso con un</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10330-2
+00:54:19.839 --> 00:54:25.148
+<v Stefano Baruzzo>punteggio che va da zero a uno,
+dove ovviamente uno è un oggetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10339-0
+00:54:25.388 --> 00:54:29.508
+<v Stefano Baruzzo>o comunque un OpenAPI totalmente annotato.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10392-0
+00:54:30.508 --> 00:54:36.836
+<v Stefano Baruzzo>Tra le varie funzionalità troviamo quelle
+dell'autocompletamento che durante la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10392-1
+00:54:36.836 --> 00:54:40.632
+<v Stefano Baruzzo>scrittura,
+nella specifica è possibile accedere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10392-2
+00:54:40.632 --> 00:54:45.694
+<v Stefano Baruzzo>direttamente in line a quelle che sono le
+classi, le ontologie,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10392-3
+00:54:45.694 --> 00:54:47.908
+<v Stefano Baruzzo>i vocabolari e le proprietà.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10399-0
+00:54:48.028 --> 00:54:51.388
+<v Stefano Baruzzo>Sempre offerte dal catalogo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10454-0
+00:54:52.628 --> 00:54:58.492
+<v Stefano Baruzzo>Tra le altre funzionalità troviamo il RDF
+Helper, che è una modale e permette,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10454-1
+00:54:58.492 --> 00:55:03.985
+<v Stefano Baruzzo>data una determinata classe semantica,
+di visualizzare quelle che sono le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10454-2
+00:55:03.985 --> 00:55:07.548
+<v Stefano Baruzzo>proprietà semantiche associate a questa
+classe.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10504-0
+00:55:07.868 --> 00:55:13.810
+<v Stefano Baruzzo>O alle sue super classi.
+Infine abbiamo una funzionalità "a grafo",</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10504-1
+00:55:13.810 --> 00:55:19.489
+<v Stefano Baruzzo>quindi di visualizzazione,
+della relazione tra quelli che sono i</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10504-2
+00:55:19.489 --> 00:55:23.508
+<v Stefano Baruzzo>nodi sintattici e quelli semantici,
+nonché la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10553-0
+00:55:23.708 --> 00:55:29.129
+<v Stefano Baruzzo>correlazione anche tra gli stessi nodi di
+ogni singola categoria.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10553-1
+00:55:29.129 --> 00:55:35.288
+<v Stefano Baruzzo>A questo punto passiamo direttamente a
+vedere quella che è l'applicazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10553-2
+00:55:35.288 --> 00:55:39.148
+<v Stefano Baruzzo>L'applicazione è possibile utilizzarla
+tramite</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10603-0
+00:55:39.308 --> 00:55:45.201
+<v Stefano Baruzzo>il link di Github e in questo caso
+abbiamo caricato quello che è un OpenAPI</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10603-1
+00:55:45.201 --> 00:55:50.706
+<v Stefano Baruzzo>di esempio per la nostra API del
+Community lab dei luoghi di interesse</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10603-2
+00:55:50.706 --> 00:55:55.048
+<v Stefano Baruzzo>della Puglia.
+Possiamo vedere qui a sinistra che c'è la</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10603-3
+00:55:55.048 --> 00:55:55.668
+<v Stefano Baruzzo>parte di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10667-0
+00:55:55.788 --> 00:56:00.940
+<v Stefano Baruzzo>Editor e qui a destra invece abbiamo la
+rappresentazione dei data models,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10667-1
+00:56:00.940 --> 00:56:05.813
+<v Stefano Baruzzo>cioè quelle informazioni che sono
+contenute all'interno dei component</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10667-2
+00:56:05.813 --> 00:56:11.174
+<v Stefano Baruzzo>schema che vediamo qui nell'OpenAPI,
+ho collassato le altre informazioni che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10667-3
+00:56:11.174 --> 00:56:12.148
+<v Stefano Baruzzo>per il momento</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10716-0
+00:56:12.348 --> 00:56:17.911
+<v Stefano Baruzzo>non sono di nostro interesse.
+Possiamo già intravedere quello di cui</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10716-1
+00:56:17.911 --> 00:56:23.151
+<v Stefano Baruzzo>avevamo parlato poco fa,
+quindi il Semantic Score in questo caso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10716-2
+00:56:23.151 --> 00:56:28.068
+<v Stefano Baruzzo>complessivo e a questo punto dobbiamo
+capire come cercare di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10765-0
+00:56:28.268 --> 00:56:34.773
+<v Stefano Baruzzo>aumentare questo punteggio quindi,
+come provvedere all'annotazione semantica</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10765-1
+00:56:34.773 --> 00:56:40.010
+<v Stefano Baruzzo>della nostra OpenAPI?
+Cerchiamo innanzitutto di capire da che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10765-2
+00:56:40.010 --> 00:56:43.388
+<v Stefano Baruzzo>punto, essendo qui una serie di elementi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10813-0
+00:56:43.588 --> 00:56:49.780
+<v Stefano Baruzzo>che è possibile annotare.
+Per questo aspetto iniziale possiamo fare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10813-1
+00:56:49.780 --> 00:56:55.881
+<v Stefano Baruzzo>fede alla Tab del grafico che presenta
+due modalità di layout e di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10813-2
+00:56:55.881 --> 00:57:01.708
+<v Stefano Baruzzo>visualizzazioni. La prima è una modalità,
+diciamo breadthfirst.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10855-0
+00:57:02.028 --> 00:57:09.003
+<v Stefano Baruzzo>In cui sostanzialmente va a mostrare i
+nodi in formato gerarchico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10855-1
+00:57:09.003 --> 00:57:15.562
+<v Stefano Baruzzo>quindi quelli più in alto sono quelli che
+hanno più relazioni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10855-2
+00:57:15.562 --> 00:57:18.268
+<v Stefano Baruzzo>mentre quelli agli estremi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10919-0
+00:57:18.468 --> 00:57:23.632
+<v Stefano Baruzzo>sono quelli che invece ricevono solo
+relazioni di input,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10919-1
+00:57:23.632 --> 00:57:27.890
+<v Stefano Baruzzo>se guardi ad esempio contatti e non di
+output.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10919-2
+00:57:27.890 --> 00:57:35.408
+<v Stefano Baruzzo>L'altra modalità di layout è quella Fcose
+che invece fa vedere una visualizzazione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10919-3
+00:57:35.408 --> 00:57:36.948
+<v Stefano Baruzzo>di tipo a nuvola.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10970-0
+00:57:37.068 --> 00:57:43.609
+<v Stefano Baruzzo>Dove al centro sono messi gli elementi
+più importanti e quindi hanno più agganci</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10970-1
+00:57:43.609 --> 00:57:48.374
+<v Stefano Baruzzo>con altri concetti.
+Nella Tab del grafico c'è una leggenda</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/10970-2
+00:57:48.374 --> 00:57:54.268
+<v Stefano Baruzzo>che spiega chiaramente quali sono i
+colori e gli aspetti diciamo grafici</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11013-0
+00:57:54.508 --> 00:58:01.293
+<v Stefano Baruzzo>Con cui abbiamo identificato tutti questi
+nodi e in particolare quelli in blu sono</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11013-1
+00:58:01.293 --> 00:58:06.851
+<v Stefano Baruzzo>i nodi dello schema che hanno relazioni
+diciamo con altri elementi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11013-2
+00:58:06.851 --> 00:58:09.548
+<v Stefano Baruzzo>quindi richiamano altri elementi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11060-0
+00:58:09.708 --> 00:58:16.165
+<v Stefano Baruzzo>Mentre i blank notes sono elementi che
+non hanno relazione al di fuori,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11060-1
+00:58:16.165 --> 00:58:22.443
+<v Stefano Baruzzo>ma vengono diciamo soltanto utilizzati
+anche la dimensione e, pardon,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11060-2
+00:58:22.443 --> 00:58:26.388
+<v Stefano Baruzzo>la forma e la tipologia di linea
+utilizzata</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11102-0
+00:58:26.508 --> 00:58:30.235
+<v Stefano Baruzzo>nel linking tra gli elementi ha diverse
+relazioni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11102-1
+00:58:30.235 --> 00:58:35.203
+<v Stefano Baruzzo>in questo caso stiamo vedendo soltanto
+elementi di tipo sintattico,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11102-2
+00:58:35.203 --> 00:58:39.148
+<v Stefano Baruzzo>perché non è ancora stato annotato il
+nostro OpenAPI.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11144-0
+00:58:40.628 --> 00:58:47.409
+<v Stefano Baruzzo>Torno quindi al breadthfirst e prendo ad
+esempio quello che è l'elemento posizione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11144-1
+00:58:47.409 --> 00:58:53.944
+<v Stefano Baruzzo>cliccandoci sopra mi porta direttamente
+sull'elemento di interesse nell'editor,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11144-2
+00:58:53.944 --> 00:58:56.068
+<v Stefano Baruzzo>ma a questo punto passiamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11157-0
+00:58:56.188 --> 00:59:00.108
+<v Stefano Baruzzo>direttamente a visualizzarlo all'interno
+della nostra Tab data models.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11217-0
+00:59:02.068 --> 00:59:07.403
+<v Stefano Baruzzo>Possiamo vedere qui che questo elemento
+ha un Semantic Score zero.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11217-1
+00:59:07.403 --> 00:59:13.453
+<v Stefano Baruzzo>In questo caso si tratta di Semantic
+Score del singolo schema e il Semantic</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11217-2
+00:59:13.453 --> 00:59:18.548
+<v Stefano Baruzzo>Score viene calcolato solamente per gli
+elementi di tipo object</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11273-0
+00:59:18.668 --> 00:59:24.262
+<v Stefano Baruzzo>troviamo qui a riga 287.
+Cerchiamo quindi di capire come annotarlo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11273-1
+00:59:24.262 --> 00:59:30.348
+<v Stefano Baruzzo>La prima cosa che sento di suggerire è
+quella di attivare l'autocomplete,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11273-2
+00:59:30.348 --> 00:59:36.188
+<v Stefano Baruzzo>qualora non sia già attivo lo clicchiamo
+eventualmente facciamo salva.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11321-0
+00:59:36.428 --> 00:59:44.451
+<v Stefano Baruzzo>E qualora anche utilizzaste un proprio
+endpoint Sparkle di andare ad inserire il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11321-1
+00:59:44.451 --> 00:59:51.087
+<v Stefano Baruzzo>proprio URL, ad esempio,
+potrebbe essere utile per lo sviluppo per</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11321-2
+00:59:51.087 --> 00:59:53.068
+<v Stefano Baruzzo>la fase di sviluppo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11332-0
+00:59:53.388 --> 00:59:57.308
+<v Stefano Baruzzo>Se avete dei concetti che non sono ancora
+presenti in produzione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11387-0
+00:59:58.668 --> 01:00:05.721
+<v Stefano Baruzzo>L'annotazione viene fatta inserendo due
+proprietà che tramite l'autocompletamento</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11387-1
+01:00:05.721 --> 01:00:11.570
+<v Stefano Baruzzo>con control spazio vengono già suggerite
+per prime: X-JsonLD-Type e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11387-2
+01:00:11.570 --> 01:00:15.268
+<v Stefano Baruzzo>X-JsonLD-context.
+X-JsonLD-Type è la prima</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11443-0
+01:00:15.548 --> 01:00:22.016
+<v Stefano Baruzzo>proprietà che sostanzialmente va a
+definire la classe semantica associata al</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11443-1
+01:00:22.016 --> 01:00:28.736
+<v Stefano Baruzzo>mio oggetto, in questo caso posizione,
+ma come so quale classe semantica andare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11443-2
+01:00:28.736 --> 01:00:33.356
+<v Stefano Baruzzo>ad utilizzare?
+Per questo motivo dobbiamo fare fede al</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11443-3
+01:00:33.356 --> 01:00:34.868
+<v Stefano Baruzzo>Catalogo Nazionale</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11469-0
+01:00:34.908 --> 01:00:38.800
+<v Stefano Baruzzo>Dei Dati,
+quindi andiamo sul portale schema.gov.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11469-1
+01:00:38.800 --> 01:00:45.153
+<v Stefano Baruzzo>it e cerchiamo ad esempio delle parole
+chiavi che possono essere in questo caso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11469-2
+01:00:45.153 --> 01:00:45.708
+<v Stefano Baruzzo>luoghi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11517-0
+01:00:47.868 --> 01:00:54.333
+<v Stefano Baruzzo>E scegliamo un'ontologia che a noi serve
+intanto filtrare per ontologie e da</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11517-1
+01:00:54.333 --> 01:01:00.378
+<v Stefano Baruzzo>queste prelevare una classe che sia
+compatibile col concetto che stiamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11517-2
+01:01:00.378 --> 01:01:03.148
+<v Stefano Baruzzo>andando a definire e ad annotare.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11541-0
+01:01:03.948 --> 01:01:09.429
+<v Stefano Baruzzo>Sfogliando,
+notiamo che Istat offre già un'ontologia</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11541-1
+01:01:09.429 --> 01:01:12.428
+<v Stefano Baruzzo>degli indirizzi e dei luoghi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11602-0
+01:01:13.668 --> 01:01:18.667
+<v Stefano Baruzzo>Che se andiamo ad aprirla,
+oltre ad avere delle informazioni di base</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11602-1
+01:01:18.667 --> 01:01:23.592
+<v Stefano Baruzzo>tra cui il proprio URI, il titolare,
+la data di creazione eccetera,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11602-2
+01:01:23.592 --> 01:01:28.880
+<v Stefano Baruzzo>ci dà già una serie di concetti
+principali tra cui indirizzo, geometria,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11602-3
+01:01:28.880 --> 01:01:30.908
+<v Stefano Baruzzo>oggetto spaziale e così via.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11643-0
+01:01:31.948 --> 01:01:38.823
+<v Stefano Baruzzo>Andando a vedere poi nel dettaglio
+possiamo notare che geometria è un</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11643-1
+01:01:38.823 --> 01:01:46.188
+<v Stefano Baruzzo>concetto che è compatibile con quello che
+noi vorremmo andare ad annotare.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11677-0
+01:01:46.428 --> 01:01:50.695
+<v Stefano Baruzzo>Quindi prendiamo questo elemento qui,
+questo URI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11677-1
+01:01:50.695 --> 01:01:57.778
+<v Stefano Baruzzo>attenzione a copiare questo e non quello
+della barra degli indirizzi e utilizziamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11677-2
+01:01:57.778 --> 01:01:59.228
+<v Stefano Baruzzo>questo come Type.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11732-0
+01:02:00.588 --> 01:02:06.030
+<v Stefano Baruzzo>Possiamo subito vedere che a fianco di
+posizione è comparso una prima</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11732-1
+01:02:06.030 --> 01:02:11.938
+<v Stefano Baruzzo>annotazione che è quella CLV geometry.
+Questo elemento qui sostanzialmente,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11732-2
+01:02:11.938 --> 01:02:16.291
+<v Stefano Baruzzo>come ho già detto,
+fornisce un'indicazione sulla classe</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11732-3
+01:02:16.291 --> 01:02:17.068
+<v Stefano Baruzzo>semantica.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11781-0
+01:02:17.308 --> 01:02:22.597
+<v Stefano Baruzzo>E cliccandoci sopra mi riporta
+esattamente alla pagina geometria dove mi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11781-1
+01:02:22.597 --> 01:02:28.175
+<v Stefano Baruzzo>dà indicazioni sul tipo di oggetto.
+In questo caso questa classe rappresenta</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11781-2
+01:02:28.175 --> 01:02:33.028
+<v Stefano Baruzzo>la geometria associabile a un'entità
+spaziale. A questo punto però</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11831-0
+01:02:33.868 --> 01:02:39.623
+<v Stefano Baruzzo>lo Score è ancora zero. Perché?
+Perché è necessario annotare le sue</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11831-1
+01:02:39.623 --> 01:02:43.346
+<v Stefano Baruzzo>proprietà,
+quindi latitudine e longitudine.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11831-2
+01:02:43.346 --> 01:02:48.170
+<v Stefano Baruzzo>Per farlo usiamo l'altra keyword che
+abbiamo introdotto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11831-3
+01:02:48.170 --> 01:02:50.708
+<v Stefano Baruzzo>che è quella X-JsonLD-context.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11872-0
+01:02:52.188 --> 01:02:58.505
+<v Stefano Baruzzo>Cliccandoci sopra ci dà già una sorta di
+parametro iniziale,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11872-1
+01:02:58.505 --> 01:03:05.856
+<v Stefano Baruzzo>questa è una keyword riservata di JsonLD,
+ma al momento non la usiamo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11872-2
+01:03:05.856 --> 01:03:08.548
+<v Stefano Baruzzo>vedremo dopo a cosa serve.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11917-0
+01:03:09.468 --> 01:03:13.273
+<v Stefano Baruzzo>In questo context cosa devo andare ad
+indicare?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11917-1
+01:03:13.273 --> 01:03:19.298
+<v Stefano Baruzzo>Quelle che sono le proprietà: latitudine,
+intanto le impostiamo come null e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11917-2
+01:03:19.298 --> 01:03:23.183
+<v Stefano Baruzzo>longitudine e impostiamo anche questa
+come null.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11917-3
+01:03:23.183 --> 01:03:26.908
+<v Stefano Baruzzo>Nel frattempo sono anche spariti i due
+errori.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11924-0
+01:03:28.748 --> 01:03:31.388
+<v Stefano Baruzzo>Cosa dobbiamo andare ad indicare qui?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11975-0
+01:03:32.428 --> 01:03:37.193
+<v Stefano Baruzzo>Dobbiamo andare ad indicare quelli che
+sono degli URI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11975-1
+01:03:37.193 --> 01:03:41.005
+<v Stefano Baruzzo>degli identificativi univoci delle
+risorse.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11975-2
+01:03:41.005 --> 01:03:46.982
+<v Stefano Baruzzo>Per scoprire quali URI andare ad
+utilizzare torna comodo il tool RDF</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/11975-3
+01:03:46.982 --> 01:03:47.588
+<v Stefano Baruzzo>helper.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12024-0
+01:03:48.588 --> 01:03:54.635
+<v Stefano Baruzzo>Questa modale sostanzialmente permette di
+visualizzare quelle che sono tutte le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12024-1
+01:03:54.635 --> 01:04:00.907
+<v Stefano Baruzzo>proprietà associate alla classe geometry,
+quindi a quella del nostro JsonLD Type e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12024-2
+01:04:00.907 --> 01:04:04.308
+<v Stefano Baruzzo>le proprietà semantiche che posso
+utilizzare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12066-0
+01:04:04.748 --> 01:04:09.987
+<v Stefano Baruzzo>sia della classe geometry sia
+eventualmente delle sue superclassi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12066-1
+01:04:09.987 --> 01:04:15.773
+<v Stefano Baruzzo>perché geometry estende Spatial object,
+estende location, estende entity.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12066-2
+01:04:15.773 --> 01:04:18.588
+<v Stefano Baruzzo>Se andiamo qui ad esempio a cercare:</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12119-0
+01:04:19.788 --> 01:04:24.802
+<v Stefano Baruzzo>Lat, latitude,
+troviamo già il primo caso di Field URI,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12119-1
+01:04:24.802 --> 01:04:31.247
+<v Stefano Baruzzo>la piccola icona con il punto
+interrogativo ci permette anche di capire</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12119-2
+01:04:31.247 --> 01:04:38.588
+<v Stefano Baruzzo>che cosa andare ad inserire all'interno
+del nostro codice con un piccolo snippet.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12126-0
+01:04:39.388 --> 01:04:42.748
+<v Stefano Baruzzo>In questo caso mi limito a copiare questo
+URI.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12134-0
+01:04:44.908 --> 01:04:47.588
+<v Stefano Baruzzo>Veniamo qui e lo andiamo a mettere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12141-0
+01:04:49.468 --> 01:04:51.068
+<v Stefano Baruzzo>sul parametro latitud.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12183-0
+01:04:51.948 --> 01:04:59.096
+<v Stefano Baruzzo>Possiamo vedere che nel nostro editor
+sono state aggiunte delle informazioni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12183-1
+01:04:59.096 --> 01:05:05.501
+<v Stefano Baruzzo>extra che prima non c'erano,
+in particolare la prima che è quella di</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12183-2
+01:05:05.501 --> 01:05:09.028
+<v Stefano Baruzzo>indicazione della proprietà semantica.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12230-0
+01:05:09.308 --> 01:05:15.350
+<v Stefano Baruzzo>Ovvero abbiamo l'elemento "lat" che se
+andiamo ad aprirlo in questo modo ci dà</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12230-1
+01:05:15.350 --> 01:05:21.163
+<v Stefano Baruzzo>informazioni sulla proprietà che è
+semantica che abbiamo appunto prelevato,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12230-2
+01:05:21.163 --> 01:05:25.828
+<v Stefano Baruzzo>ci dà in questo caso indicazioni sul
+sistema di riferimento.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12251-0
+01:05:26.108 --> 01:05:31.224
+<v Stefano Baruzzo>E così via ci dice anche la tipologia di
+proprietà data type piuttosto che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12251-1
+01:05:31.224 --> 01:05:32.588
+<v Stefano Baruzzo>functional property.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12294-0
+01:05:35.068 --> 01:05:42.337
+<v Stefano Baruzzo>Oltre a questo abbiamo anche informazioni
+sul tipo di scrittura,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12294-1
+01:05:42.337 --> 01:05:49.717
+<v Stefano Baruzzo>sul tipo di dato effettivo,
+in questo caso è un RDFS literal e ci</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12294-2
+01:05:49.717 --> 01:05:50.388
+<v Stefano Baruzzo>annota</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12343-0
+01:05:50.508 --> 01:05:56.219
+<v Stefano Baruzzo>le nostra OpenAPI che per il parametro
+latitude non aveva nessuna descrizione</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12343-1
+01:05:56.219 --> 01:06:01.636
+<v Stefano Baruzzo>direttamente con quella che è la
+descrizione prelevata dalle informazioni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12343-2
+01:06:01.636 --> 01:06:06.028
+<v Stefano Baruzzo>contenute nel catalogo,
+quindi questa proprietà rappresenta</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12345-0
+01:06:06.068 --> 01:06:06.988
+<v Stefano Baruzzo>la latitudine.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12360-0
+01:06:08.748 --> 01:06:14.668
+<v Stefano Baruzzo>Allo stesso modo possiamo fare la
+annotazione per longitudine -</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12364-0
+01:06:18.308 --> 01:06:18.668
+<v Stefano Baruzzo>long.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12372-0
+01:06:22.188 --> 01:06:24.788
+<v Stefano Baruzzo>Copiamo l'URI anche in questo caso.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12380-0
+01:06:28.268 --> 01:06:29.628
+<v Stefano Baruzzo>Lo andiamo ad inserire qui.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12439-0
+01:06:31.708 --> 01:06:36.334
+<v Stefano Baruzzo>Stessa cosa per longitudine,
+possiamo vedere che in questo caso il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12439-1
+01:06:36.334 --> 01:06:41.650
+<v Stefano Baruzzo>nostro Semantic Score del modello è
+passato ad un valore uno perché tutte le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12439-2
+01:06:41.650 --> 01:06:46.828
+<v Stefano Baruzzo>sue proprietà sono state annotate e il
+semantic Score globale è aumentato.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12487-0
+01:06:46.908 --> 01:06:51.715
+<v Stefano Baruzzo>Anche se di poco, un valore di 007,
+è aumentato di poco, perché?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12487-1
+01:06:51.715 --> 01:06:57.188
+<v Stefano Baruzzo>Perché nel calcolo globale incidono tutti
+i modelli e tutte le proprietà,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12487-2
+01:06:57.188 --> 01:07:02.068
+<v Stefano Baruzzo>quindi più modelli sono annotati e hanno
+un valore prossimo a uno</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12491-0
+01:07:02.188 --> 01:07:04.668
+<v Stefano Baruzzo>più il valore complessivo aumenta.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12539-0
+01:07:05.708 --> 01:07:11.108
+<v Stefano Baruzzo>Tra le varie funzionalità,
+limitandosi per il momento a questo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12539-1
+01:07:11.108 --> 01:07:15.651
+<v Stefano Baruzzo>oggetto posizione,
+abbiamo anche delle accordion che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12539-2
+01:07:15.651 --> 01:07:20.708
+<v Stefano Baruzzo>mostrano quello che è l'example
+utilizzato in questo caso.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12590-0
+01:07:20.988 --> 01:07:24.841
+<v Stefano Baruzzo>L'example si intende l'example a livello
+di oggetto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12590-1
+01:07:24.841 --> 01:07:28.258
+<v Stefano Baruzzo>quindi quello indicato tra le righe 302 e
+304,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12590-2
+01:07:28.258 --> 01:07:34.291
+<v Stefano Baruzzo>non gli example delle singole proprietà,
+quindi per fare un'annotazione corretta è</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12590-3
+01:07:34.291 --> 01:07:36.108
+<v Stefano Baruzzo>sempre necessario mettere</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12595-0
+01:07:36.748 --> 01:07:39.388
+<v Stefano Baruzzo>una scrittura a livello di oggetto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12653-0
+01:07:40.428 --> 01:07:44.459
+<v Stefano Baruzzo>Dopodiché l'altra accordion è quella del
+JsonLD context,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12653-1
+01:07:44.459 --> 01:07:49.479
+<v Stefano Baruzzo>che sostanzialmente è quello che siamo
+andati a rappresentare qua o in</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12653-2
+01:07:49.479 --> 01:07:53.086
+<v Stefano Baruzzo>alternativa,
+qualora aveste degli schemi annidati,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12653-3
+01:07:53.086 --> 01:07:55.348
+<v Stefano Baruzzo>il sistema risolve in automatico</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12700-0
+01:07:55.468 --> 01:08:01.698
+<v Stefano Baruzzo>tutti questi anidamenti di contesto
+fornendo quello diciamo del padre -</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12700-1
+01:08:01.698 --> 01:08:06.976
+<v Stefano Baruzzo>qualora si vada a navigare all'interno di
+proprietà anidate.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12700-2
+01:08:06.976 --> 01:08:11.908
+<v Stefano Baruzzo>Infine troviamo la Tab RDF che
+sostanzialmente mi mostra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12749-0
+01:08:13.148 --> 01:08:18.165
+<v Stefano Baruzzo>in formato diverso, in una forma quasi,
+passatemi il termine,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12749-1
+01:08:18.165 --> 01:08:23.425
+<v Stefano Baruzzo>leggibile verbalmente.
+di ciò che stiamo andando a rappresentare</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12749-2
+01:08:23.425 --> 01:08:27.228
+<v Stefano Baruzzo>dall'unione tra il JsonLD context e
+l'example.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12765-0
+01:08:28.448 --> 01:08:33.848
+<v Stefano Baruzzo>La lettura delle RDF va fatta
+considerando che vi è un soggetto,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12813-0
+01:08:35.228 --> 01:08:40.981
+<v Stefano Baruzzo>un predicato e un complemento oggetto.
+Alla fine troviamo il punto come una</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12813-1
+01:08:40.981 --> 01:08:47.035
+<v Stefano Baruzzo>normale sentenza, una frase nella lingua.
+In questo caso l'oggetto è un oggetto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12813-2
+01:08:47.035 --> 01:08:50.668
+<v Stefano Baruzzo>anonimo,
+ma ovviamente noi sappiamo che fa fede</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12819-0
+01:08:50.908 --> 01:08:54.388
+<v Stefano Baruzzo>a quello che potrebbe essere un oggetto
+posizione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12834-0
+01:08:55.708 --> 01:09:01.948
+<v Stefano Baruzzo>L'oggetto anonimo ha un RDF Type tipo CLV
+geometry.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12876-0
+01:09:03.148 --> 01:09:08.392
+<v Stefano Baruzzo>L'oggetto anonimo ha una latitudine pari
+a 4.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12876-1
+01:09:08.392 --> 01:09:17.738
+<v Stefano Baruzzo>11 eccetera eccetera in formato double e
+l'oggetto ha una longitudine long pari a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12876-2
+01:09:17.738 --> 01:09:18.308
+<v Stefano Baruzzo>1.689</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12922-0
+01:09:18.908 --> 01:09:25.721
+<v Stefano Baruzzo>in formato anche questo double quindi ci
+permette una lettura diversa.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12922-1
+01:09:25.721 --> 01:09:33.588
+<v Stefano Baruzzo>Prima avevamo inizialmente rimosso quella
+che era una keyword di JsonLD: "vocab".</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12979-0
+01:09:34.268 --> 01:09:38.441
+<v Stefano Baruzzo>Se andiamo qui ad utilizzare
+l'autocompletamento e torniamo ad</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12979-1
+01:09:38.441 --> 01:09:41.686
+<v Stefano Baruzzo>inserirla,
+"vocab" è una delle varie keyword che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12979-2
+01:09:41.686 --> 01:09:47.183
+<v Stefano Baruzzo>permette di andare a definire quelli che
+sono dei prefissi da applicare a tutte le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/12979-3
+01:09:47.183 --> 01:09:48.308
+<v Stefano Baruzzo>nostre proprietà.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13011-0
+01:09:48.748 --> 01:09:52.683
+<v Stefano Baruzzo>In particolare se andiamo a prendere
+questo, il CLV,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13011-1
+01:09:52.683 --> 01:09:58.548
+<v Stefano Baruzzo>poi in alternativa lo possiamo anche fare
+dal autocompletamento ontologia CLV.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13026-0
+01:10:00.108 --> 01:10:05.708
+<v Stefano Baruzzo>Possiamo semplicemente andare ad indicare
+latitudine e longitudine.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13032-0
+01:10:07.948 --> 01:10:11.188
+<v Stefano Baruzzo>Nonché il type in questo modo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13073-0
+01:10:12.548 --> 01:10:19.566
+<v Stefano Baruzzo>Quindi abbiamo una scrittura,
+un prefisso di base a cui vengono poi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13073-1
+01:10:19.566 --> 01:10:26.790
+<v Stefano Baruzzo>aggiunti gli altri suffissi,
+se invece volessimo una scrittura un po'</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13073-2
+01:10:26.790 --> 01:10:28.028
+<v Stefano Baruzzo>più precisa,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13122-0
+01:10:28.508 --> 01:10:31.538
+<v Stefano Baruzzo>OK,
+ma mantenendo comunque un grado meno</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13122-1
+01:10:31.538 --> 01:10:37.302
+<v Stefano Baruzzo>verboso potremmo andare ad introdurre
+quelli che sono dei prefissi tipo CLV e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13122-2
+01:10:37.302 --> 01:10:41.588
+<v Stefano Baruzzo>andare ad esempio a scrivere la
+longitudine come CLV:long</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13188-0
+01:10:42.908 --> 01:10:49.257
+<v Stefano Baruzzo>Possiamo vedere che qui, in ogni caso,
+tutte queste scritture sono valide e il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13188-1
+01:10:49.257 --> 01:10:55.767
+<v Stefano Baruzzo>Semantic Score è sempre uno e alla fin
+fine la proprietà longitudine qui tramite</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13188-2
+01:10:55.767 --> 01:11:00.428
+<v Stefano Baruzzo>il JsonLD context è stata associata al
+concetto semantico</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13208-0
+01:11:00.668 --> 01:11:08.268
+<v Stefano Baruzzo>CLV long che, come possiamo vedere,
+è preso dal catalogo nazionale dei dati.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13235-0
+01:11:09.708 --> 01:11:16.746
+<v Stefano Baruzzo>In questo caso abbiamo definito soltanto
+un unico elemento posizione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13235-1
+01:11:16.746 --> 01:11:21.068
+<v Stefano Baruzzo>ma vi posso far vedere un OpenAPI
+annotato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13238-0
+01:11:23.228 --> 01:11:24.348
+<v Stefano Baruzzo>completamente.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13300-0
+01:11:26.588 --> 01:11:30.441
+<v Stefano Baruzzo>In questo caso,
+andando ad incollare una specifica che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13300-1
+01:11:30.441 --> 01:11:34.503
+<v Stefano Baruzzo>abbiamo già risolto,
+vediamo che gli elementi sono alcuni</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13300-2
+01:11:34.503 --> 01:11:38.636
+<v Stefano Baruzzo>annotati, altri no,
+in questo caso lo status response come</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13300-3
+01:11:38.636 --> 01:11:42.908
+<v Stefano Baruzzo>valore zero perché non è annotato,
+non vi erano dei concetti</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13348-0
+01:11:43.388 --> 01:11:47.946
+<v Stefano Baruzzo>associabili a quel a elemento lì,
+posizione, contatti,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13348-1
+01:11:47.946 --> 01:11:54.077
+<v Stefano Baruzzo>eccetera sono elementi che invece hanno
+un'annotazione totale o parziale,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13348-2
+01:11:54.077 --> 01:11:58.717
+<v Stefano Baruzzo>in questo caso 0.
+67 per l'elemento contatti e lo score</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13348-3
+01:11:58.717 --> 01:11:59.628
+<v Stefano Baruzzo>complessivo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13358-0
+01:12:00.028 --> 01:12:04.028
+<v Stefano Baruzzo>del nostro OpenAPI è pari a 0.61.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13367-0
+01:12:10.308 --> 01:12:12.828
+<v Stefano Baruzzo>OK, non dovrebbe esserci altro.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13412-0
+01:12:17.428 --> 01:12:24.394
+<v Claudia Pollina>Bene, perfetto. Grazie Stefano.
+Spero che spero che sia stato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13382-0
+01:12:20.988 --> 01:12:21.868
+<v Stefano Baruzzo>Grazie a voi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13412-1
+01:12:24.394 --> 01:12:30.797
+<v Claudia Pollina>interessante, utile.
+Direi che sono stati presentati due</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13412-2
+01:12:30.797 --> 01:12:33.268
+<v Claudia Pollina>strumenti molto utili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13468-0
+01:12:33.948 --> 01:12:40.561
+<v Claudia Pollina>Soprattutto a questa fase di sviluppo e
+di iterativa di sviluppo e vi abbiamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13468-1
+01:12:40.561 --> 01:12:45.902
+<v Claudia Pollina>mostrato quale può essere l'output,
+quindi quell'applicazione,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13468-2
+01:12:45.902 --> 01:12:50.988
+<v Claudia Pollina>ma come potete utilizzarlo e aggiungerlo
+al vostro workflow</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13525-0
+01:12:51.228 --> 01:12:55.428
+<v Claudia Pollina>da sviluppatori o capirne anche
+semplicemente i benefici se il vostro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13525-1
+01:12:55.428 --> 01:12:59.028
+<v Claudia Pollina>lavoro è un'altro.
+Quindi siamo arrivati alla parte finale,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13525-2
+01:12:59.028 --> 01:13:03.648
+<v Claudia Pollina>volevo ringraziare tutti i relatori e
+aprire la sessione finale di domande e</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13525-3
+01:13:03.648 --> 01:13:07.308
+<v Claudia Pollina>risposte. Abbiamo 10 minuti,
+magari qualche minutino in più.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13579-0
+01:13:07.628 --> 01:13:13.998
+<v Claudia Pollina>Abbiamo provato a rispondere, vi dico,
+la maggior parte delle risposte un po'</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13579-1
+01:13:13.998 --> 01:13:20.042
+<v Claudia Pollina>più tecniche e verbose in chat,
+speriamo di avervi dato un po' di diciamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13579-2
+01:13:20.042 --> 01:13:23.308
+<v Claudia Pollina>di indicazioni che possono essere utili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13594-0
+01:13:24.268 --> 01:13:34.748
+<v Claudia Pollina>Ne prenderei giusto un paio di domande in
+più, c'è una, allora.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13631-0
+01:13:38.028 --> 01:13:46.497
+<v Claudia Pollina>Ci tenevo particolarmente a rispondere a
+una domanda durante l'emissione della CIE,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13631-1
+01:13:46.497 --> 01:13:52.748
+<v Claudia Pollina>non aspetta che la ritrovo,
+che mi sono persa tra le domande.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13632-0
+01:13:52.788 --> 01:13:53.308
+<v Claudia Pollina>Sì.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13692-0
+01:13:56.788 --> 01:14:00.260
+<v Claudia Pollina>Arrivo subito,
+allora durante le missioni della CIE non</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13692-1
+01:14:00.260 --> 01:14:05.095
+<v Claudia Pollina>si dichiara di più il titolo di studio,
+ma alcuni uffici devono gestire degli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13692-2
+01:14:05.095 --> 01:14:08.257
+<v Claudia Pollina>albi basandosi sui titoli di studio delle
+persone.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13692-3
+01:14:08.257 --> 01:14:12.348
+<v Claudia Pollina>Vorrei sapere se e come pensate di fare
+un aggiornamento massivo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13742-0
+01:14:12.428 --> 01:14:16.435
+<v Claudia Pollina>Allora abbiamo parlato inizialmente del
+once only,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13742-1
+01:14:16.435 --> 01:14:22.405
+<v Claudia Pollina>quindi idealmente i titoli di studio
+possono essere recuperati direttamente</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13742-2
+01:14:22.405 --> 01:14:27.668
+<v Claudia Pollina>dalle altre banche dati di cui ci
+occupiamo anche al dipartimento.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13793-0
+01:14:27.908 --> 01:14:33.437
+<v Claudia Pollina>Che sono per esempio ANIS o ANIST,
+quindi le altre due banche dati che si</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13793-1
+01:14:33.437 --> 01:14:37.696
+<v Claudia Pollina>occupano o di scuola,
+qualora il titolo di studio sia le</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13793-2
+01:14:37.696 --> 01:14:41.133
+<v Claudia Pollina>superiori o la licenza media o di
+università,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13793-3
+01:14:41.133 --> 01:14:43.748
+<v Claudia Pollina>quindi andando a recuperare il dato</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13807-0
+01:14:43.948 --> 01:14:49.308
+<v Claudia Pollina>direttamente alla fonte per avere dei
+dati certi, ecco.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13817-0
+01:14:53.468 --> 01:14:55.868
+<v Claudia Pollina>Vogliamo poi prenderne qualcun'altra?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13877-0
+01:15:03.468 --> 01:15:09.396
+<v Claudia Pollina>Per quanto riguarda invece, per esempio,
+se verrà integrato un viewer delle</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13877-1
+01:15:09.396 --> 01:15:13.998
+<v Claudia Pollina>specifiche open API è una buona idea,
+sarebbe molto utile.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13877-2
+01:15:13.998 --> 01:15:17.742
+<v Claudia Pollina>Al momento non si vedono le specifiche in
+PDND,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13877-3
+01:15:17.742 --> 01:15:20.628
+<v Claudia Pollina>potrebbe essere comunque molto utile.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13887-0
+01:15:21.668 --> 01:15:25.948
+<v Claudia Pollina>Proviamo a rispondervi in questo modo.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13942-0
+01:15:34.108 --> 01:15:39.220
+<v Claudia Pollina>Ecco, un po' abbiamo risposto.
+Tutto ciò che state illustrando è utile</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13942-1
+01:15:39.220 --> 01:15:43.108
+<v Claudia Pollina>per poter pubblicare altre API verso PDND?
+Sì Gianni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13942-2
+01:15:43.108 --> 01:15:48.508
+<v Claudia Pollina>tutto ciò che stiamo illustrando che
+abbiamo illustrato è utile proprio al</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13974-0
+01:15:48.908 --> 01:15:55.459
+<v Claudia Pollina>flusso di lavoro dell'amministrazione
+degli sviluppatori che lavorano presso</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/13974-1
+01:15:55.459 --> 01:16:00.988
+<v Claudia Pollina>quell'amministrazione per pubblicare o
+ripubblicare API in PDND.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14027-0
+01:16:06.748 --> 01:16:10.617
+<v Claudia Pollina>Vediamo di prenderne qualcun'altra perché
+ce ne sono diverse.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14027-1
+01:16:10.617 --> 01:16:15.110
+<v Claudia Pollina>Ce n'era una che mi piaceva anche che era
+quello di Lorenzo Ponticelli.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14027-2
+01:16:15.110 --> 01:16:19.228
+<v Claudia Pollina>Esiste la possibilità che non esistono
+antologie per il mio caso?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14030-0
+01:16:19.708 --> 01:16:21.148
+<v Claudia Pollina>Vuoi rispondere tu, Stefano?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14097-0
+01:16:22.588 --> 01:16:25.887
+<v Stefano Baruzzo>Sì,
+avevo proprio risposto in chat in questo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14053-0
+01:16:22.828 --> 01:16:26.028
+<v Claudia Pollina>Esiste la possibilità via chat?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14097-1
+01:16:25.887 --> 01:16:30.652
+<v Stefano Baruzzo>istante. Esattamente allora sì.
+Nell'esempio infatti che abbiamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14063-0
+01:16:27.708 --> 01:16:28.908
+<v Claudia Pollina>Ecco, scusa, non ho visto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14097-2
+01:16:30.652 --> 01:16:36.443
+<v Stefano Baruzzo>condiviso ci sono degli elementi che non
+hanno una un'ontologia comunque degli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14097-3
+01:16:36.443 --> 01:16:39.228
+<v Stefano Baruzzo>elementi che sono stati associati, no?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14155-0
+01:16:39.868 --> 01:16:44.695
+<v Stefano Baruzzo>Non è ovviamente obbligatorio che siano
+presenti tutti gli elementi,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14155-1
+01:16:44.695 --> 01:16:49.732
+<v Stefano Baruzzo>però almeno i concetti, quelli core,
+sarebbe bene riuscire a modellare,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14155-2
+01:16:49.732 --> 01:16:54.699
+<v Stefano Baruzzo>se possibile ovviamente le API,
+in modo da combaciare il più possibile</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14155-3
+01:16:54.699 --> 01:16:56.028
+<v Stefano Baruzzo>con quanto presente</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14209-0
+01:16:56.348 --> 01:17:01.537
+<v Stefano Baruzzo>nel catalogo, ecco.
+"X trattino" sono i cosiddetti extra</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14209-1
+01:17:01.537 --> 01:17:09.093
+<v Stefano Baruzzo>parameters e quindi non vanno a bloccare
+i parametri ufficiali della specifica che</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14209-2
+01:17:09.093 --> 01:17:12.188
+<v Stefano Baruzzo>ricordo è quella 3.0 dell'OpenAPI.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14222-0
+01:17:14.668 --> 01:17:19.508
+<v Claudia Pollina>OK, grazie Stefano per aver risposto.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14237-0
+01:17:28.108 --> 01:17:30.348
+<v Claudia Pollina>Possiamo rispondere anche a quella
+sull'AI?</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14245-0
+01:17:33.468 --> 01:17:35.268
+<v Claudia Pollina>Magari Matteo, se vuoi rispondere tu.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14296-0
+01:17:36.828 --> 01:17:42.697
+<v Matteo Fortini>Sì, volevo dire che sull'AI,
+al di là dell'utilizzo,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14296-1
+01:17:42.697 --> 01:17:50.005
+<v Matteo Fortini>insomma interno sperimentale,
+ci sono due strumenti open a riuso,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14296-2
+01:17:50.005 --> 01:17:52.108
+<v Matteo Fortini>sono due server MCP</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14361-0
+01:17:52.428 --> 01:17:56.490
+<v Matteo Fortini>che abbiamo sviluppato e che sono sul
+catalogo Developers,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14361-1
+01:17:56.490 --> 01:18:01.516
+<v Matteo Fortini>server MCP che quindi supporta
+un'intelligenza artificiale per fare cose</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14361-2
+01:18:01.516 --> 01:18:07.024
+<v Matteo Fortini>specifiche, una è proprio sul checker,
+quindi permette a un'AI di far girare il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14361-3
+01:18:07.024 --> 01:18:10.948
+<v Matteo Fortini>checker su una specifica e ottenere
+risultati e un'altro</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14411-0
+01:18:11.428 --> 01:18:17.962
+<v Matteo Fortini>è per l'esplorazione di schema.gov.
+it attraverso il suo endpoint sparkle.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14411-1
+01:18:17.962 --> 01:18:24.496
+<v Matteo Fortini>Naturalmente l'AI in entrambi i casi
+sarebbe in grado di realizzare queste</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14411-2
+01:18:24.496 --> 01:18:28.068
+<v Matteo Fortini>questi test anche in autonomia, ma questi</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14448-0
+01:18:28.188 --> 01:18:34.810
+<v Matteo Fortini>tool lo rendono più semplice,
+quindi evitano allucinazioni,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14448-1
+01:18:34.810 --> 01:18:43.308
+<v Matteo Fortini>rendono tutto più diretto e permettono
+anche AI meno grandi di essere utili.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14470-0
+01:18:47.708 --> 01:18:51.068
+<v Claudia Pollina>Bene, allora sì, vai.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14498-0
+01:18:48.668 --> 01:18:54.576
+<v Matteo Fortini>Claudia, scusa, ne approfitto,
+tutti i tool sono open quelli che abbiamo</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14498-1
+01:18:54.576 --> 01:19:00.887
+<v Matteo Fortini>mostrato nell'idea di Developers Italia,
+tutto su github di Developers Italia</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14498-2
+01:19:00.887 --> 01:19:02.748
+<v Matteo Fortini>appunto, proprio perché</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14526-0
+01:19:04.228 --> 01:19:10.307
+<v Matteo Fortini>la filosofia è quella di essere open e
+quindi volentieri anche leggiamo apertura</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14526-1
+01:19:10.307 --> 01:19:13.308
+<v Matteo Fortini>di show di poor request per questi tool.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14594-0
+01:19:22.628 --> 01:19:27.301
+<v Claudia Pollina>Eccomi, scusate,
+io direi di non prenderne delle altre.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14594-1
+01:19:27.301 --> 01:19:33.809
+<v Claudia Pollina>Ringrazio tutti per avere partecipato.
+Vi lancio l'ultima chiamata alle armi.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14594-2
+01:19:33.809 --> 01:19:39.148
+<v Claudia Pollina>Per chi vuole continuare ad approfondire
+può visitare la pagina</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14647-0
+01:19:39.748 --> 01:19:44.957
+<v Claudia Pollina>dedicata all'interoperabilità di
+Developers Italia per trovare tutti gli</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14647-1
+01:19:44.957 --> 01:19:50.665
+<v Claudia Pollina>strumenti di cui abbiamo parlato e le
+risorse a disposizione e capire un po' il</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14647-2
+01:19:50.665 --> 01:19:55.588
+<v Claudia Pollina>flusso di lavoro la trovate su
+developersitalia.it interoperabilità.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14725-0
+01:19:56.348 --> 01:20:01.374
+<v Claudia Pollina>Grazie ancora a tutti per le anche per le
+domande proviamo proprio a rispondere a</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14725-1
+01:20:01.374 --> 01:20:05.542
+<v Claudia Pollina>tutti in chat o di fare dei follow-up.
+È stato un pomeriggio ricco.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14725-2
+01:20:05.542 --> 01:20:09.403
+<v Claudia Pollina>Spero che questi strumenti vi portino
+utili nel vostro lavoro.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14725-3
+01:20:09.403 --> 01:20:13.203
+<v Claudia Pollina>Vi ricordo che la registrazione sarà
+disponibile e condivisa,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14725-4
+01:20:13.203 --> 01:20:15.348
+<v Claudia Pollina>quindi potete riascoltare poi tutto</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14766-0
+01:20:15.468 --> 01:20:20.768
+<v Claudia Pollina>con calma non sarà condivisa invece la
+presentazione.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14766-1
+01:20:20.768 --> 01:20:28.815
+<v Claudia Pollina>E poi vi invito al prossimo Community Lab
+che sarà tra circa un mese sulle novità</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14766-2
+01:20:28.815 --> 01:20:31.268
+<v Claudia Pollina>del Design System Italia.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14817-0
+01:20:31.468 --> 01:20:37.035
+<v Claudia Pollina>Per rimanere aggiornati potete anche
+iscrivervi alla mailing list qui,</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14817-1
+01:20:37.035 --> 01:20:42.446
+<v Claudia Pollina>ve la mettiamo qui in chat,
+o la trovate anche sui siti di Designers</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14817-2
+01:20:42.446 --> 01:20:47.228
+<v Claudia Pollina>Italia Developers Italia al prossimo
+Community Lab e grazie.</v>
+
+3492024e-acf5-4068-8180-fccfbe64db44/14818-0
+01:20:47.268 --> 01:20:47.548
+<v Claudia Pollina>Grazie.</v>
