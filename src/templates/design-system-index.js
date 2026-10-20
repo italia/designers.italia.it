@@ -46,7 +46,7 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
             <NavSidebar page={Pagedata.seo.name} {...dsNav} />
             <main
               id="main"
-              className="col-12 col-lg-9 px-lg-0 content-column bg-white"
+              className="col-12 px-lg-0 content-column bg-white"
             >
               {Pagedata.components.hero && (
                 <Hero
