@@ -925,6 +925,7 @@ export const query = graphql`
             noSpace
             text
             title
+            selector
             responsive
             # addonClasses
             headingLevel
