@@ -31,7 +31,7 @@
             }
 
             .icon {
-              transition: transform .3s;
+              transition: transform 0.3s;
             }
 
             &[aria-expanded="true"] {
@@ -93,7 +93,7 @@
         margin-left: 24px;
         margin-top: 48px;
         width: 65px;
-    }
+      }
     }
   }
 
@@ -107,10 +107,12 @@
 }
 
 //Mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+}
 
 //Small tablet ------------------------------------------------------------------------------------------
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+}
 
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
@@ -125,7 +127,6 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
   .menu-column {
     height: calc(100vh);
     overflow-y: auto;
@@ -151,13 +152,17 @@
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
 //Desktop -----------------------------------------------------------------------------------------------
-@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxl) {
+}
 
 //Hover states ------------------------------------------------------------------------------------------
-@media (hover: hover) {}
+@media (hover: hover) {
+}
 
 //Transitions (A11y reduced motion disabled) ------------------------------------------------------------
-@media screen and (prefers-reduced-motion: no-preference) {}
+@media screen and (prefers-reduced-motion: no-preference) {
+}

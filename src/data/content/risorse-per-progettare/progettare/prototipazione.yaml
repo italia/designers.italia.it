@@ -82,7 +82,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -92,7 +91,7 @@ components:
     subtitle: Realizza un prototipo in bassa fedeltà per progettare l’esperienza utente #C
     tag:
       label: Kit di design #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -131,7 +130,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -154,7 +153,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Esperienza utente,Progettazione interfaccia,Prototipazione]
+      tags: [Esperienza utente, Progettazione interfaccia, Prototipazione]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -178,8 +177,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -190,7 +188,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -210,19 +207,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come prototipare l'interazione con un servizio in diversi livelli di fedeltà e usare un prototipo per validare l’esperienza utente con stakeholder e utenti.
           ctas:
-          - label: "Vai all’argomento Progettazione dell'interazione" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dell-interazione.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-
+            - label: "Vai all’argomento Progettazione dell'interazione" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dell-interazione.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -237,7 +232,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: Definisci i flussi di interazione #C
         rounded: true
@@ -263,7 +257,4 @@ components:
           Imposta la struttura dell’interfaccia con gli elementi essenziali per verificare l’efficienza e l’efficacia di un servzio digitale, senza preoccuparti dell’aspetto grafico.
         tag:
           label: Attività del kit #C
-
-
-
 

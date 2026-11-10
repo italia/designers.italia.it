@@ -12,7 +12,7 @@ seo:
   image: https://designers.italia.it/images/community/media-thumbnails/202511-community-call-italia.jpg
   canonical: null
   pathname: /community/media/202511-community-call-progettare-bene-con-il-design-system-italia/
-  
+
 kangaroo:
   navposition:
     id: kangEnd
@@ -34,7 +34,6 @@ components:
     subtitle: "Regione Lombardia e la Scuola Normale Superiore raccontano la loro esperienza"
     tag:
       label: Video - Community Call
-      
 
     kangaroo:
       id: kangarooExample
@@ -46,14 +45,20 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Community call, Design system, Open source, Progettazione interfaccia, Progettazione servizi]
+      tags:
+        [
+          Community call,
+          Design system,
+          Open source,
+          Progettazione interfaccia,
+          Progettazione servizi,
+        ]
 
   sectionsEditorial:
-
     # FORMATO VIDEO DEFAULT
     - fullColumn: false # fullwidth vs normal
       full: true # large column vs normal
-      noSpace: false 
+      noSpace: false
       centered: true
       background: medium
       components:
@@ -66,23 +71,23 @@ components:
           trascriptionLabel: "Trascrizione"
           trascriptionLabelEN: "Transcription"
           trascription: |
-            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=QyzK93Huhy8)            
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=QyzK93Huhy8)
 
-    - noSpace: false 
+    - noSpace: false
       centered: true
       components:
         - name: TextImageCta
-          # title: 
+          # title:
           text: |
             In questo incontro la **Scuola Normale Superiore e Regione Lombardia** raccontano la loro esperienza di utilizzo delle risorse di Designers Italia soffermandosi sul **ruolo del design system .italia nel traformare l'approccio alla progettazione** e alla realizzazione di siti e servizi digitali, condividendo esempi concreti del suo utilizzo, sfide affrontate e suggerimenti utili al resto della community.
           ctas:
-          - label: Vai al design system .italia #C
-            url: "/design-system/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2 
+            - label: Vai al design system .italia #C
+              url: "/design-system/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

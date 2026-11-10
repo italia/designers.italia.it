@@ -24,7 +24,7 @@ metadata:
     - /community/materiali-di-disseminazione/il-ruolo-del-design-nella-trasformazione-digitale-della-pa/
     - /materiali-di-disseminazione/il-ruolo-del-design-nella-trasformazione-digitale-della-pa/
     - /disseminazione/il-ruolo-del-design-nella-trasformazione-digitale-della-pa/
-    
+
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
@@ -83,7 +83,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -93,7 +92,7 @@ components:
     subtitle: "Impara come organizzare un progetto di trasformazione digitale efficace e nel rispetto della norma" #C
     tag:
       label: Corso di formazione #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -132,7 +131,7 @@ components:
       #       label: Linee guida di design #C
       #       url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -155,7 +154,14 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Formazione, Cultura progettuale, Linee guida, Normativa, Progettazione servizi]
+      tags:
+        [
+          Formazione,
+          Cultura progettuale,
+          Linee guida,
+          Normativa,
+          Progettazione servizi,
+        ]
 
       # # KANGAROO: CHILDREN SHORTCUTS
       # dropdown:
@@ -179,13 +185,11 @@ components:
       #         label: Progettare servizi e touchpoint digitali della PA #C
       #       - url: "l-importanza-dei-dati-nella-PA/"
       #         label: L’importanza dei dati nella PA #C
-  
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -196,15 +200,14 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-             Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
+            Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
 
-             Il corso introduce il quadro normativo e le indicazioni da seguire per progettare e realizzare servizi pubblici digitali e i loro punti di contatto con l’utenza. Verranno illustrate le linee guida, le attività necessarie per soddisfarne i requisiti e gli strumenti progettuali utili a definire il perimetro di progetto e a raggiungere gli obiettivi e gli standard di qualità nazionali. 
+            Il corso introduce il quadro normativo e le indicazioni da seguire per progettare e realizzare servizi pubblici digitali e i loro punti di contatto con l’utenza. Verranno illustrate le linee guida, le attività necessarie per soddisfarne i requisiti e gli strumenti progettuali utili a definire il perimetro di progetto e a raggiungere gli obiettivi e gli standard di qualità nazionali. 
 
-             Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**. 
+            Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -220,14 +223,13 @@ components:
           title: Durata #C
           text: | #C
             3 ore
-            
+
         # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Certificazione #C
           text: | #C
             Il corso prevede un quiz di valutazione finale per il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
-                  
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -243,7 +245,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Norme e Linee guida: per realizzare siti e servizi digitali conformi"
         text: | #C
@@ -260,7 +261,7 @@ components:
       # CARD CHILDREN
       - title: "Il manuale operativo: per rendere concrete le Linee guida di design"
         text: | #C
-          Approfondisci gli elementi necessari per impostare un progetto di trasformazione digitale, dalla definizione del perimetro e del processo progettuale all'individuazione delle competenze e delle risorse necessarie. Scopri il Manuale operativo di design e gli aspetti chiave da considerare per organizzare e gestire un progetto in modo efficace. 
+          Approfondisci gli elementi necessari per impostare un progetto di trasformazione digitale, dalla definizione del perimetro e del processo progettuale all'individuazione delle competenze e delle risorse necessarie. Scopri il Manuale operativo di design e gli aspetti chiave da considerare per organizzare e gestire un progetto in modo efficace.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -282,13 +283,12 @@ components:
         moreInfo: "Docente: Ilaria Scarpellini"
         tag:
           label: Intervista #C
-     
-              
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-# —
+  sectionsEditorial2:
+    # —
     # EDITORIAL #C #I
     # —
     - title: Segui il corso #C
@@ -299,22 +299,21 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-      
         # TXT BLOCK
         - name: TextImageCta
           # title: Segui il corso #C
           headingLevel: 2
           text: | #C
-            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.  
+            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.
           ctas:
-          - label: "Accedi al corso" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.accademiacomunidigitali.it/enrol/index.php?id=79 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Accedi al corso" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.accademiacomunidigitali.it/enrol/index.php?id=79 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

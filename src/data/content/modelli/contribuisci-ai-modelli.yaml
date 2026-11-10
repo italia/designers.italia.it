@@ -35,14 +35,15 @@ components:
     subtitle: Partecipa all'evoluzione dei modelli di sito e servizi della Pubblica Amministrazione
     tag:
       label: Modelli #C
-      
+
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
-    text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
-     # KANGAROO: METADATA
+    text:
+      "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
+      # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -70,7 +71,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -93,32 +94,35 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Modelli di sito, Modelli di servizi, Interfaccia utente, Sviluppo interfaccia]
+      tags:
+        [
+          Modelli di sito,
+          Modelli di servizi,
+          Interfaccia utente,
+          Sviluppo interfaccia,
+        ]
 
   sectionsEditorial:
-
-            
     - centered: true
       noSpace: false
       title: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta
       text: La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
       background: null
       components:
-
         # - name: TextImageCta
         #   noSpace: true
-        #   text: | 
+        #   text: |
         #     La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
-    # - fullColumn: true
-    #   noSpace: true
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/design-system/schema-come-partecipo.png
-    #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina. 
-    # - centered: true
-    #   noSpace: true
-    #   background: null
-    #   components:
+        # - fullColumn: true
+        #   noSpace: true
+        #   components:
+        #     - name: ImgFull
+        #       img: /images/design-system/schema-come-partecipo.png
+        #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina.
+        # - centered: true
+        #   noSpace: true
+        #   background: null
+        #   components:
 
         - name: TextImageCta
           title: "Perché contribuire?"
@@ -133,18 +137,18 @@ components:
           noSpace: false
           text: |
             Partecipare a discussioni, aprire segnalazioni e inviare contributi per la **documentazione**, l'**architettura dell'informazione**, le **risorse di design** e le **risorse di sviluppo**.
-            
+
             Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alla partecipazione a discussioni su modifiche futuribili, come contributor puoi prendere parte al miglioramento continuo dei modelli di sito e servizi per la PA.
-            
+
             Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback.
-            
+
             Quando una persona della community contribuisce ai modelli ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione.
 
         - name: TextImageCta
           title: Invia i tuoi contributi
           headingLevel: 3
           noSpace: true
-          ctas: 
+          ctas:
             - label: "Scopri come contribuire" #C
               screenReaderText: ""
               url: "/modelli/contribuisci-ai-modelli/come-contribuire-ai-modelli/" #M

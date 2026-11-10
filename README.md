@@ -1,6 +1,6 @@
 # 🖖 Sorgente del sito Designers Italia
 
-*[English version / Versione inglese](README-EN.md)*
+_[English version / Versione inglese](README-EN.md)_
 
 Questo repository contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il progetto che mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione.
 
@@ -43,7 +43,7 @@ npm i
 npm run dev
 ```
 
-   Il sito ora è disponibile su [http://localhost:8000](http://localhost:8000)!
+Il sito ora è disponibile su [http://localhost:8000](http://localhost:8000)!
 
 3. **Prepara le anteprime del design system**
 
@@ -61,7 +61,7 @@ npm run prepare-content
 npm run build
 ```
 
-   Il sito generato staticamente viene posizionato nella directory `public`.
+Il sito generato staticamente viene posizionato nella directory `public`.
 
 5. **Valida il tuo lavoro**
 
@@ -75,7 +75,7 @@ npm run lint:fix
 npm run prettier:fix
 ```
 
-6. **Deployment e processi automatici (solo maintainer)**  
+6. **Deployment e processi automatici (solo maintainer)**
 
    - **Aggiornamento Bootstrap Italia**: L'azione `bsi-update` aggiorna automaticamente Bootstrap Italia e rigenera le anteprime dei componenti nelle schede del Design system (giornaliera o manuale).
 

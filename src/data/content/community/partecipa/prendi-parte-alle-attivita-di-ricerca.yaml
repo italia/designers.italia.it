@@ -46,13 +46,13 @@ kangaroo:
         label: Partecipa #C
         url: "../" #M
       #- title: Nella scheda operativa #C
-        #icon:
-          #icon: "sprites.svg#it-tool"
-          #size: "sm"
-          #color: "secondary"
-          #align: "middle"
-        #label: Adotta il modello di sito comunale #C
-        #url: "../" #M
+      #icon:
+      #icon: "sprites.svg#it-tool"
+      #size: "sm"
+      #color: "secondary"
+      #align: "middle"
+      #label: Adotta il modello di sito comunale #C
+      #url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
 #     prev:
@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -98,14 +97,14 @@ components:
       #label: Attività del modello #C
       #addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
+    #Lorem **ipsum**
     img: /images/community/icons/partecipa-ricerca.svg #I
-  # alt: descrizione immagine #C
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -124,33 +123,33 @@ components:
             label: Partecipa #C
             url: "../" #M
           #- title: Nella scheda operativa
-            #icon:
-              #icon: "sprites.svg#it-tool"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Adotta il modello di sito comunale #C
-            #url: "../" #M
+          #icon:
+          #icon: "sprites.svg#it-tool"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Adotta il modello di sito comunale #C
+          #url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           #- title: Sei
-            #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
-            #icon:
-              #icon: "sprites.svg#it-user"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Designer, Project manager #C
+          #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+          #icon:
+          #icon: "sprites.svg#it-user"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Designer, Project manager #C
           - title: Vuoi
             tooltip: "Obiettivi per cui sono utili i contenuti di questa pagina"
             icon:
@@ -162,17 +161,15 @@ components:
       #tagsLabel: Parliamo di
       #color: secondary
       #icon:
-        #icon: sprites.svg#it-horn
-        #size: sm
-        #color: secondary
+      #icon: sprites.svg#it-horn
+      #size: sm
+      #color: secondary
       #tags: [Analisi del contesto,Pianificazione]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: La tua opinione può aiutarci a migliorare i servizi pubblici digitali #C
       menu: false
       centered: true
@@ -180,7 +177,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: La tua opinione può aiutarci a migliorare i servizi pubblici digitali #C
@@ -199,8 +195,6 @@ components:
 
             - questionari e indagini online.
 
-
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -210,18 +204,18 @@ components:
           headingLevel: 3
           text: | #C
             Per dare la tua disponibilità a partecipare, compila un breve form di 3 minuti e rispondi ad alcune domande su di te. 
-            
+
             Le informazioni che ti chiediamo ci serviranno per includere, nella progettazione dei servizi digitali pubblici, le esigenze di persone con un’ampia varietà di caratteristiche e per contattarti soltanto in caso di attività pertinenti con il tuo profilo. Potrai sempre scegliere liberamente a quali attività partecipare.
-            
+
           ctas:
-          - label: Compila il form #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://ec.europa.eu/eusurvey/runner/Partecipa-alle-attivita-di-ricerca-di-Designers-Italia #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Compila il form #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://ec.europa.eu/eusurvey/runner/Partecipa-alle-attivita-di-ricerca-di-Designers-Italia #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

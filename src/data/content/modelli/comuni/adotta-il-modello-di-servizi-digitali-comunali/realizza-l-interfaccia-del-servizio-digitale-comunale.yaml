@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,16 +95,16 @@ components:
     subtitle: Assembla il front-end e rendi fruibile il servizio digitale comunale ai cittadini #C
     tag:
       label: "Attività del modello" #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
-  # img: /images/400x300.png #I
-  # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -132,17 +131,17 @@ components:
             label: Adotta il modello di servizi digitali comunali #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -165,14 +164,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Sviluppo interfaccia,Adozione modelli]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Le librerie dei componenti, moduli e sezioni #C
       menu: false
       centered: true
@@ -180,9 +177,8 @@ components:
       #text: | #C
 
       components:
-
         - name: TextImageCta
-          title: 
+          title:
           headingLevel: 2
           # noSpace: true
           text: | #C
@@ -211,7 +207,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Libreria componenti UI #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "Tutti i componenti per realizzare l'interfaccia grafica dei servizi digitali." #C
             url: https://github.com/italia/design-comuni-ui-kit #M
@@ -222,7 +218,7 @@ components:
                 ariaLabel: "Libreria componenti UI (si apre in una nuova finestra)" #C
                 blank: true
           - label: Libreria dei moduli e delle sezioni - GitHub #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Tutti i componenti per assemblare un flusso di servizio. #C
             url: https://github.com/italia/design-comuni-ui-kit?tab=readme-ov-file#ui-kit-per-il-modello-di-sito-dei-comuni-italiani #M
@@ -233,9 +229,9 @@ components:
                 ariaLabel: "Libreria dei moduli e delle sezioni - GitHub (si apre in una nuova finestra)" #C
                 blank: true
           - label: Design system .italia #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre nella stessa tab) # FOR SCREEN READER ARIA LABEL
-            text: Indicazioni e risorse per progettare e realizzare interfacce di qualità, efficienti e accessibili.  #C
+            text: Indicazioni e risorse per progettare e realizzare interfacce di qualità, efficienti e accessibili. #C
             url: "/design-system/" #M
             blank: true
             actions:
@@ -244,9 +240,9 @@ components:
                 ariaLabel: "Design system Italia (si apre nella stessa tab)" #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Anteprime dei template HTML per i servizi digitali comunali #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia.  #C
+            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia. #C
             url: https://italia.github.io/design-comuni-pagine-statiche/servizi/index.html #M
             blank: true
             actions:
@@ -256,7 +252,7 @@ components:
                 blank: true
 
           - label: Sorgenti dei template HTML per i servizi digitali comunali #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il repository GitHub con il codice sorgente. #C
             url: https://github.com/italia/design-comuni-pagine-statiche #M
@@ -266,4 +262,3 @@ components:
                 url: https://github.com/italia/design-comuni-pagine-statiche #M
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML per i servizi digitali comunali (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-

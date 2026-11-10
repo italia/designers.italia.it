@@ -85,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -95,7 +94,7 @@ components:
     subtitle: Svolgi un'attività di card sorting per raggruppare e ordinare i contenuti del sito o servizio in categorie che hanno senso per gli utenti #C
     tag:
       label: Kit di design #C
-      
+
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -113,22 +112,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-        - title: Ti trovi nella fase #C
-          icon:
-            icon: "sprites.svg#it-folder"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: Progettare #C
-          url: "../../" #M
-        - title: Nel kit di design #C
-          icon:
-            icon: "sprites.svg#it-tool"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: "Architettura dell'informazione" #C
-          url: "../" #M
+          - title: Ti trovi nella fase #C
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare #C
+            url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Architettura dell'informazione" #C
+            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -141,7 +140,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -164,14 +163,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Contenuti e linguaggio]
+      tags: [Architettura informazione, Contenuti e linguaggio]
 
   ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Come catalogare e raggruppare i contenuti con il card sorting #C
       menu: false
       centered: true
@@ -179,19 +176,17 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
             Una volta individuati i contenuti e le funzioni per il sito o servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggrupparli e ordinarli in categorie che hanno senso per gli utenti**, così da costruire e/o consolidare l’architettura dell’informazione del sito o servizio digitale.
-            
-            Il card sorting ti permette, infatti, di scoprire come ragionano gli utenti, dove si aspettano di trovare determinati contenuti e quali tipologie di contenuto percepiscono come affini. Con queste informazioni puoi poi procedere a definire l'alberatura (ovvero la struttura) di un sito o servizio e/o eventuali tassonomie per categorizzare i contenuti e renderli facilmente trovabili dalle persone.
-            
-            Nel *card sorting chiuso*, i partecipanti all'attività organizzano i contenuti in categorie preimpostate (utile per aggiungere contenuti ad architetture già esistenti), mentre nel *card sorting aperto*, sono loro a creare le categorie e a dargli un nome (utile per progettare architetture da zero).
-            
-            Gli strumenti a disposizione ti aiutano a organizzare e svolgere un'attività di card sorting sia online che in presenza.
 
+            Il card sorting ti permette, infatti, di scoprire come ragionano gli utenti, dove si aspettano di trovare determinati contenuti e quali tipologie di contenuto percepiscono come affini. Con queste informazioni puoi poi procedere a definire l'alberatura (ovvero la struttura) di un sito o servizio e/o eventuali tassonomie per categorizzare i contenuti e renderli facilmente trovabili dalle persone.
+
+            Nel *card sorting chiuso*, i partecipanti all'attività organizzano i contenuti in categorie preimpostate (utile per aggiungere contenuti ad architetture già esistenti), mentre nel *card sorting aperto*, sono loro a creare le categorie e a dargli un nome (utile per progettare architetture da zero).
+
+            Gli strumenti a disposizione ti aiutano a organizzare e svolgere un'attività di card sorting sia online che in presenza.
 
   # ///////////////////
   # RESOURCES
@@ -216,7 +211,7 @@ components:
                 blank: false
           - label: Lavagna collaborativa di Card sorting per Tldraw #C
             srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Una lavagna collaborativa per svolgere card sorting da remoto su Tldraw #C
             url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.tldr #M
             blank: false
@@ -238,7 +233,7 @@ components:
                 blank: false
           - label: Card sorting in versione stampabile #C
             srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
             url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
             blank: false
@@ -247,4 +242,3 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
                 ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
-

@@ -66,7 +66,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -75,15 +74,15 @@ components:
     title: Realizzare #C
     subtitle: "Costruisci e sviluppa l'interfaccia utente con il design system .italia e metti online la tua soluzione digitale" #C
     tag:
-        label: Fase di progettazione  #C
-        
+      label: Fase di progettazione #C
+
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
-      Con la fase di realizzazione **costruisci l’interfaccia utente** e **sviluppi la soluzione progettata**. I kit di questa fase ti aiutano a creare prototipi ad alta fedeltà, sviluppare il front-end con componenti pronti all’uso e svolgere le attività operative necessarie per pubblicare un nuovo sito o aggiornarne uno esistente.    
+      Con la fase di realizzazione **costruisci l’interfaccia utente** e **sviluppi la soluzione progettata**. I kit di questa fase ti aiutano a creare prototipi ad alta fedeltà, sviluppare il front-end con componenti pronti all’uso e svolgere le attività operative necessarie per pubblicare un nuovo sito o aggiornarne uno esistente.
     img: /images/risorse-per-progettare/icons/realizzare-large.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -98,7 +97,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Sviluppo interfaccia,Esperienza utente]
+      tags:
+        [
+          Design system,
+          Interfaccia utente,
+          Sviluppo interfaccia,
+          Esperienza utente,
+        ]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -126,7 +131,6 @@ components:
   # ///////////////////
   # sectionsEditorial:
 
-
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
@@ -139,7 +143,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: Costruzione interfaccia #C
         imgRatio: 16x9
@@ -152,7 +155,7 @@ components:
         tag:
           label: Kit di design #C
 
-       # CARD CHILDREN
+        # CARD CHILDREN
       - title: Sviluppo interfaccia #C
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_webDevelopment.svg #I
@@ -164,7 +167,7 @@ components:
         tag:
           label: Kit di design #C
 
-       # CARD CHILDREN
+        # CARD CHILDREN
       - title: Migrazione sito #C
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_migrazione.svg #I
@@ -179,22 +182,21 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
+  sectionsEditorial2:
+    #  # —
+    #   # IMG FULL COVER
+    #   # —
+    #   - menu: false #TOGGLE RIGHT SECTION INDEX
+    #     background: null
+    #     full: true
+    #     noSpace: true
+    #     components:
+    #       # IMG
+    #       - name: ImageIcons
+    #         image: /images/image-icons-fullwidth.jpg #I
+    #         alt: Descrizione immagine grande #C
 
-  #  # —
-  #   # IMG FULL COVER
-  #   # —
-  #   - menu: false #TOGGLE RIGHT SECTION INDEX
-  #     background: null
-  #     full: true
-  #     noSpace: true
-  #     components:
-  #       # IMG
-  #       - name: ImageIcons
-  #         image: /images/image-icons-fullwidth.jpg #I
-  #         alt: Descrizione immagine grande #C
-
-  # —
+    # —
     # EDITORIAL #C #I
     # —
     - title: "Realizzare l’interfaccia di un sito o un servizio digitale"
@@ -205,10 +207,9 @@ components:
       text: | #C
         Facilita il design e lo sviluppo di siti e servizi in modo efficace usando le risorse del design system .italia
       components:
-
         # TXT BLOCK
         - name: TextImageCta
-          title: Un'esperienza coerente e inclusiva   #C
+          title: Un'esperienza coerente e inclusiva #C
           text: | #C
             In questa fase di progettazione, il focus è sulla costruzione del touchpoint digitale attraverso il quale l’utente interagisce con il servizio pubblico. Bisogna letteralmente comporre i blocchi dell’interfaccia utente dal punto di vista grafico, testare e sviluppare il cosiddetto codice ‘front-end’ del servizio. 
 
@@ -218,19 +219,19 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Design system .italia   #C
+          title: Design system .italia #C
           text: | #C
             Il sito Designers Italia ospita infatti la documentazione del design system del Paese: l'ecosistema di risorse già pronte per il design e lo sviluppo di interfacce semplici e accessibili, a cui fanno riferimento le attività proposte nei kit di questa fase. 
 
             Design system .italia è il primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori, la base delle interfacce digitali dei servizi pubblici italiani.
           ctas:
-          - label: Vai al design system  #C
-            url: "/design-system/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al design system #C
+              url: "/design-system/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

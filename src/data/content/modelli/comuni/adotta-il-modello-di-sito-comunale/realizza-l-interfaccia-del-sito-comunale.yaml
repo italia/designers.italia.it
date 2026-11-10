@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,16 +95,16 @@ components:
     subtitle: Assembla l’interfaccia web e aggiungi i contenuti per dare forma al sito del Comune #C
     tag:
       label: Attività del modello #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
-  # img: /images/400x300.png #I
-  # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -132,17 +131,17 @@ components:
             label: Adotta il modello di sito comunale #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -165,23 +164,22 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-      
+  sectionsEditorial:
     - menu: false
       centered: true
       title: Le librerie di componenti e i layout di pagina
       background: null
       # text: |
-      
+
       components:
         # TXT BLOCK
         - name: TextImageCta
-          title: 
+          title:
           headingLevel: 2
           # noSpace: true
           text: | #C
@@ -202,7 +200,6 @@ components:
             Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
 
             I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le [Linee guida sull’accessibilità degli strumenti informatici](https://docs.italia.it/AGID/documenti-in-consultazione/lg-accessibilita-docs/).
-
 
         # TXT BLOCK
         - name: TextImageCta
@@ -226,7 +223,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Sito demo navigabile #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un esempio visivo e pratico del sito del Comune realizzato seguendo il modello. #C
             url: https://comuni.designers.italia.it #M
@@ -237,13 +234,12 @@ components:
                 ariaLabel: "Sito demo navigabile (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
-        
       - simpleList: true
         title: Libreria UI e layout hi-fi di pagina #C
         headingLevel: 3
         listItems:
           - label: Layout Hi-fi delle principali pagine del modello Comuni #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: I layout in alta definizione delle principali pagine del modello Comuni con i componenti già assemblati. #C
             url: https://www.figma.com/community/file/1262690210012419806/comuni-modello-sito-e-servizi #M
@@ -258,7 +254,7 @@ components:
                 ariaLabel: "Layout Hi-fi del modello Comuni - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Libreria dei componenti del modello Comuni #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Tutti i componenti per realizzare le interfacce del modello Comuni. #C
             url: https://github.com/italia/design-comuni-ui-kit/ #M
@@ -269,7 +265,7 @@ components:
                 ariaLabel: "Libreria dei componenti del modello Comuni - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Design system .italia #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre nella stessa tab) # FOR SCREEN READER ARIA LABEL
             text: Indicazioni e risorse per progettare e realizzare interfacce di qualità, efficienti e accessibili. #C
             url: "/design-system/" #M
@@ -278,16 +274,16 @@ components:
               - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: /design-system/ #M
                 ariaLabel: "Design system Italia (si apre nella stessa tab)" #C #COMPILE FOR EACH ITEM
-                blank: true         
-                
+                blank: true
+
       - simpleList: true
         title: Template HTML #C
         headingLevel: 3
         listItems:
           - label: Anteprime dei template HTML del sito comunale #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia.  #C
+            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia. #C
             url: https://italia.github.io/design-comuni-pagine-statiche/ #M
             blank: true
             actions:
@@ -296,9 +292,9 @@ components:
                 ariaLabel: "Anteprime dei template HTML del sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Sorgenti dei template HTML del sito comunale #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il repository GitHub con il codice sorgente.  #C
+            text: Il repository GitHub con il codice sorgente. #C
             url: https://github.com/italia/design-comuni-pagine-statiche #M
             blank: true
             actions:
@@ -307,13 +303,12 @@ components:
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML del sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
-
       - simpleList: true
         title: Temi CMS #C
         headingLevel: 3
         listItems:
           - label: Tema WordPress per il sito comunale #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il repository GitHub con il file e le istruzioni per l’installazione del tema. #C
             url: https://github.com/italia/design-comuni-wordpress-theme #M
@@ -325,7 +320,7 @@ components:
                 blank: true
 
           - label: Tema Drupal per il sito comunale #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "Il repository GitHub con il file e le istruzioni per l’installazione del tema." #C
             url: https://github.com/italia/design-comuni-drupal-theme #M
@@ -336,13 +331,10 @@ components:
                 ariaLabel: "Repository GitHub: Tema Drupal per il sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
-
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -354,7 +346,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C

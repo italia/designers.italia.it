@@ -1,34 +1,34 @@
 nav.breadcrumb {
-  font-size:1rem;
-  color: #2F475E;
+  font-size: 1rem;
+  color: #2f475e;
   .breadcrumb__list {
-    padding:.5em 0
+    padding: 0.5em 0;
   }
   .breadcrumb__list__item {
-      margin-right:.5rem;
-      margin-left:.5rem;
-      margin-bottom:.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .breadcrumb__list__item:first-child {
     margin-left: 0;
   }
   a {
-      color: #5b6f82;
-      text-decoration: underline;
-      font-weight:600;
+    color: #5b6f82;
+    text-decoration: underline;
+    font-weight: 600;
   }
   a.breadcrumb__link__active {
-      font-weight:400;
-      text-decoration: none;
+    font-weight: 400;
+    text-decoration: none;
   }
 }
 
 .bg-primary {
-    nav.breadcrumb {
-        color: var(--breadcrumbs-bg-primary-color);
-        a {
-          color: var(--breadcrumbs-bg-primary-color); 
-        }
+  nav.breadcrumb {
+    color: var(--breadcrumbs-bg-primary-color);
+    a {
+      color: var(--breadcrumbs-bg-primary-color);
+    }
   }
 }
 

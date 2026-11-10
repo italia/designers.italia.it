@@ -84,7 +84,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -94,7 +93,7 @@ components:
     subtitle: "Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
     tag:
       label: Kit di design #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -133,7 +132,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -156,7 +155,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Data driven design,Analytics]
+      tags: [Data driven design, Analytics]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -180,8 +179,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -192,7 +190,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -206,17 +203,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulla web analytics e su come una lettura sistematica dei dati può migliorare la comprensione dei comportamenti online degli utenti e quindi migliorare la qualità dei servizi digitali.
           ctas:
-          - label: "Vai all'argomento Introduzione alla web analytics" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/ricerca-progettuale/ricerca-primaria/web-analytics.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Introduzione alla web analytics" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/ricerca-progettuale/ricerca-primaria/web-analytics.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -236,7 +233,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: Monitora la tua soluzione digitale #C
         fullHeight: true

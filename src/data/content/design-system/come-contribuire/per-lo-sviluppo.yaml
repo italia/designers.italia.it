@@ -42,9 +42,9 @@ components:
         size: sm
       text: In breve
     text: |
-      Se ti occupi di sviluppo software puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse. 
+      Se ti occupi di sviluppo software puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -72,7 +72,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -95,19 +95,17 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+      tags: [Design system, Interfaccia utente, Sviluppo interfaccia]
 
   sectionsEditorial:
-
     - full: true
       noSpace: false
       paddingLeft: true
       title: Contribuisci a Bootstrap Italia e al suo ecosistema di risorse
-      text: | 
-        Il kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali. 
+      text: |
+        Il kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali.
       background: null
       components:
-
         - name: TextImageCta
           noSpace: false
           headingLevel: 3
@@ -115,7 +113,7 @@ components:
             Puoi partecipare a discussioni, aprire segnalazioni e inviare contributi alla principale risorsa di sviluppo **Bootstrap Italia**, inclusa la versione 3 attualmente in beta, ed a **Dev Kit Italia**, il nuovo kit basato su web component nativi attualmente in fase beta. È inoltre possibile collaborare al lavoro di integrazione di **Design Tokens Italia** e contribuire ai framework **React Kit** e **Angular Kit** che implementano Bootstrap Italia.
 
             Premessa importante: assicurati di conoscere i [fondamenti del design system del Paese](/design-system/fondamenti/) e [le risorse per sviluppatori](/design-system/come-iniziare/per-sviluppatori/).
-          ctas: 
+          ctas:
             - label: "Conosci il modello di contribuzione?" #C
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
               blank: false #M #C true if new tab for external links
@@ -132,8 +130,8 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Controlla se esiste già una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai alla segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di sviluppo sul tema scopri di seguito come inviare contributi e proponilo nella discussione.  
-          ctas: 
+            Controlla se esiste già una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai alla segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di sviluppo sul tema scopri di seguito come inviare contributi e proponilo nella discussione.
+          ctas:
             - label: "Discussioni su Bootstrap Italia" #C
               screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/bootstrap-italia/issues #M
@@ -173,8 +171,8 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Se il tema di tuo interesse non è nella lista, puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tuo contributo. 
-          ctas: 
+            Se il tema di tuo interesse non è nella lista, puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tuo contributo.
+          ctas:
             - label: "Nuova segnalazione Bootstrap Italia" #C
               screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/bootstrap-italia/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
@@ -213,7 +211,7 @@ components:
           title: Invia un contributo di sviluppo
           noSpace: true
           headingLevel: 3
-          text: | 
+          text: |
             Puoi inviare un contributo diretto di sviluppo utilizzando un [flow semplificato](https://github.com/italia/bootstrap-italia/blob/main/CONTRIBUTING.md#lavorazione-di-una-issue) rispetto a un Git-flow standard.
         - name: TextImageCta
           title: Per Bootstrap Italia
@@ -223,14 +221,14 @@ components:
             Il repository contiene i sorgenti del framework di sviluppo e i sorgenti del sito di [documentazione dedicato agli sviluppatori](https://italia.github.io/bootstrap-italia/). 
 
             Puoi proporre modifiche, correzioni o integrazioni al framework e al sito di documentazione dedicato:
-            
+
             1. apri prima una segnalazione, o proponi il contributo nei commenti a una discussione già esistente sul tema di interesse, evidenziando intenzioni e possibilità
             2. parti sempre da un fork del repository [/italia/bootstrap-italia](https://github.com/italia/bootstrap-italia); se vuoi contribuire alla versione 3 in beta, lavora sul branch [3.x](https://github.com/italia/bootstrap-italia/tree/3.x)
             3. proponi le tue modifiche aprendo una pull request
             4. indica la pull request nella segnalazione aperta al punto 1 o in un commento dedicato
-            
-            Nelle lavorazioni poni attenzione al rispetto dei fondamenti del design system del Paese. Può esserti utile il "workflow per migliorare lo sviluppo dei componenti" del [fondamento accessibilità](/design-system/fondamenti/accessibilita/). 
-          ctas: 
+
+            Nelle lavorazioni poni attenzione al rispetto dei fondamenti del design system del Paese. Può esserti utile il "workflow per migliorare lo sviluppo dei componenti" del [fondamento accessibilità](/design-system/fondamenti/accessibilita/).
+          ctas:
             - label: "Approfondisci il Fondamento accessibilità" #C
               url: "/design-system/fondamenti/accessibilita/" #M
               blank: false #M #C true if new tab for external links
@@ -254,7 +252,7 @@ components:
             2. parti sempre da un fork del repository [italia/design-tokens-italia](https://github.com/italia/design-tokens-italia)
             3. proponi le tue modifiche aprendo una pull request
             4. indica la pull request nella segnalazione aperta al punto 1 o in un commento dedicato
-          ctas: 
+          ctas:
             - label: "Approfondisci il Fondamento Design Tokens" #C
               url: "/design-system/fondamenti/design-tokens/" #M
               blank: false #M #C true if new tab for external links
@@ -270,10 +268,9 @@ components:
       noSpace: true
       paddingLeft: true
       title: "Contribuisci a React Kit e Angular Kit"
-      text: | 
-       Partecipa all'evoluzione dei due framework che implementano il design system in React e Angular. 
+      text: |
+        Partecipa all'evoluzione dei due framework che implementano il design system in React e Angular.
       background: null
-      
       components:
         - name: TextImageCta
           noSpace: false
@@ -287,7 +284,7 @@ components:
           headingLevel: 3
           text: |
             Puoi seguire i lavori in corso e contribuire nel [repository React Kit](https://github.com/italia/design-react-kit/).
-          ctas: 
+          ctas:
             - label: "Discussioni su React Kit" #C
               screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-react-kit/issues #M
@@ -317,7 +314,7 @@ components:
           headingLevel: 3
           text: |
             Puoi seguire i lavori in corso e contribuire nel [repository Angular Kit](https://github.com/italia/design-angular-kit/).
-          ctas: 
+          ctas:
             - label: "Discussioni su Angular Kit" #C
               screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-angular-kit/issues #M

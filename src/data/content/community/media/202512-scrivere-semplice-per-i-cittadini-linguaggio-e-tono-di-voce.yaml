@@ -12,7 +12,7 @@ seo:
   image: https://designers.italia.it/images/community/media-thumbnails/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.png
   canonical: null
   pathname: /community/media/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce/
-  
+
 kangaroo:
   navposition:
     id: kangEnd
@@ -34,7 +34,6 @@ components:
     subtitle: "Come rendere i contenuti della PA più chiari, utili e accessibili attraverso scelte di linguaggio consapevoli"
     tag:
       label: Video - Webinar
-      
 
     kangaroo:
       id: kangarooExample
@@ -46,14 +45,22 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione contenuti, Progettazione servizi, Design system, Contenuti e linguaggio, Accessibilità, Microtesti, Tono di voce]
+      tags:
+        [
+          Progettazione contenuti,
+          Progettazione servizi,
+          Design system,
+          Contenuti e linguaggio,
+          Accessibilità,
+          Microtesti,
+          Tono di voce,
+        ]
 
   sectionsEditorial:
-
     # FORMATO VIDEO DEFAULT
     - fullColumn: false # fullwidth vs normal
       full: true # large column vs normal
-      noSpace: false 
+      noSpace: false
       centered: true
       background: medium
       components:
@@ -66,25 +73,25 @@ components:
           trascriptionLabel: "Trascrizione"
           trascriptionLabelEN: "Transcription"
           trascription: |
-            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=wH7_T2fAXjw)            
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=wH7_T2fAXjw)
 
-    - noSpace: false 
+    - noSpace: false
       centered: true
       components:
         - name: TextImageCta
-          # title: 
+          # title:
           text: |
             Questo webinar è stato realizzato in collaborazione con ANCI nell’ambito di un percorso condiviso di formazione e accompagnamento rivolto alle Pubbliche Amministrazioni locali, con l’obiettivo di rafforzare le competenze di chi progetta e gestisce siti e servizi pubblici.
 
             Durante l’incontro parliamo dell'importanza del **linguaggio** e del **tono di voce** per realizzare servizi digitali pubblici semplici, inclusivi e coerenti. A partire da esempi concreti, affrontiamo temi come la semplificazione dei testi, l’uso di parole comprensibili, la struttura delle informazioni e le scelte di stile più adatte ai contesti della PA.
           #ctas:
           #- label: Vai al design system .italia #C
-            #url: "/design-system/" #M
-            #blank: false #M #C true if new tab for external links
-            #icon:
-              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2 
+          #url: "/design-system/" #M
+          #blank: false #M #C true if new tab for external links
+          #icon:
+          #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+          #color: primary
+          #align: middle
+          #hidden: true
+          #size: sm
+          #addonClasses: ms-2

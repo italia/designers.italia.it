@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,16 +95,16 @@ components:
     subtitle: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito per i musei civici #C
     tag:
       label: Attività del modello #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
-  # img: /images/400x300.png #I
-  # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -132,17 +131,17 @@ components:
             label: Adotta il modello di sito per i musei civici #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -165,21 +164,18 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Analisi del contesto,Pianificazione,Adozione modelli]
+      tags: [Analisi del contesto, Pianificazione, Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Le risorse per preparare il lavoro #C
       menu: false
       centered: true
       background: null
       #text: | #C
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -198,7 +194,6 @@ components:
 
             Puoi usare il [Modello di analisi dei contenuti (ODS 42KB)](/files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-Modello-analisi-contenuti.ods) di Designers Italia per creare una lista di tutte le pagine del vecchio sito, indicando le struttura gerarchica e le URL. Passa quindi in rassegna le pagine del vecchio sito, aiutandoti con strumenti per l’analisi dei dati come [Web Analytics Italia](https://webanalytics.italia.it/) e segna quali sono le pagine più visitate, i contenuti più efficaci per gli utenti ed eventuali problematiche come dati mancanti o incorretti.
 
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -209,17 +204,17 @@ components:
           text: | #C
             Consulta la struttura del nuovo sito sul [Grafico dell’alberatura (PDF 3.4MB)](/files/resources/modelli/musei-civici/Alberatura-ModelloMusei-DesignersItalia.pdf) e affiancala a quella del vecchio, cercando il più possibile di far corrispondere una ad una le pagine (corrispondenza biunivoca). A ogni pagina, assegna la corretta Tipologia di contenuto dal Documento di architettura ([Versione ODS 82KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.ods), [Versione XLSX 216KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.xlsx)).
           ctas:
-          - label: Scopri di più sulla struttura e le sezioni del modello #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-musei-docs/it/versione-corrente/architettura-informazione/struttura-sito.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri di più sulla struttura e le sezioni del modello #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-musei-docs/it/versione-corrente/architettura-informazione/struttura-sito.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT BLOCK
         - name: TextImageCta
@@ -232,7 +227,7 @@ components:
             È utile pianificare in anticipo e stabilire in questa fase se l’aggiornamento e la compilazione dei contenuti del sito verrà effettuata tramite codice o content management system (sistema di gestione contenuti, CMS).
 
             La scelta di CMS, come previsto dagli articoli 68 e 69 del Codice dell’Amministrazione Digitale (CAD), dovrebbe principalmente riguardare software a riuso oppure open source. Sul [Catalogo del software della PA](https://developers.italia.it/it/search?type=software_reuse&sort_by=release_date&page=0) è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.
-      
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -257,7 +252,7 @@ components:
                 blank: false
 
           - label: Grafico dell'alberatura - Musei civici (PDF 3.4MB) #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il grafico che illustra la struttura e la posizione delle pagine del sito di un museo civico. #C
             url: /files/resources/modelli/musei-civici/Alberatura-ModelloMusei-DesignersItalia.pdf #M
@@ -293,7 +288,7 @@ components:
                 blank: false
 
           - label: Catalogo del software della PA (Catalogo del riuso) #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni. #C
             url: https://developers.italia.it/it/search?type=software_reuse&sort_by=release_date&page=0 #M

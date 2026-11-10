@@ -85,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -95,7 +94,7 @@ components:
     subtitle: Imposta la struttura del sito o servizio digitale, le principali tipologie di contenuto ed eventuali sistemi di categorizzazione dei contenuti #C
     tag:
       label: Kit di design #C
-      
+
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -113,22 +112,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-        - title: Ti trovi nella fase #C
-          icon:
-            icon: "sprites.svg#it-folder"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: Progettare #C
-          url: "../../" #M
-        - title: Nel kit di design #C
-          icon:
-            icon: "sprites.svg#it-tool"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: "Architettura dell'informazione" #C
-          url: "../" #M
+          - title: Ti trovi nella fase #C
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare #C
+            url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Architettura dell'informazione" #C
+            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -141,7 +140,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -164,14 +163,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Contenuti e linguaggio]
+      tags: [Architettura informazione, Contenuti e linguaggio]
 
   ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Come finalizzare l'architettura di un sito o servizio #C
       menu: false
       centered: true
@@ -179,7 +176,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           # title: A cosa servono h3 #C
@@ -193,9 +189,6 @@ components:
             3. Infine, definisci le **tassonomie**, i sistemi di classificazione che permettono di etichettare e organizzare i contenuti (come categorie o tag), facilitando la ricerca e la navigazione. Ricorda, prima di crearne nuove, di controllare se esistono [vocabolari controllati già definiti su schema.gov.it](https://schema.gov.it/search?type=CONTROLLED_VOCABULARY&sortBy=TITLE&direction=ASC).
 
             Le risorse di questa attività ti permettono di formalizzare l'architettura del sito o servizio che stai progettando e di annotare le scelte progettuali in documenti facili da consultare.
-
-            
-
 
   # ///////////////////
   # RESOURCES
@@ -220,7 +213,7 @@ components:
                 blank: false
           - label: Alberatura grafica per Tldraw #C
             srBefore: "Scarica Tldraw Alberatura" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Uno strumento per creare il grafico che illustra l'architettura di un sito o servizio con Tldraw #C
             url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/definisci-alberatura-content-type-e-tassonomie/DI-Alberatura.tldr #M
             blank: false
@@ -240,5 +233,3 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/definisci-alberatura-content-type-e-tassonomie/DI-Architettura-Informazione.ods #M
                 ariaLabel: "Scarica ODS Documento di architettura dell'informazione" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-

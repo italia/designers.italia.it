@@ -79,7 +79,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -89,7 +88,7 @@ components:
     subtitle: Realizza il punto di contatto tra i musei civici e i visitatori #C
     tag:
       label: Scheda operativa #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -128,7 +127,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -151,7 +150,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
+      tags:
+        [
+          Architettura informazione,
+          Progettazione contenuti,
+          Modelli di sito,
+          Adozione modelli,
+        ]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -174,12 +179,10 @@ components:
             - url: "realizza-l-interfaccia-del-sito-del-museo-civico/"
               label: "Realizza l'interfaccia" #C
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -190,7 +193,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -205,29 +207,29 @@ components:
 
             L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’**esperienza coerente tra le varie amministrazioni**.
           ctas:
-          - label: Naviga un esempio di sito desktop #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1595-132414&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down-width&page-id=54%3A17335&starting-point-node-id=1595%3A132414 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Naviga un esempio di sito mobile #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1665-151326&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down&page-id=1665%3A126017&starting-point-node-id=1665%3A151326 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
+            - label: Naviga un esempio di sito desktop #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1595-132414&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down-width&page-id=54%3A17335&starting-point-node-id=1595%3A132414 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Naviga un esempio di sito mobile #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1665-151326&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down&page-id=1665%3A126017&starting-point-node-id=1665%3A151326 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -243,17 +245,17 @@ components:
 
             Per facilitare il lavoro, consigliamo di leggere la documentazione operativa che spiega nel dettaglio le scelte progettuali alla base del modello e come usare le risorse.
           ctas:
-          - label: Vai alla documentazione operativa #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-musei-docs/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla documentazione operativa #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-musei-docs/ #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -270,19 +272,17 @@ components:
 
             Sono presenti, inoltre, norme, leggi e linee guida che vanno rispettate nella progettazione, realizzazione e implementazione di siti e servizi pubblici digitali.
           ctas:
-          - label: Scopri tutte le norme e i requisiti legali #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-musei-docs/it/versione-corrente/adesione-modello.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    
+            - label: Scopri tutte le norme e i requisiti legali #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-musei-docs/it/versione-corrente/adesione-modello.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -297,7 +297,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "1. Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
@@ -316,8 +315,8 @@ components:
         imgRatio: 16x9
         fullHeight: true
         rounded: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti-per-il-sito-del-museo-civico/" #M
         text: | #C
           Imposta la struttura informativa del sito del museo civico e organizza la migrazione dei contenuti dal vecchio al nuovo sito
@@ -329,22 +328,18 @@ components:
         imgRatio: 16x9
         rounded: true
         fullHeight: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-sito-del-museo-civico/" #M
         text: | #C
           Assembla l’interfaccia web del sito del museo civico con la libreria dei componenti UI o segui i layout già pronti
         tag:
           label: Attività del modello #C
 
-
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -355,7 +350,6 @@ components:
       text: | #C
         Scopri i canali dove confrontarti con la community di Designers Italia sulle risorse del modello
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/ItForum.svg #I
@@ -365,17 +359,17 @@ components:
           text: |
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-musei-civici #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Forum Italia #C
+              url: https://forum.italia.it/c/design/modello-musei-civici #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -386,17 +380,17 @@ components:
           text: |
             **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-modello-musei
           ctas:
-          - label: Vai su Slack #C
-            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Slack #C
+              url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -407,18 +401,17 @@ components:
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: Vai su GitHub #C
-            url: https://github.com/italia/  #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai su GitHub #C
+              url: https://github.com/italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Contribuisci al modello
@@ -426,14 +419,14 @@ components:
           text: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta, trasparente e basata sul contributo attivo della community che utilizza le risorse. #C
           noSpace: true
           ctas:
-          - label: Scopri come contribuire #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: /modelli/contribuisci-ai-modelli/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: md
-              addonClasses: ms-2
+            - label: Scopri come contribuire #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: /modelli/contribuisci-ai-modelli/ #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: md
+                addonClasses: ms-2
