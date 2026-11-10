@@ -39,15 +39,15 @@ components:
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
-   # pretext:
-   #   icon:
-   #     icon: sprites.svg#it-info-circle
-   #     size: sm
-   #   text: In breve
-   # text: |
-   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -75,7 +75,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -98,7 +98,15 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Accessibilità,Progettazione servizi,Accessibilità,Cultura progettuale,Progettazione interfaccia,Sviluppo interfaccia]
+      tags:
+        [
+          Accessibilità,
+          Progettazione servizi,
+          Accessibilità,
+          Cultura progettuale,
+          Progettazione interfaccia,
+          Sviluppo interfaccia,
+        ]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -121,44 +129,44 @@ components:
           text: |
             Abbiamo scelto di considerare l'**accessibilità by design** parte di ogni processo e risorsa del design system del Paese, non solo come un orizzonte ideale o una risposta alle norme. Nel design system trovi risorse quindi **accessibili by default** per PA e fornitori, da cui partire per realizzare siti e servizi facili da usare e inclusivi, con più efficacia, minor tempo e costi.
           ctas:
-          - label: "Approfondimento su Medium" #C
-            url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: "L'intervento agli Accessibility Days 2023" #C
-            url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche/" #M
-            screenReaderText: " (media)"
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Approfondimento su Medium" #C
+              url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "L'intervento agli Accessibility Days 2023" #C
+              url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche/" #M
+              screenReaderText: " (media)"
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
         - name: TextImageCta
           title: "Per cambiare la visione dell’accessibilità: da adempimento a opportunità"
           noSpace: true
           text: |
             Il design system del Paese, .italia, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente.
-          ctas: 
-          - label: "Vai al fondamento Princípi e intenzioni" #C
-            url: "/design-system/fondamenti/principi-e-intenzioni/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          ctas:
+            - label: "Vai al fondamento Princípi e intenzioni" #C
+              url: "/design-system/fondamenti/principi-e-intenzioni/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Identità
@@ -166,16 +174,16 @@ components:
           text: |
             La semplicità d’uso è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone.
           ctas:
-          - label: Vai al fondamento Identità #C
-            url: "/design-system/fondamenti/identita/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al fondamento Identità #C
+              url: "/design-system/fondamenti/identita/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Linee guida e criteri di successo
@@ -183,33 +191,33 @@ components:
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI CEI EN 301549:2021** (Requisiti di accessibilità per prodotti e servizi ICT), corrisponde ai **livelli “A” e “AA” della W3C Recommendation WCAG 2.1**.
           ctas:
-          - label: "Linee guida accessibilità" #C
-            url: "/normativa/linee-guida-accessibilita/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: "Specifica WCAG 2.1 in lingua italiana" #C
-            url: https://www.w3.org/Translations/WCAG21-it/ #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Linee guida accessibilità" #C
+              url: "/normativa/linee-guida-accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Specifica WCAG 2.1 in lingua italiana" #C
+              url: https://www.w3.org/Translations/WCAG21-it/ #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           noSpace: true
           text: |
             I **criteri di successo** oggetto di verifica previsti nelle WCAG 2.1 consistono in istruzioni testabili che non dipendono dalla tecnologia utilizzata. I criteri sono divisi in tredici linee guida che forniscono gli obiettivi e che rispondono a loro volta a livello più alto ai **quattro principi** che fanno da pilastri all'accessibilità del Web. 
-            
+
             Chiunque voglia utilizzare il Web deve disporre di contenuto che sia:
             1. **[Percepibile](https://www.w3.org/Translations/WCAG21-it/#perceivable) - Le informazioni e i componenti dell'interfaccia utente devono essere presentati agli utenti in modi in cui essi possano percepirli.**
                 - Questo significa che gli utenti devono essere in grado di percepire le informazioni presentate (non possono essere invisibili a tutti i loro sensi).
@@ -221,34 +229,34 @@ components:
                 - Questo significa che gli utenti devono essere in grado di accedere ai contenuti con il progredire delle tecnologie (con l'evoluzione delle tecnologie e degli interpreti, i contenuti devono rimanere accessibili).
 
         - name: TextImageCta
-          title: Nota sulle nuove WCAG 2.2 
+          title: Nota sulle nuove WCAG 2.2
           noSpace: true
           headingLevel: 4
           text: |
-            La **nuova versione delle WCAG 2.2 è una W3C Recommendation dal 5 ottobre 2023** che dichiara la **retrocompabilità con le WCAG 2.1**, ossia un contenuto conforme alle WCAG 2.2 è conforme anche alle WCAG 2.1, attualmente obbligo normativo secondo la UNI CEI EN 310549:2021. Si consiglia pertanto, ove possibile, di lavorare già in ottica WCAG 2.2 per avere una conformità con la norma tecnica attuale e con i dettami della futura norma tecnica armonizzata di recepimento dell'European Accessibility Act.  
+            La **nuova versione delle WCAG 2.2 è una W3C Recommendation dal 5 ottobre 2023** che dichiara la **retrocompabilità con le WCAG 2.1**, ossia un contenuto conforme alle WCAG 2.2 è conforme anche alle WCAG 2.1, attualmente obbligo normativo secondo la UNI CEI EN 310549:2021. Si consiglia pertanto, ove possibile, di lavorare già in ottica WCAG 2.2 per avere una conformità con la norma tecnica attuale e con i dettami della futura norma tecnica armonizzata di recepimento dell'European Accessibility Act.
           ctas:
-          - label: "Approfondimento su webaccessibile" #C
-            url: https://www.webaccessibile.org/comunicati/wcag-2-2-disponibili-in-lingua-italiana/ #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: "Specifica WCAG 2.2 in lingua italiana" #C
-            url: https://www.w3.org/Translations/WCAG22-it/ #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2         
+            - label: "Approfondimento su webaccessibile" #C
+              url: https://www.webaccessibile.org/comunicati/wcag-2-2-disponibili-in-lingua-italiana/ #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Specifica WCAG 2.2 in lingua italiana" #C
+              url: https://www.w3.org/Translations/WCAG22-it/ #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Profili coinvolti nella cura dell'accessibilità
@@ -258,14 +266,14 @@ components:
 
             I profili coinvolti nella cura dell'accessibilità, oltre gli esperti di dominio che indirizzano e validano il lavoro, sono tutti quelli coinvolti nelle diverse fasi del progetto digitale: **i responsabili progetto**, dalla raccolta dei requisiti alla validazione di processi e risultati; **i designer e gli sviluppatori** nel realizzare e manutenere progetti accessibili by design, definendo processi che abilitino il miglioramento continuo e testando fin dall'inizio del progetto; **la redazione** curando i contenuti nel tempo.
 
-            È quindi importante che tutti i profili coinvolti approfondiscano le norme, le specifiche tecniche di riferimento e le buone pratiche sul tema accessibilità per il proprio ambito di competenza, con particolare attenzione a **facilitare i passaggi di conoscenza tra le diverse fasi del progetto e tra le diverse competenze**. 
+            È quindi importante che tutti i profili coinvolti approfondiscano le norme, le specifiche tecniche di riferimento e le buone pratiche sul tema accessibilità per il proprio ambito di competenza, con particolare attenzione a **facilitare i passaggi di conoscenza tra le diverse fasi del progetto e tra le diverse competenze**.
 
         # - name: TextImageCta
         #   title: Consigli per il linguaggio
         #   noSpace: true
         #   text: |
         #     Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale.
-        #   ctas: 
+        #   ctas:
         #   - label: "Vai al fondamento Linguaggio" #C
         #     url: "/design-system/fondamenti/linguaggio/" #M
         #     blank: false #M #C true if new tab for external links
@@ -275,7 +283,7 @@ components:
         #       align: middle
         #       hidden: true
         #       size: sm
-        #       addonClasses: ms-2  
+        #       addonClasses: ms-2
 
         - name: TextImageCta
           noSpace: true
@@ -292,43 +300,42 @@ components:
       text: Processi e risorse per l'evoluzione del design system e del suo ecosistema di risorse
       background: null
       components:
-
         - name: TextImageCta
           noSpace: true
           title: "Lo stato di accessibilità dei componenti"
-          text: |          
+          text: |
             Nelle schede di documentazione dei [componenti](/design-system/componenti/) è prevista una tabella che riporta quattro valutazioni soggettive sull'accessibilità del componente e delle sue varianti nel framework di sviluppo Bootstrap Italia: 
               1. **Visivamente accessibile** - uso e contrasto colori, leggibilità
               2. **Amichevole con i lettori di schermo** - struttura titolazioni, etichette e testi alternativi
               3. **Navigabile** - focus, struttura, navigazione da tastiera o altri device
               4. **Comprensibile** - comprensibile, prevedibile, gestione semplice dell'errore
-            
+
             **Per svolgere i test è possibile isolare l'anteprima del componente in una finestra dedicata**, con il pulsante in alto a destra dell'anteprima. Questa funzionalità permette di giudicare le caratteristiche intrinseche del componente isolate dal contesto documentazione, semplificando la necessità di implementare ambienti di test ad hoc.
 
-            Puoi esplorare lo stato delle verifiche di accessibilità e coerenza per tutti i componenti nella [board dedicata su GitHub](https://github.com/orgs/italia/projects/32). 
+            Puoi esplorare lo stato delle verifiche di accessibilità e coerenza per tutti i componenti nella [board dedicata su GitHub](https://github.com/orgs/italia/projects/32).
           ctas:
-          - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
-            url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
-            screenReaderText: " (si apre in una nuova finestra)"
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: "Modello di contribuzione" #C
-            url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
+              url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
+              screenReaderText: " (si apre in una nuova finestra)"
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Modello di contribuzione" #C
+              url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Workflow per migliorare lo sviluppo dei componenti
@@ -394,14 +401,14 @@ components:
             - controllo testi alternativi (alt text);
             - controllo annuncio cambi dinamici del DOM (aria-live).
           ctas:
-          - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
-            url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
+              url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

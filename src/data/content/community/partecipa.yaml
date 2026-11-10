@@ -79,7 +79,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -119,24 +118,24 @@ components:
       otherInfo:
         items:
           #- title: Rispettando
-            #tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Linee guida di design #C
-            #url: "/normativa/linee-guida-di-design/" #M
+          #tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+          #icon:
+          #icon: "sprites.svg#it-pa"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Linee guida di design #C
+          #url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           #- title: Sei
-            #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
-            #icon:
-              #icon: "sprites.svg#it-user"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Designer, Developer, Qui per curiosità #C
+          #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+          #icon:
+          #icon: "sprites.svg#it-user"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Designer, Developer, Qui per curiosità #C
           - title: Vuoi
             tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
@@ -148,9 +147,9 @@ components:
       #tagsLabel: Parliamo di
       #color: secondary
       #icon:
-        #icon: sprites.svg#it-horn
-        #size: sm
-        #color: secondary
+      #icon: sprites.svg#it-horn
+      #size: sm
+      #color: secondary
       #tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
 
       # KANGAROO: CHILDREN SHORTCUTS
@@ -172,12 +171,10 @@ components:
             - url: "raccontaci-come-hai-usato-le-nostre-risorse/"
               label: "Raccontaci come hai usato le nostre risorse" #C
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -188,7 +185,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -197,10 +193,8 @@ components:
           #title: Partecipare per migliorare i servizi pubblici digitali #C
           text: | #C
             Crediamo nel valore del **design partecipato**, nella **condivisione di esperienze e competenze**, e nel **dialogo costante** per creare servizi pubblici digitali sempre più efficaci e vicini alle persone. 
-            
-            Entra a far parte anche tu di una community di cittadini e progettisti che collaborano, imparano insieme e generano innovazione continua.
 
-            
+            Entra a far parte anche tu di una community di cittadini e progettisti che collaborano, imparano insieme e generano innovazione continua.
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -215,7 +209,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Prendi parte alle attività di ricerca" #C
         imgRatio: 16x9
@@ -227,7 +220,7 @@ components:
         text: | #C
           Condividi la tua esperienza e le tue opinioni per aiutarci a migliorare i servizi pubblici digitali.
         #tag:
-          #label: Attività del modello #C
+        #label: Attività del modello #C
 
       # CARD CHILDREN ACTION
       - title: Segnala buoni esempi di progettazione e sviluppo nella PA #C
@@ -240,7 +233,7 @@ components:
         text: | #C
           Inviaci un sito, servizio o software che rappresenta un caso virtuoso di trasformazione digitale della Pubblica Amministrazione.
         #tag:
-          #label: Attività del modello #C
+        #label: Attività del modello #C
 
       # CARD CHILDREN ACTION
       - title: Scrivi un articolo di approfondimento #C
@@ -251,15 +244,14 @@ components:
         iconImgAlt: Illustrazione di un foglio con una matita #C
         url: "scrivi-un-articolo-di-approfondimento/" #M
         text: | #C
-          Condividi con la community la tua esperienza con la progettazione di servizi pubblici digitali. 
+          Condividi con la community la tua esperienza con la progettazione di servizi pubblici digitali.
         #tag:
-          #label: Attività del modello #C
+        #label: Attività del modello #C
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -270,7 +262,6 @@ components:
       text: | #C
         Scopri i canali dove confrontarti con la community di Designers Italia
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/ItForum.svg #I
@@ -280,17 +271,17 @@ components:
           text: |
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Forum Italia #C
+              url: https://forum.italia.it/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -301,17 +292,17 @@ components:
           text: |
             **Dialoga e collabora in tempo reale** con i designer e i maintainer sui canali Slack dedicati al #design
           ctas:
-          - label: Vai su Slack #C
-            url: https://slack.developers.italia.it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Slack #C
+              url: https://slack.developers.italia.it/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -322,15 +313,14 @@ components:
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: Vai su GitHub #C
-            url: https://github.com/italia/  #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai su GitHub #C
+              url: https://github.com/italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

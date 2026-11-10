@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,14 +95,14 @@ components:
     subtitle: Identifica le azioni che un utente compie per interagire con con un servizio digitale #C
     tag:
       label: Attività del kit #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
+    #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_prototipazione_flussi.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -143,7 +142,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,14 +165,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Progettazione servizi]
+      tags: [Progettazione interfaccia, Progettazione servizi]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: A cosa servono i flussi di interazione #C
       menu: false
       centered: true
@@ -181,7 +178,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -254,14 +250,11 @@ components:
           - label: Esempio di visualizzazione dei flussi #C
             url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
             srBefore: "Scarica immagine JPG " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Una immagine esempio di come realizzare una visualizzazione dei flussi comprensibile e utile #C
             blank: false
             actions:
-              - icon: sprites.svg#it-camera  #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-camera #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
-                ariaLabel: "Scarica immagine JPG Esempio di visualizzazione dei flussi"  #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Scarica immagine JPG Esempio di visualizzazione dei flussi" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-
-

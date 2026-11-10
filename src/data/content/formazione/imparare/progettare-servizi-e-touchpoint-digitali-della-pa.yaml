@@ -33,7 +33,7 @@ seo:
   image: https://designers.italia.it/images/formazione/social/DI-corso-anci-3.png #I
   canonical: null
   pathname: /formazione/imparare/progettare-servizi-e-touchpoint-digitali-della-pa/ #M
-  
+
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
 # ————————————————————————————————————————————
@@ -82,7 +82,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -92,7 +91,7 @@ components:
     subtitle: "Impara a realizzare interfacce utente usabili ed accessibili con il Design system .italia e i kit per lo sviluppo" #C
     tag:
       label: Corso di formazione #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -131,7 +130,7 @@ components:
       #       label: Linee guida di design #C
       #       url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -154,7 +153,15 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Formazione, Cultura progettuale, Progettazione servizi, Progettazione contenuti, Progettazione interfaccia, Sviluppo interfaccia]
+      tags:
+        [
+          Formazione,
+          Cultura progettuale,
+          Progettazione servizi,
+          Progettazione contenuti,
+          Progettazione interfaccia,
+          Sviluppo interfaccia,
+        ]
 
       # # KANGAROO: CHILDREN SHORTCUTS
       # dropdown:
@@ -178,13 +185,11 @@ components:
       #         label: Progettare servizi e touchpoint digitali della PA #C
       #       - url: "l-importanza-dei-dati-nella-PA/"
       #         label: L’importanza dei dati nella PA #C
-  
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -195,15 +200,14 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-             Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
+            Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
 
-             Il corso introduce il design system .italia, una risorsa open source che contiene indicazioni, regole, componenti e stack tecnologici da utilizzare per progettare e sviluppare servizi pubblici digitali usabili, accessibili e inclusivi.
+            Il corso introduce il design system .italia, una risorsa open source che contiene indicazioni, regole, componenti e stack tecnologici da utilizzare per progettare e sviluppare servizi pubblici digitali usabili, accessibili e inclusivi.
 
-             Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**. 
+            Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -221,14 +225,13 @@ components:
           title: Durata #C
           text: | #C
             3 ore
-            
+
         # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Certificazione #C
           text: | #C
             Il corso prevede un quiz di valutazione finale per il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
-
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -244,7 +247,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Progettare servizi e touchpoint digitali per la PA"
         text: | #C
@@ -261,7 +263,7 @@ components:
       # CARD CHILDREN
       - title: "Buone pratiche di sviluppo per costruire interfacce di qualità"
         text: | #C
-          Sviluppare interfacce accessibili e usabili su diversi dispositivi può essere una sfida, ma esistono strumenti collaborativi e risorse pronte all’uso che assicurano qualità e coerenza. Approfondisci le buone pratiche di sviluppo e come usare i kit tecnologici del design system .italia. 
+          Sviluppare interfacce accessibili e usabili su diversi dispositivi può essere una sfida, ma esistono strumenti collaborativi e risorse pronte all’uso che assicurano qualità e coerenza. Approfondisci le buone pratiche di sviluppo e come usare i kit tecnologici del design system .italia.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -274,7 +276,7 @@ components:
       # CARD CHILDREN
       - title: "Progettare contenuti semplici e intuitivi per le persone"
         text: | #C
-          I contenuti sono un elemento fondamentale dell’interfaccia perché “parlano” all’utente e guidano nell’esperienza del servizio stesso. Approfondisci come progettare testi e microtesti di interfaccia efficaci, accessibili e inclusivi per tutte le persone. 
+          I contenuti sono un elemento fondamentale dell’interfaccia perché “parlano” all’utente e guidano nell’esperienza del servizio stesso. Approfondisci come progettare testi e microtesti di interfaccia efficaci, accessibili e inclusivi per tutte le persone.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -296,12 +298,12 @@ components:
         moreInfo: "Relatore: Matteo Avesani"
         tag:
           label: Intervista #C
-     
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-# —
+  sectionsEditorial2:
+    # —
     # EDITORIAL #C #I
     # —
     - title: Segui il corso #C
@@ -312,23 +314,21 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-      
         # TXT BLOCK
         - name: TextImageCta
           # title: Segui il corso #C
           headingLevel: 2
           text: | #C
-            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.  
+            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.
           ctas:
-          - label: "Accedi al corso" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.accademiacomunidigitali.it/course/view.php?id=25 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-    
+            - label: "Accedi al corso" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.accademiacomunidigitali.it/course/view.php?id=25 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

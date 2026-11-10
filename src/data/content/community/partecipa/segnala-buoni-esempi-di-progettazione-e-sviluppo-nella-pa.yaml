@@ -21,7 +21,7 @@ metadata:
     name: level4
   redirect_from:
     - /community/partecipa/raccontaci-come-hai-usato-le-risorse-a-disposizione/
-    
+
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
@@ -48,13 +48,13 @@ kangaroo:
         label: Partecipa #C
         url: "../" #M
       #- title: Nella scheda operativa #C
-        #icon:
-          #icon: "sprites.svg#it-tool"
-          #size: "sm"
-          #color: "secondary"
-          #align: "middle"
-        #label: Adotta il modello di sito comunale #C
-        #url: "../" #M
+      #icon:
+      #icon: "sprites.svg#it-tool"
+      #size: "sm"
+      #color: "secondary"
+      #align: "middle"
+      #label: Adotta il modello di sito comunale #C
+      #url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
 #     prev:
@@ -88,7 +88,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -100,14 +99,14 @@ components:
       #label: Attività del modello #C
       #addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
+    #Lorem **ipsum**
     img: /images/community/icons/partecipa-risorse.svg #I
-  # alt: descrizione immagine #C
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -126,33 +125,33 @@ components:
             label: Partecipa #C
             url: "../" #M
           #- title: Nella scheda operativa
-            #icon:
-              #icon: "sprites.svg#it-tool"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Adotta il modello di sito comunale #C
-            #url: "../" #M
+          #icon:
+          #icon: "sprites.svg#it-tool"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Adotta il modello di sito comunale #C
+          #url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           #- title: Sei
-            #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
-            #icon:
-              #icon: "sprites.svg#it-user"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Designer, Project manager #C
+          #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+          #icon:
+          #icon: "sprites.svg#it-user"
+          #size: "sm"
+          #align: "middle"
+          #color: "secondary"
+          #label: Designer, Project manager #C
           - title: Vuoi
             tooltip: "Obiettivi per cui sono utili i contenuti di questa pagina"
             icon:
@@ -164,17 +163,15 @@ components:
       #tagsLabel: Parliamo di
       #color: secondary
       #icon:
-        #icon: sprites.svg#it-horn
-        #size: sm
-        #color: secondary
+      #icon: sprites.svg#it-horn
+      #size: sm
+      #color: secondary
       #tags: [Analisi del contesto,Pianificazione]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Aiutaci a collezionare buoni esempi #C
       menu: false
       centered: true
@@ -182,7 +179,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: Aiutaci a migliorare le risorse per progettare servizi pubblici digitali #C
@@ -190,7 +186,6 @@ components:
             Vogliamo raccogliere **esempi concreti di siti**, **servizi digitali** e **software per la Pubblica Amministrazione**, realizzati seguendo le linee guida e le buone pratiche di design e sviluppo promosse da Designers Italia e Developers Italia.
 
             Gli esempi raccolti potranno anche essere utilizzati per iniziative di divulgazione, come articoli di approfondimento, eventi o materiali formativi, con l’obiettivo di valorizzare buone pratiche di progettazione in ambito pubblico e farle conoscere ad altre amministrazioni e professionisti del settore.
-
 
         - name: TextImageCta
           title: Quali esempi cerchiamo #C
@@ -202,8 +197,6 @@ components:
 
             Siamo interessati a scoprire le sfide e i risultati raggiunti per capire anche come le nostre risorse hanno contribuito a raggiungere gli obiettivi di progetto.
 
-            
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -214,16 +207,15 @@ components:
           text: | #C
             Compila un form di 5 minuti e rispondi alle nostre domande. **Assicurati di avere a disposizione un link pubblico** al sito, servizio o repository dove è pubblicato il software.
 
-            
           ctas:
-          - label: Compila il form #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://ec.europa.eu/eusurvey/runner/buonepraticheDesItDevIT #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Compila il form #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://ec.europa.eu/eusurvey/runner/buonepraticheDesItDevIT #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

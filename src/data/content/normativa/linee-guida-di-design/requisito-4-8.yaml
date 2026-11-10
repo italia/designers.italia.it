@@ -80,7 +80,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -90,16 +89,15 @@ components:
     # subtitle: Subtitle #C
     tag:
       label: Norme - Requisiti Linee guida design #C
-      
+
     imgRatio: 4x3
     # pretext:
-      # icon:
-      #   icon: sprites.svg#it-info-circle
-      #   size: sm
-      # text: Finalità
+    # icon:
+    #   icon: sprites.svg#it-info-circle
+    #   size: sm
+    # text: Finalità
     # text: | #C
     #   **Finalità**: fornire indicazioni su come assicurarsi che le attività di progettazione, sviluppo e manutenzione di siti e servizi digitali rispondano alle presenti linee guida.
-
 
     # img: /images/400x300.png #I
     # alt: descrizione immagine #C
@@ -151,7 +149,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Normativa]
+      tags: [Linee guida, Normativa]
 
       # # KANGAROO: CHILDREN SHORTCUTS
       # dropdown:
@@ -178,8 +176,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -196,7 +193,6 @@ components:
       background: light
       # text: | #C
       components:
-
         - name: TextImageCta
           noSpace: true
           # title: Perché è importante #C
@@ -217,7 +213,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Azione 1"
         text: | #C
@@ -227,15 +222,13 @@ components:
         # url: "azione-1/" #M
         rounded: true
 
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     - title: null #C
       menu: false
       centered: true
       background: null
       noSpace: true
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: Note di lettura
@@ -253,7 +246,7 @@ components:
                 size: sm
                 addonClasses: ms-2
 
-       # TXT BLOCK
+        # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Leggi su Docs Italia

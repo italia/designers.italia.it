@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,16 +95,16 @@ components:
     subtitle: Assembla i componenti e prototipa il flusso di interazione per realizzare i servizi digitali dei Comuni #C
     tag:
       label: Attività del modello #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
-  # img: /images/400x300.png #I
-  # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -132,17 +131,17 @@ components:
             label: Adotta il modello di servizi digitali comunali #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -165,14 +164,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Interfaccia utente,Progettazione interfaccia,Adozione modelli]
+      tags: [Interfaccia utente, Progettazione interfaccia, Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: I componenti dell’interfaccia di un servizio digitale #C
       menu: false
       centered: true
@@ -180,7 +177,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -201,18 +197,17 @@ components:
             - Riepilogo.
 
           ctas:
-          - label: Vai al dettaglio dei moduli #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-            
+            - label: Vai al dettaglio dei moduli #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT BLOCK
         - name: TextImageCta
@@ -225,17 +220,17 @@ components:
             - Dati un oggetto (un immobile o un veicolo).
 
           ctas:
-          - label: Vai al dettaglio delle sezioni #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/sezioni.html#le-sezioni-dei-moduli #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al dettaglio delle sezioni #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/sezioni.html#le-sezioni-dei-moduli #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # RESOURCES
@@ -251,7 +246,7 @@ components:
           - label: Diagramma di flusso per Permessi e documenti #C
             srBefore: "Scarica PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Lo schema delle interazioni per comprendere in che ordine assemblare i componenti per la tipologia di servizi comunali "Permessi e documenti".  #C
+            text: Lo schema delle interazioni per comprendere in che ordine assemblare i componenti per la tipologia di servizi comunali "Permessi e documenti". #C
             url: /files/resources/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/1-Permessi-documenti-diagrammadiflusso-ServiziComuni.pdf #M
             blank: false
             actions:
@@ -303,4 +298,3 @@ components:
                 url: /files/resources/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/5-Servizi-pagamento-diagrammadiflusso-ServiziComuni.pdf #M
                 ariaLabel: "Scarica PDF Diagramma di flusso per Servizi a pagamento" #C #COMPILE FOR EACH ITEM
                 blank: false
-

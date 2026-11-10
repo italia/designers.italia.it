@@ -33,8 +33,8 @@ components:
     title: "Milano Digital Week 2025: progettare assistenti virtuali nei servizi pubblici"
     subtitle: "Come le intelligenze artificiali conversazionali possono migliorare i servizi pubblici e gli strumenti di Designers Italia per progettarle"
     tag:
-        label: Webinar
-        addonClasses: mt-3 text-uppercase
+      label: Webinar
+      addonClasses: mt-3 text-uppercase
 
     kangaroo:
       id: kangarooExample
@@ -46,21 +46,26 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Intelligenza artificiale, Contenuti e linguaggio, Progettazione interfaccia]
+      tags:
+        [
+          Intelligenza artificiale,
+          Contenuti e linguaggio,
+          Progettazione interfaccia,
+        ]
       eventInfo:
-         items:
+        items:
           - title: Luogo
             icon:
               icon: "sprites.svg#it-map-marker"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label:  Online
+            label: Online
             url:
             blank: true
             screenReaderText: " (si apre in una nuova finestra)"
             text: |
-            
+
           - title: Partecipazione
             icon:
               icon: "sprites.svg#it-user"
@@ -83,18 +88,16 @@ components:
   #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
   #   alt: Descrizione immagine grande
 
-  sectionsEditorial :
+  sectionsEditorial:
     - menu: false
       centered: true
       # title: Titolo area h2
       # text: Sottotitolo area h2
       id: corpoEvento
       components:
-
         # - name: TextImageCta
         #   text: |
         #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
-
 
         - name: TextImageCta
           # title: Titoletto interno h3
@@ -105,16 +108,16 @@ components:
 
             La Milano Digital Week è l'evento diffuso che si svolge in diverse location della città di Milano, si focalizza sullo sviluppo e l'innovazione 
             digitale coinvolgendo la collettività: cittadinanza, imprese e istituzioni. Il tema di quest’anno riguarda l’Intelligenza Artificiale e 
-            l’evoluzione del rapporto tra linguaggi tecnologici e umani. 
+            l’evoluzione del rapporto tra linguaggi tecnologici e umani.
 
           ctas:
-          - label: Iscriviti
-            url: https://www.milanodigitalweek.com/event/come-progettare-assistenti-virtuali-nei-servizi-pubblici
-            blank: true
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            icon:
-              icon: sprites.svg#it-external-link
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
+            - label: Iscriviti
+              url: https://www.milanodigitalweek.com/event/come-progettare-assistenti-virtuali-nei-servizi-pubblici
+              blank: true
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              icon:
+                icon: sprites.svg#it-external-link
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2

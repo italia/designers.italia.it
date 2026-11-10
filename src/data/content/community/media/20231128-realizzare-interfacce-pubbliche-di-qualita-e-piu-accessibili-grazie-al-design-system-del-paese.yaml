@@ -34,7 +34,6 @@ components:
     subtitle: "Sono la qualità e l’accessibilità i protagonisti della seconda puntata del ciclo di webinar “Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica”."
     tag:
       label: Video - Webinar
-      
 
     kangaroo:
       id: kangarooExample
@@ -46,14 +45,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system, Esperienza utente, Progettazione interfaccia, Accessibilità]
+      tags:
+        [
+          Design system,
+          Esperienza utente,
+          Progettazione interfaccia,
+          Accessibilità,
+        ]
 
   sectionsEditorial:
-
     # FORMATO VIDEO DEFAULT
     - fullColumn: false # fullwidth vs normal
       full: true # large column vs normal
-      noSpace: false 
+      noSpace: false
       centered: true
       background: medium
       components:
@@ -116,7 +120,7 @@ components:
 
             Torno sul sito Designers perché ho bisogno di un'immagine. Designers Italia ovviamente comprende tutto il processo, non soltanto tutto il processo di progettare un servizio o un sito, non soltanto la parte finale delle interfacce o delle esperienze utente. Noi amiamo dire che ci piace usare un processo a 5 fasi. Ce ne sono solo ce ne sono molti modelli di come si progetta bene. Nel nostro modello, astratto, che stiamo da qualche anno portando avanti per la Pubblica Amministrazione italiana, le fasi sono 5: organizzare il progetto, comprendere lo scenario d'uso, quali sono i bisogni, fare ricerca utente, progettare il servizio facendo prototipi di solito di bassa qualità, perché tutto quello che è estetica o alta qualità può essere rumoroso nella fase della progettazione. Questo è il Design system, non a caso c'è la stessa icona, realizzare il progetto, nel nostro caso il punto di contatto col cittadino o col dipendente. E validare la soluzione. Test di usabilità, verifica di accessibilità, testo con panel di utenti. Ecco, quello che fa il Design system è realizzare, strutturare, creare, un'ontologia, creare una guida su come velocizzare o rendere più di qualità la fase realizzare, che è questa qua, l'interfaccia utente. Ma non è qui. Questo è l'immaginetta che noi ovviamente usiamo per astrarre un concetto: che il processo iterativo si rivalida, si riorganizza, si ricomprende, si riprogetta in continuazione. Sarebbe molto bello fosse possibile disegnarla come un frattale, perché la fase validare che è qui in realtà è un po' dovunque. E la fase comprendere e progettare è una fase che è un po' dovunque, un po' dovunque. Ve lo spiego: io organizzo il progetto, valido la mia organizzazione, e riorganizzo, riorganizzo e comprendo, valido quello che ho compreso, riorganizzo o ricomprendo, e via di seguito. Cioè la fase di validazione, ma anche la fase di comprensione e progettazione e organizzazione, sono in continua interazione, devono essere per forza di cose in continua interazione. Avere quindi una fase realizzare che è più semplice, non vuol dire avere una fase da prendere come scorciatoia, salto direttamente al Design system, ma vuol dire avere molto più tempo per fare queste altre cose. Avere più possibilità di fare più realizzare, di realizzare più prototipi da testare, avere molta più possibilità di fare ricerca utente, di fare organizzazione dei contenuti. Perché questa realizzare deve da una parte costare effettivamente meno perché ci vuole meno tempo a parità di qualità. E dall'altra c'è più tempo per fare altre cose. 
             Vi faccio degli esempi pratici. Come ve li faccio? Ve li faccio mostrandovi il dietro le quinte, e il dietro le quinte di che cosa. Il dietro le quinte del sito Designers Italia. 
-            
+
             Vorrei dire che la qualità by design è iterativa, non è mai una qualità ottenuta una tantum. Tanto più per alcune caratteristiche come l'accessibilità o la privacy. Faccio un esempio pratico: se state usando uno dei temi CMS messi a disposizione per uno dei modelli, o ne avete realizzato uno, il giorno che installate un nuovo plugin e dovete rifare un ciclo di interazione. Sarà accessibile il prodotto di quel plugin che mi cambia le cose nella grafica. Violerà la privacy degli utenti? Il giorno che decidete di mettere i contenuti multimediali da una fonte di terze parti, tipo video che arrivano da una terze parti, che non "hostate" voi sul vostro server, ve lo state chiedendo se inficiate la qualità? Dovete rifare il pezzo. Sto inserendo problematiche di accessibilità? Sì o no? Devo rifare verifiche con utenti... devo pormi problemi… Avere più tempo per fare queste cose vuol dire, per esempio, che noi sul sito Designers Italia abbiamo fatto il processo ideale. Prima o poi anche racconteremo in pubblico, con un bell'articolo di approfondimento, partendo dall'architettura, partendo dalle ricerche utente, dalle analisi euristiche. Ci siamo permessi di fare analisi e test su modellizzazione di pagine. Abbiamo fatto scelte di architettura e scelte progettuali di esperienza utente, partendo dalla carta, e poi riportandola qua in lavagne, astraendo completamente dalla grafica o dalla prototipazione. Modellizzando l'interfaccia utente, l'esperienza dell'utente, quindi la sequenza di contenuti in pagina molto prima di porsi problemi di come erano graficamente.
 
             Avere un Design system non è una scorciatoia, è una solidità strutturale. Avere una fondamenta che ti permette di non preoccuparti dell'estetica, o non preoccuparti se non in parte che è quella di branding, di personalizzazione. Ma puoi farlo con molta più calma. Non devi per ogni singola cosa riperdere tantissimo tempo. 
@@ -146,21 +150,21 @@ components:
 
             [...]
 
-    - noSpace: false 
+    - noSpace: false
       centered: true
       components:
         - name: TextImageCta
-          # title: 
+          # title:
           text: |
             Il webinar è parte di un ciclo dedicato ai Comuni italiani e ai loro fornitori, sviluppato in collaborazione con l'Associazione Nazionale Comuni Italiani (ANCI), rivolgendosi in particolare a coloro che lavorano nell'implementazione della Misura 1.4.1 "Esperienza del Cittadino nei servizi pubblici" del Piano Nazionale di Ripresa e Resilienza. Il webinar affronta diversi aspetti legati all'implementazione del modello Comuni. Il focus del webinar è sulla centralità dell'accessibilità sin dalle prime fasi del processo progettuale e su come sfruttare le risorse del Design system del Paese per realizzare e sviluppare servizi digitali a norma e di qualità.
           ctas:
-          - label: Leggi la notizia #C
-            url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Leggi la notizia #C
+              url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

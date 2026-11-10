@@ -79,7 +79,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -89,7 +88,7 @@ components:
     subtitle: "Definisci obiettivi, attività, competenze e requisiti per ingaggiare i fornitori e avviare i lavori nel rispetto della normativa" #C
     tag:
       label: Kit di design #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -128,7 +127,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -174,12 +173,10 @@ components:
             - url: "ingaggia-il-fornitore/"
               label: Ingaggia il fornitore #C
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -190,7 +187,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -198,7 +194,7 @@ components:
 
             Un progetto ben impostato dal principio permette di evitare sprechi, sia di risorse che di tempo, e di assicurare la realizzazione di servizi digitali utili per le persone. 
 
-            In questo kit trovi gli strumenti necessari per definire il perimetro del progetto e creare la documentazione utile a ingaggiare i fornitori. 
+            In questo kit trovi gli strumenti necessari per definire il perimetro del progetto e creare la documentazione utile a ingaggiare i fornitori.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -206,19 +202,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulle attività utili a pianificare e gestire un progetto di trasformazione digitale.
           ctas:
-          - label: "Vai all'argomento Pianificazione, gestione e strategia" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/pianificazione-gestione-e-strategia.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-
+            - label: "Vai all'argomento Pianificazione, gestione e strategia" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/pianificazione-gestione-e-strategia.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -231,14 +225,13 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per impostare e avviare un progetto di trasformazione digitale   #C
+    text: Esplora le attività di questo kit di design per impostare e avviare un progetto di trasformazione digitale #C
     col4: false
     noSpace: false
     nopadtop: true
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: Definisci il perimetro di progetto #C
         fullHeight: true
@@ -253,17 +246,17 @@ components:
           label: Attività del kit #C
 
       # CARD CHILDREN ACTION
-    #  - title: Valuta l'adozione di software a riuso #C
-    #    fullHeight: true
-    #    rounded: true
-    #    imgRatio: 16x9
-    #    iconImg: /images/risorse-per-progettare/icons/kit_impostazione_progetto_riuso.svg #I
-    #    iconImgAlt: "" #C
-    #    url: "valuta-l-adozione-di-software-a-riuso/" #M
-    #    text: | #C
-    #      Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
-    #    tag:
-    #      label: Attività del kit #C
+      #  - title: Valuta l'adozione di software a riuso #C
+      #    fullHeight: true
+      #    rounded: true
+      #    imgRatio: 16x9
+      #    iconImg: /images/risorse-per-progettare/icons/kit_impostazione_progetto_riuso.svg #I
+      #    iconImgAlt: "" #C
+      #    url: "valuta-l-adozione-di-software-a-riuso/" #M
+      #    text: | #C
+      #      Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
+      #    tag:
+      #      label: Attività del kit #C
 
       # CARD CHILDREN ACTION
       - title: Ingaggia il fornitore #C

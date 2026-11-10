@@ -10,7 +10,7 @@
     flex-shrink: 0;
     width: calc(var(--testimonials-icon-inside-size) / 1.5);
     height: calc(var(--testimonials-icon-inside-size) / 1.5);
-    fill: #FFF;
+    fill: #fff;
   }
   .fw-medium {
     font-weight: 600;
@@ -18,22 +18,19 @@
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
   .testimonials {
-    .col-12:last-child{
+    .col-12:last-child {
       .testimonial-wrapper {
         margin-top: -50px;
       }
@@ -45,8 +42,8 @@
 @include media-breakpoint-up(xl) {
   .testimonials {
     .icon-wrapper {
-      width: var( --testimonials-icon-size);
-      height: var( --testimonials-icon-size);
+      width: var(--testimonials-icon-size);
+      height: var(--testimonials-icon-size);
     }
     .icon {
       width: var(--testimonials-icon-inside-size);

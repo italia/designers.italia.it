@@ -88,7 +88,9 @@ function CustomPropsTable({ title, selector }) {
                         <code>{track.value}</code>
                         &nbsp;
                       </p>
-                      <p><code>...</code></p>
+                      <p>
+                        <code>...</code>
+                      </p>
                     </td>
                     <td>
                       {track.files.map((v) => (

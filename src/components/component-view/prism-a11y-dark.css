@@ -11,7 +11,8 @@
   @media (forced-colors: none), (forced-colors: active) {
     :root {
       --prism-a11y-border-radius: 0.3em;
-      --prism-a11y-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+      --prism-a11y-font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+        monospace;
       --prism-a11y-line-height: 1.5;
       --prism-a11y-code-block-margin: 0.5em 0;
       --prism-a11y-code-block-padding: 1em;
@@ -38,15 +39,11 @@
     }
   }
 
-
   @media (forced-colors: none), (forced-colors: active) {
     /*
      * MARK: Theme
      */
-    :where(
-      code[class*="language-"],
-      pre[class*="language-"]
-    ) {
+    :where(code[class*="language-"], pre[class*="language-"]) {
       color: var(--prism-a11y-color-text-no-token);
       background: var(--prism-a11y-color-background);
       font-family: var(--prism-a11y-font-family);
@@ -75,10 +72,7 @@
       border-radius: var(--prism-a11y-border-radius);
     }
 
-    :where(
-      :not(pre) > code[class*="language-"],
-      pre[class*="language-"]
-    ) {
+    :where(:not(pre) > code[class*="language-"], pre[class*="language-"]) {
       background: var(--prism-a11y-color-background);
     }
 
@@ -89,12 +83,7 @@
       white-space: normal;
     }
 
-    :where(
-      .token.comment,
-      .token.prolog,
-      .token.doctype,
-      .token.cdata
-    ) {
+    :where(.token.comment, .token.prolog, .token.doctype, .token.cdata) {
       color: var(--prism-a11y-color-text-comment);
     }
 
@@ -103,60 +92,53 @@
     }
 
     :where(
-      .token.property,
-      .token.tag,
-      .token.constant,
-      .token.symbol,
-      .token.deleted
-    ) {
+        .token.property,
+        .token.tag,
+        .token.constant,
+        .token.symbol,
+        .token.deleted
+      ) {
       color: var(--prism-a11y-color-text-red);
     }
 
     :where(
-      .token.operator,
-      .token.entity,
-      .token.url,
-      .language-css .token.string,
-      .style .token.string,
-      .token.variable,
-      .token.keyword
-    ) {
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .language-css .token.string,
+        .style .token.string,
+        .token.variable,
+        .token.keyword
+      ) {
       color: var(--prism-a11y-color-text-cyan);
     }
 
     :where(
-      .token.selector,
-      .token.attr-name,
-      .token.string,
-      .token.char,
-      .token.builtin,
-      .token.inserted
-    ) {
+        .token.selector,
+        .token.attr-name,
+        .token.string,
+        .token.char,
+        .token.builtin,
+        .token.inserted
+      ) {
       color: var(--prism-a11y-color-text-green);
     }
 
     :where(
-      .token.atrule,
-      .token.attr-value,
-      .token.function,
-      .token.regex,
-      .token.important
-    ) {
+        .token.atrule,
+        .token.attr-value,
+        .token.function,
+        .token.regex,
+        .token.important
+      ) {
       color: var(--prism-a11y-color-text-yellow);
     }
 
-    :where(
-      .token.boolean,
-      .token.number,
-      .token.keyword
-    ) {
+    :where(.token.boolean, .token.number, .token.keyword) {
       color: var(--prism-a11y-color-text-purple);
     }
 
-    :where(
-      .token.important,
-      .token.bold
-    ) {
+    :where(.token.important, .token.bold) {
       font-weight: bold;
     }
 
@@ -168,27 +150,28 @@
       cursor: help;
     }
 
-
     /*
      * MARK: Plugin support
      */
     /* Line highlight */
     .line-highlight {
       background: var(--prism-a11y-plugin-color-background);
-      border-top: var(--prism-a11y-width-border) solid var(--prism-a11y-plugin-color-border);
-      border-bottom: var(--prism-a11y-width-border) solid var(--prism-a11y-plugin-color-border);
+      border-top: var(--prism-a11y-width-border) solid
+        var(--prism-a11y-plugin-color-border);
+      border-bottom: var(--prism-a11y-width-border) solid
+        var(--prism-a11y-plugin-color-border);
     }
 
     /* Line numbers */
     .line-numbers .line-numbers-rows {
-      border-right: var(--prism-a11y-width-border) solid var(--prism-a11y-color-text-no-token);
+      border-right: var(--prism-a11y-width-border) solid
+        var(--prism-a11y-color-text-no-token);
     }
 
     .line-numbers-rows > span:before {
       color: var(--prism-a11y-color-text-comment);
     }
   }
-
 
   /*
    * MARK: Forced color mode support
@@ -208,11 +191,7 @@
       --prism-a11y-plugin-color-background: Canvas;
     }
 
-    :where(
-      .token.boolean,
-      .token.number,
-      .token.keyword
-    ) {
+    :where(.token.boolean, .token.number, .token.keyword) {
       font-weight: bold;
     }
   }

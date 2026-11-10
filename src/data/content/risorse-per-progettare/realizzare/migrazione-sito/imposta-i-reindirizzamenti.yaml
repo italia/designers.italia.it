@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,7 +95,7 @@ components:
     subtitle: Associa ogni URL del vecchio sito alla destinazione corretta nel nuovo per una migrazione coerente e senza errori #C
     tag:
       label: Attività del kit #C
-      
+
     # #pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -143,7 +142,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -168,28 +167,23 @@ components:
         color: secondary
       tags: [Architettura informazione, Progettazione dei contenuti, SEO]
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Garantire una navigazione senza interruzioni #C
       menu: false
       centered: true
       background: null
       #text: | #C
-         
-      components:
 
+      components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             Quando un sito viene aggiornato o riorganizzato, molti URL cambiano e aumenta il rischio che i visitatori incontrino errori o pagine inesistenti. I **reindirizzamenti accompagnano utenti e motori di ricerca alle nuove pagine del sito**, **preservando la continuità della navigazione**, **evitando errori** e **mantenendo intatto il valore SEO** delle pagine.
 
             Lo strumento di mappatura ti permette di raccogliere e associare URL vecchi con nuove destinazioni e di **esportare il file in un formato subito utilizzabile per automatizzare la configurazione dei reindirizzamenti**.
-
 
   # ///////////////////
   # RESOURCES
@@ -213,4 +207,3 @@ components:
                 url: /files/resources/risorse-per-progettare/realizzare/migrazione-sito/DI-Reindirizzamenti.ods #M
                 ariaLabel: "Scarica ODS Mappatura dei reindirizzamenti" #C #COMPILE FOR EACH ITEM
                 blank: false
-

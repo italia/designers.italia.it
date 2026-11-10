@@ -1,6 +1,6 @@
 # 🖖 Designers Italia Website Source Code
 
-*[Versione italiana / Italian version](README.md)*
+_[Versione italiana / Italian version](README.md)_
 
 This repository contains the source code for the [Designers Italia](https://designers.italia.it) website, a project that provides knowledge and tools for creating digital services for the Italian Public Administration.
 
@@ -16,7 +16,7 @@ Comments and proposals regarding the evolution of the site and resources can be 
 
 ### 📖 Contribution Guides
 
-Detailed guides are available for project contributors *(Italian language only)*:
+Detailed guides are available for project contributors _(Italian language only)_:
 
 - **[HOW-TO-MANAGE-EDITORIAL-CONTENT.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-MANAGE-EDITORIAL-CONTENT.md)** - Guide for creating and managing editorial content (news, events, media)
 - **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-RELEASE-DESIGN-SYSTEM.md)** - Procedure for design system releases
@@ -43,7 +43,7 @@ npm i
 npm run dev
 ```
 
-   Your site is now running at [http://localhost:8000](http://localhost:8000)!
+Your site is now running at [http://localhost:8000](http://localhost:8000)!
 
 3. **Prepare previews of the design system**
 
@@ -61,7 +61,7 @@ npm run prepare-content
 npm run build
 ```
 
-   Your statically generated site is placed inside the public directory.
+Your statically generated site is placed inside the public directory.
 
 5. **Validate your work**
 

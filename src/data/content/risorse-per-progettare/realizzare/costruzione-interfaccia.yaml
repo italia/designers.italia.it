@@ -85,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -95,7 +94,7 @@ components:
     subtitle: "Costruisci l’interfaccia di un servizio digitale in alta fedeltà, con uno stile semplice e coerente" #C
     tag:
       label: Kit di design #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -134,7 +133,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -157,7 +156,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Progettazione interfaccia,Prototipazione]
+      tags:
+        [
+          Design system,
+          Interfaccia utente,
+          Progettazione interfaccia,
+          Prototipazione,
+        ]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -179,8 +184,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -191,7 +195,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           # title: A cosa servono h3 #C
@@ -214,26 +217,26 @@ components:
           title: Risorse pronte all'uso disponibili #C
           specular: true
           text: | #C
-             Se stai progettando siti e servizi digitali per un [Comune](/modelli/comuni), una [scuola](/modelli/scuole), una [ASL](/modelli/aziende-sanitarie-locali) o un [museo civico](/modelli/musei-civici), sono già disponibili all'uso i [modelli](/modelli) di Designers Italia con i layout e i prototipi in alta fedeltà.
-             
+            Se stai progettando siti e servizi digitali per un [Comune](/modelli/comuni), una [scuola](/modelli/scuole), una [ASL](/modelli/aziende-sanitarie-locali) o un [museo civico](/modelli/musei-civici), sono già disponibili all'uso i [modelli](/modelli) di Designers Italia con i layout e i prototipi in alta fedeltà.
+
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno, puoi approfondire le caratteristiche per la realizzazione di interfacce efficaci, l’importanza di uno stile visivo coerente e l’utilità di realizzare un prototipo in alta fedeltà prima dello sviluppo.
-          
+
           ctas:
-          - label: "Vai all'argomento Progettare e costruire in alta fedeltà" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dell-interfaccia/progettare-e-costruire-in-alta-fedelta.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Progettare e costruire in alta fedeltà" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dell-interfaccia/progettare-e-costruire-in-alta-fedelta.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -248,7 +251,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Realizza un prototipo in alta fedeltà" #C
         rounded: true

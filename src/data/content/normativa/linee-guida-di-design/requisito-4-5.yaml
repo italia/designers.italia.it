@@ -80,7 +80,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -90,13 +89,13 @@ components:
     # subtitle: Subtitle #C
     tag:
       label: Norme - Requisiti Linee guida design #C
-      
+
     imgRatio: 4x3
     # pretext:
-      # icon:
-      #   icon: sprites.svg#it-info-circle
-      #   size: sm
-      # text: Finalità
+    # icon:
+    #   icon: sprites.svg#it-info-circle
+    #   size: sm
+    # text: Finalità
     # text: | #C
     #   **Finalità**: mettere a disposizione interfacce utenti semplici da utilizzare.
     # img: /images/400x300.png #I
@@ -149,9 +148,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Normativa,Interfaccia utente]
+      tags: [Linee guida, Normativa, Interfaccia utente]
 
-     # KANGAROO: CHILDREN SHORTCUTS
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -175,8 +174,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -193,14 +191,12 @@ components:
       background: light
       # text: | #C
       components:
-
         - name: TextImageCta
           noSpace: true
           # title: Perché è importante #C
           # headingLevel: 2
           text: | #C
             Progettare un sito o un servizio digitale pubblico che abbia delle **interfacce utente semplici e intuitive** è fondamentale. Un’interfaccia utente fatta bene è un’interfaccia che permette alle persone di **individuare velocemente e con pochi passaggi i contenuti che cerca**. Garantisce un’esperienza d’uso ideale.
-
 
   highlightCards:
     id: HC1
@@ -213,7 +209,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Azione 1"
         text: | #C
@@ -244,9 +239,7 @@ components:
         url: "azione-3/" #M
         rounded: true
 
-
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -256,13 +249,12 @@ components:
       background: null
       noSpace: true
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: Riferimenti normativi #C
           text: | #C
-           - **Linee guida sull'accessibilità degli strumenti informatici**
-             Adottate da AGID con Determinazione n. 396 in data 8 settembre 2020.
+            - **Linee guida sull'accessibilità degli strumenti informatici**
+              Adottate da AGID con Determinazione n. 396 in data 8 settembre 2020.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -281,7 +273,7 @@ components:
                 size: sm
                 addonClasses: ms-2
 
-       # TXT BLOCK
+        # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Leggi su Docs Italia

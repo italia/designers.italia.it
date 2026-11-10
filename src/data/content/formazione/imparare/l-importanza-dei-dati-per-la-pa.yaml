@@ -82,7 +82,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -92,7 +91,7 @@ components:
     subtitle: "Impara a usare i dati nel processo di progettazione e sfruttare le opportunità che offrono per migliorare siti e servizi" #C
     tag:
       label: Corso di formazione #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -131,7 +130,7 @@ components:
       #       label: Linee guida di design #C
       #       url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -154,7 +153,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Formazione, Progettazione servizi, Data driven design, Visualizzazione dati]
+      tags:
+        [
+          Formazione,
+          Progettazione servizi,
+          Data driven design,
+          Visualizzazione dati,
+        ]
 
       # # KANGAROO: CHILDREN SHORTCUTS
       # dropdown:
@@ -178,13 +183,11 @@ components:
       #         label: Progettare servizi e touchpoint digitali della PA #C
       #       - url: "l-importanza-dei-dati-nella-PA/"
       #         label: L’importanza dei dati nella PA #C
-  
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -195,15 +198,14 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-             Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
+            Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
 
-             Il corso introduce il ruolo dei dati nella Pubblica Amministrazione, le opportunità che offrono e gli strumenti di analisi dati, come Web Analytics Italia (WAI), che aiutano a progettare o migliorare i servizi pubblici digitali.
+            Il corso introduce il ruolo dei dati nella Pubblica Amministrazione, le opportunità che offrono e gli strumenti di analisi dati, come Web Analytics Italia (WAI), che aiutano a progettare o migliorare i servizi pubblici digitali.
 
-             Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**. 
+            Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -219,14 +221,13 @@ components:
           title: Durata #C
           text: | #C
             3 ore
-            
+
         # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Certificazione #C
           text: | #C
             Il corso prevede un quiz di valutazione finale per il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
-
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -242,7 +243,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Visualizzare dati per la Pubblica Amministrazione"
         text: | #C
@@ -259,7 +259,7 @@ components:
       # CARD CHILDREN
       - title: "Comprendere e utilizzare le statistiche dei siti web: il progetto Web Analytics Italia"
         text: | #C
-          La piattaforma Web Analytics Italia (WAI) permette di analizzare i dati relativi all’uso di un sito web della PA per trarne spunti di miglioramento. Scopri come usare WAI e creare dashboard di monitoraggio personalizzate. 
+          La piattaforma Web Analytics Italia (WAI) permette di analizzare i dati relativi all’uso di un sito web della PA per trarne spunti di miglioramento. Scopri come usare WAI e creare dashboard di monitoraggio personalizzate.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -282,13 +282,11 @@ components:
         tag:
           label: Intervista #C
 
-
-     
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-# —
+  sectionsEditorial2:
+    # —
     # EDITORIAL #C #I
     # —
     - title: Segui il corso #C
@@ -299,23 +297,21 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-      
         # TXT BLOCK
         - name: TextImageCta
           # title: Segui il corso #C
           headingLevel: 2
           text: | #C
-            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.  
+            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.
           ctas:
-          - label: "Accedi al corso" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.accademiacomunidigitali.it/course/view.php?id=27 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-    
+            - label: "Accedi al corso" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.accademiacomunidigitali.it/course/view.php?id=27 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

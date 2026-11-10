@@ -107,7 +107,6 @@ components:
     title: Scopri le attività della community
 
   highlightCardsLoop:
-
     - id: notizie
       title: Notizie
       headingLevel: 3
@@ -123,7 +122,7 @@ components:
         fullHeight: true
         rounded: true
         showDateInfo: true
-        showTags: true        # ✅ Show tags for news
+        showTags: true # ✅ Show tags for news
         showDateOverlay: false
         showIconOverlay: false
         showTag: false
@@ -138,13 +137,22 @@ components:
           url: "/argomenti/"
           btnStyle: outline-secondary
           label: Scopri tutti gli argomenti
-        tags: [Accessibilità,Design system,Modelli di sito,Privacy,Ricerca utente,Partecipazione,Test di usabilità]
+        tags:
+          [
+            Accessibilità,
+            Design system,
+            Modelli di sito,
+            Privacy,
+            Ricerca utente,
+            Partecipazione,
+            Test di usabilità,
+          ]
       buttons:
-      - btnStyle: primary
-        label: Esplora tutte le notizie
-        addonStyle: d-block
-        url: "/community/notizie/"
-        disabled: false
+        - btnStyle: primary
+          label: Esplora tutte le notizie
+          addonStyle: d-block
+          url: "/community/notizie/"
+          disabled: false
 
     - id: eventi
       title: Eventi
@@ -153,22 +161,22 @@ components:
       col4: true
       background: light
       buttons:
-      - btnStyle: primary
-        label: Esplora tutti gli eventi
-        url: "/community/eventi/"
-        addonStyle: d-block
-        disabled: false
+        - btnStyle: primary
+          label: Esplora tutti gli eventi
+          url: "/community/eventi/"
+          addonStyle: d-block
+          disabled: false
       cardSettings:
         headingLevel: 4
         imgRatio: 4x3
         imgPlaceholder: false
         fullHeight: true
-        cardEvent: true      
+        cardEvent: true
         showDateInfo: true
-        showTags: false          
-        showDateOverlay: true   
-        showIconOverlay: false   
-        showTag: true            
+        showTags: false
+        showDateOverlay: true
+        showIconOverlay: false
+        showTag: true
 
     - id: articoli-di-approfondimento
       title: Articoli di approfondimento
@@ -178,28 +186,28 @@ components:
       background: null
       cardSettings:
         headingLevel: 4
-        customCol: col-lg-4           
-        imgRatio: 16x9               
-        imgPlaceholder: false        
-        fullHeight: true             
-        rounded: true                
-        showDateInfo: false          
-        showTags: true               
-        showTag: false               
-        showDateOverlay: false      
-        showIconOverlay: false       
+        customCol: col-lg-4
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        showDateInfo: false
+        showTags: true
+        showTag: false
+        showDateOverlay: false
+        showIconOverlay: false
       buttons:
-      - btnStyle: outline-primary
-        label: Vai al Medium di Designers Italia
-        url: https://medium.com/designers-italia
-        blank: true
-        ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
-        icon:
-          icon: sprites.svg#it-medium
-          color: primary
-          align: middle
-          size: sm
-          addonClasses: ms-2
+        - btnStyle: outline-primary
+          label: Vai al Medium di Designers Italia
+          url: https://medium.com/designers-italia
+          blank: true
+          ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
+          icon:
+            icon: sprites.svg#it-medium
+            color: primary
+            align: middle
+            size: sm
+            addonClasses: ms-2
 
     - id: media
       title: Media
@@ -213,22 +221,22 @@ components:
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
-        cardEvent: true        
-        showDateInfo: false      
-        showTags: false         
-        showDateOverlay: false  
-        showIconOverlay: true   
-        showTag: true  
+        cardEvent: true
+        showDateInfo: false
+        showTags: false
+        showDateOverlay: false
+        showIconOverlay: true
+        showTag: true
       buttons:
-      - type: button
-        btnStyle: primary
-        label: Esplora tutti i media
-        url: "/community/media/"
-        addonStyle: d-block
-        disabled: false
+        - type: button
+          btnStyle: primary
+          label: Esplora tutti i media
+          url: "/community/media/"
+          addonStyle: d-block
+          disabled: false
 
   sectionsEditorial:
-# —
+    # —
     # EDITORIAL #C #I
     # —
     - menu: false
@@ -238,7 +246,6 @@ components:
       text: | #C
         Scopri i canali dove confrontarti sulle risorse di Designers Italia, del design system del Paese e dei modelli di sito e servizi
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/ItForum.svg #I
@@ -248,17 +255,17 @@ components:
           text: |
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-comuni/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Forum Italia #C
+              url: https://forum.italia.it/c/design/modello-comuni/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -269,17 +276,17 @@ components:
           text: |
             **Dialoga e collabora in tempo reale** con i designer e i maintainer sui canali Slack dedicati al #design
           ctas:
-          - label: Vai su Slack #C
-            url: https://slack.developers.italia.it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Slack #C
+              url: https://slack.developers.italia.it/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -291,14 +298,14 @@ components:
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: Vai su GitHub #C
-            url: https://github.com/italia/  #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su GitHub #C
+              url: https://github.com/italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

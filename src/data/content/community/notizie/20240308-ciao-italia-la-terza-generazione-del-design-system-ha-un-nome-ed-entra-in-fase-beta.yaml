@@ -32,8 +32,8 @@ components:
     title: "Ciao .italia: la terza generazione del design system ha un nome ed entra in fase beta"
     subtitle: "L'ecosistema di risorse per realizzare siti e servizi pubblici diventa ora un elemento imprescindibile per la Pubblica Amministrazione"
     tag:
-        label: Notizia
-        
+      label: Notizia
+
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -52,9 +52,10 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI Kit]
+      tags:
+        [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI Kit]
       personalInfo:
-         items:
+        items:
           - title: Tempo di lettura
             icon:
               icon: "sprites.svg#it-clock"
@@ -71,11 +72,11 @@ components:
             label: 8 marzo 2024
 
   imageIcons:
-   image: /images/community/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta-1920x923.png
-   alt: ""
-   background: null
+    image: /images/community/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta-1920x923.png
+    alt: ""
+    background: null
 
-  sectionsEditorial :
+  sectionsEditorial:
     - menu: false
       noSpace: false
       centered: true
@@ -86,21 +87,21 @@ components:
         - name: TextImageCta
           text: |
             Dopo un lavoro durato un anno, il design system del Paese esce dalla versione alpha e passa alla v1-beta, segnando un **momento cruciale** per la progettazione dei servizi pubblici digitali. E lo fa, per la prima volta, con il **nuovo nome .italia**, scelto insieme a 400 persone della community nei mesi scorsi, dimostrando che con piccole azioni è possibile far convergere il Paese in direzione di obiettivi rilevanti per la comunità. 
-            
+
             Il **design system .italia** raccoglie indicazioni e risorse pratiche per realizzare siti e servizi pubblici di qualità, efficienti e accessibili, fornendo **soluzioni basate sui bisogni delle persone, già testate, pronte all’uso** e che **rispettano le linee guida previste dall’articolo 53 del Codice dell’amministrazione digitale.** Come diciamo spesso, “senza dover reinventare la ruota ogni volta”.
 
             ## Cosa include la beta
             La versione beta **consolida le funzionalità e la struttura della documentazione ufficiale** e anticipa la versione stabile, permettendo così alla comunità di testarla e segnalare possibili migliorie.  
-            
+
             **Tutta la documentazione è stata aggiornata alle ultime risorse dell’ecosistema:** UI Kit Italia 3.4 (ultima versione con nuovi componenti utili alla prototipazione), Bootstrap Italia 2.8.2 (ultima versione, con le versioni 2.8 e 2.7 che apportano notevoli migliorie di accessibilità e refactoring di diversi componenti) e Design Tokens Italia 1.2. 
-            
+
             L’arrivo alla fase beta della documentazione **accompagna anche i rilasci di due importanti framework di sviluppo**, che avverranno nei prossimi giorni: grazie al lavoro portato avanti dalla community, **i nuovi kit React e Angular sono vicini**, rispettivamente, alle versioni stabili 5 e 1.
 
             ![Ultimi rilasci: Design system .italia v1-beta.1; UI Kit Italia v3.4.0; Bootstrap Italia 2.8.2; React e Angular Kit pre-releases](/images/design-system/ds-beta-releases.png)
-        
+
         - name: TextImageCta
           noSpace: false
-          text: | 
+          text: |
             ## Com'è strutturato il design system .italia
 
             La versione beta contiene i contenuti stabili e testati sul campo delle sezioni “Come iniziare”, “Come contribuire”, “Fondamenti” e di tutti i principali componenti per la progettazione e lo sviluppo. 
@@ -117,12 +118,12 @@ components:
 
         - name: TextImageCta
           noSpace: false
-          text: | 
+          text: |
             ## Cosa ci attende nei prossimi mesi
             Come abbiamo detto, la beta è l’ultimo passo prima della versione stabile e servirà a testare ulteriormente la documentazione e gli strumenti di questa terza generazione delle risorse [i cui lavori sono iniziati nel novembre 2021.](https://designers.italia.it/community/notizie/20211223-per-un-2022-ricco-di-sfide/) Nelle prossime settimane, infatti, **avvieremo un terzo ciclo di verifica sull’accessibilità dei componenti**, un censimento sullo stato dei componenti nelle diverse risorse dell’ecosistema, con l’obiettivo di renderle totalmente coerenti, e completeremo la documentazione dei componenti e alcune funzionalità non ancora integrate, come il collegamento con i nuovi framework di sviluppo React e Angular.
 
             ## Grazie, community
-            Il rilascio della versione beta del design system .italia, oltre ad essere frutto del lavoro del gruppo di Designers Italia e Developers Italia, **è il risultato di feedback, segnalazioni di bug e contributi della community.** Grazie per aver contribuito a questo importante momento per la progettazione e realizzazione dei servizi pubblici digitali italiani! 
+            Il rilascio della versione beta del design system .italia, oltre ad essere frutto del lavoro del gruppo di Designers Italia e Developers Italia, **è il risultato di feedback, segnalazioni di bug e contributi della community.** Grazie per aver contribuito a questo importante momento per la progettazione e realizzazione dei servizi pubblici digitali italiani!
 
         - name: TextImageCta
           title: Inizia a usare il design system .italia
@@ -130,72 +131,65 @@ components:
           noSpace: false
           ctasVertical: true
           ctas:
-          - label: Vai a "Come iniziare"
-            url: "/design-system/come-iniziare/"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-          - label: Vai a "Come contribuire"
-            url: "/design-system/come-contribuire/"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-          - label: Vai a "Fondamenti"
-            url: "/design-system/fondamenti/"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-          - label: Vai a "Componenti"
-            url: "/design-system/componenti/"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-          - label: Esplora il Changelog
-            url: "/design-system/fondamenti/versionamento#changelog-documentazione"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-
+            - label: Vai a "Come iniziare"
+              url: "/design-system/come-iniziare/"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+            - label: Vai a "Come contribuire"
+              url: "/design-system/come-contribuire/"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+            - label: Vai a "Fondamenti"
+              url: "/design-system/fondamenti/"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+            - label: Vai a "Componenti"
+              url: "/design-system/componenti/"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+            - label: Esplora il Changelog
+              url: "/design-system/fondamenti/versionamento#changelog-documentazione"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
 
         - name: TextImageCta
           title: Contribuisci ai lavori in corso
           headingLevel: 2
           ctasVertical: true
           ctas:
-          - label: Prova il kit React (pre-release)
-            url: "https://github.com/italia/design-react-kit"
-            icon:
-              icon: sprites.svg#it-github
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-          - label: Prova il kit Angular (pre-release)
-            url: "https://github.com/italia/design-angular-kit"
-            icon:
-              icon: sprites.svg#it-github
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-              
-              
-
-
-
-            
+            - label: Prova il kit React (pre-release)
+              url: "https://github.com/italia/design-react-kit"
+              icon:
+                icon: sprites.svg#it-github
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+            - label: Prova il kit Angular (pre-release)
+              url: "https://github.com/italia/design-angular-kit"
+              icon:
+                icon: sprites.svg#it-github
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2

@@ -82,7 +82,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -92,7 +91,7 @@ components:
     subtitle: "Impara come progettare un servizio partendo dalla comprensione del contesto in cui si posizionerà e delle circostanze in cui verrà utilizzato" #C
     tag:
       label: Corso di formazione #C
-      
+
     imgRatio: 4x3
     pretext:
       icon:
@@ -131,7 +130,7 @@ components:
       #       label: Linee guida di design #C
       #       url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -154,7 +153,16 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Formazione, Cultura progettuale, Progettazione servizi, Analisi del contesto, Ricerca utente, User personas, User journey]
+      tags:
+        [
+          Formazione,
+          Cultura progettuale,
+          Progettazione servizi,
+          Analisi del contesto,
+          Ricerca utente,
+          User personas,
+          User journey,
+        ]
 
       # # KANGAROO: CHILDREN SHORTCUTS
       # dropdown:
@@ -178,13 +186,11 @@ components:
       #         label: Progettare servizi e touchpoint digitali della PA #C
       #       - url: "l-importanza-dei-dati-nella-PA/"
       #         label: L’importanza dei dati nella PA #C
-  
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -195,15 +201,14 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-             Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
+            Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con la progettazione di servizi digitali in ambito pubblico.
 
-             Il corso introduce le metodologie e gli strumenti per comprendere il contesto d'uso e lo stato attuale del servizio, individuare criticità e opportunità di miglioramento, identificare buone pratiche di progettazione già in uso e approfondire la prospettiva degli utenti.
+            Il corso introduce le metodologie e gli strumenti per comprendere il contesto d'uso e lo stato attuale del servizio, individuare criticità e opportunità di miglioramento, identificare buone pratiche di progettazione già in uso e approfondire la prospettiva degli utenti.
 
-             Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**. 
+            Il corso è erogato sulla **piattaforma dell’Accademia dei Comuni digitali**.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -219,14 +224,13 @@ components:
           title: Durata #C
           text: | #C
             3 ore
-            
+
         # TXT BLOCK
         - name: TextImageCta
           noSpace: true
           title: Certificazione #C
           text: | #C
             Il corso prevede un quiz di valutazione finale per il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
-
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -242,7 +246,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Comprendere il contesto d'uso e lo stato dell'arte per la progettazione di servizi digitali"
         text: | #C
@@ -259,7 +262,7 @@ components:
       # CARD CHILDREN
       - title: "I metodi e gli strumenti per mappare l’esperienza utente di un servizio digitale"
         text: | #C
-          Sintetizzare e rappresentare la prospettiva degli utenti è fondamentale per progettare esperienze d’uso che rispondano alle loro reali esigenze. Approfondisci i metodi di mappatura e gli strumenti di Designers Italia che ti supportano in questo processo. 
+          Sintetizzare e rappresentare la prospettiva degli utenti è fondamentale per progettare esperienze d’uso che rispondano alle loro reali esigenze. Approfondisci i metodi di mappatura e gli strumenti di Designers Italia che ti supportano in questo processo.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -272,7 +275,7 @@ components:
       # CARD CHILDREN
       - title: "Comprendere lo stato dell’arte di un prodotto digitale: la valutazione euristica"
         text: | #C
-          La valutazione euristica è una metodologia per valutare l’interfaccia utente sulla base di principi di progettazione consolidati, chiamati euristiche cognitive. Approfondisci come svolgere la valutazione euristica per migliorare l’usabilità di un sito o servizio digitale. 
+          La valutazione euristica è una metodologia per valutare l’interfaccia utente sulla base di principi di progettazione consolidati, chiamati euristiche cognitive. Approfondisci come svolgere la valutazione euristica per migliorare l’usabilità di un sito o servizio digitale.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -285,7 +288,7 @@ components:
       # CARD CHILDREN
       - title: "Analizzare lo stato dell’arte di un ecosistema complesso: il progetto MaaS"
         text: | #C
-          Questo caso studio presenta il valore che i metodi di mappatura e la raccolta delle esigenze hanno portato al progetto di mobilità integrata Mobility as a Service (MaaS) del Dipartimento per la trasformazione digitale. Scopri come sono state superate le sfide di un ecosistema caratterizzato da una molteplicità di attori, prospettive ed interessi. 
+          Questo caso studio presenta il valore che i metodi di mappatura e la raccolta delle esigenze hanno portato al progetto di mobilità integrata Mobility as a Service (MaaS) del Dipartimento per la trasformazione digitale. Scopri come sono state superate le sfide di un ecosistema caratterizzato da una molteplicità di attori, prospettive ed interessi.
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
@@ -294,12 +297,12 @@ components:
         moreInfo: "Relatrice: Sara Matassoni"
         tag:
           label: Intervista #C
-     
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-# —
+  sectionsEditorial2:
+    # —
     # EDITORIAL #C #I
     # —
     - title: Segui il corso #C
@@ -310,23 +313,21 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-      
         # TXT BLOCK
         - name: TextImageCta
           # title: Segui il corso #C
           headingLevel: 2
           text: | #C
-            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.  
+            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**. È obbligatorio seguire le lezioni in ordine e completare almeno l'80% di una lezione per passare alla successiva.
           ctas:
-          - label: "Accedi al corso" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.accademiacomunidigitali.it/course/view.php?id=23 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-    
+            - label: "Accedi al corso" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://www.accademiacomunidigitali.it/course/view.php?id=23 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

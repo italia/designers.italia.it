@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,14 +95,14 @@ components:
     subtitle: Definisci personalità, tono di voce e agency di un’intelligenza artificiale conversazionale #C
     tag:
       label: Attività del kit #C
-      
+
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
+    #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_assistente_ai.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -143,7 +142,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,14 +165,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Intelligenza artificiale, Progettazione contenuti, Contenuti e linguaggio, Tono di voce, Co-progettazione]
+      tags:
+        [
+          Intelligenza artificiale,
+          Progettazione contenuti,
+          Contenuti e linguaggio,
+          Tono di voce,
+          Co-progettazione,
+        ]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Come creare il profilo di un assistente virtuale #C
       menu: false
       centered: true
@@ -181,17 +185,16 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
           text: | #C
             Con la diffusione dell’intelligenza artificiale, gli assistenti virtuali (chiamati anche IA conversazionali o agenti conversazionali) stanno diventando sempre più comuni anche nella Pubblica Amministrazione. Gli utenti dei servizi pubblici digitali sono ormai abituati a interagire con questi servizi, sia tramite chat che attraverso la voce, e si aspettano esperienze semplici, inclusive e rispettose. Proprio per questo, è fondamentale progettare con cura l’interazione: **il modo in cui l’assistente si rivolge alle persone deve tenere conto del contesto d’uso**, **delle azioni da compiere**, **della tutela della privacy** e **della sfera emotiva degli utenti**. 
-            
+
             Gli strumenti di questo kit ti supportano nella definizione della personalità, del tono di voce e del livello di autonomia (agency) di un assistente virtuale. Puoi usarli sia per lavorare individualmente, sia per facilitare attività di co-progettazione con utenti e stakeholder, in presenza oppure da remoto.
 
             Per approfondire la normativa sull'uso dell'intelligenza artificiale in ambito pubblico, fai riferimento alla [Strategia italiana per l'Intelligenza Artificiale](https://www.agid.gov.it/it/ambiti-intervento/intelligenza-artificiale).
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -233,7 +236,7 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/assistente-virtuale/DI-Assistente-virtuale-presentazione-workshop-odp.odp #M
                 ariaLabel: "Scarica ODS Presentazione introduttiva al workshop" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Strumento di progettazione stampabile  #C
+          - label: Strumento di progettazione stampabile #C
             srBefore: "Scarica PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: # FOR SCREEN READER ARIA LABEL
             text: Template da stampare per svolgere l’attività di progettazione in presenza #C
@@ -244,7 +247,7 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/assistente-virtuale/DI-assistente-virtuale-stampabile.pdf #M
                 ariaLabel: "Scarica PDF Strumento di progettazione stampabile " #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Lavagna collaborativa per FigJam  #C
+          - label: Lavagna collaborativa per FigJam #C
             srBefore: "Scarica il file FigJam della lavagna collaborativa" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: # FOR SCREEN READER ARIA LABEL
             text: Template con istruzioni per svolgere online su FigJam l’attività di progettazione del profilo di un assistente virtuale #C
@@ -255,7 +258,7 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/assistente-virtuale/DI-Assistente-virtuale-lavagna-collaborativa-figjam.jam #M
                 ariaLabel: "Scarica il file FigJam della lavagna collaborativa" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Lavagna collaborativa per Tldraw  #C
+          - label: Lavagna collaborativa per Tldraw #C
             srBefore: "Scarica il file Tldraw della lavagna collaborativa" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: # FOR SCREEN READER ARIA LABEL
             text: Template con istruzioni per svolgere online su Tldraw l’attività di progettazione del profilo di un assistente virtuale #C
@@ -266,7 +269,7 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/assistente-virtuale/DI-Assistente-virtuale-lavagna-collaborativa-tldraw.tldr #M
                 ariaLabel: "Scarica il file Tldraw della lavagna collaborativa" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Istruzioni per il primo utilizzo delle lavagne collaborative  #C
+          - label: Istruzioni per il primo utilizzo delle lavagne collaborative #C
             srBefore: "Scarica PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: # FOR SCREEN READER ARIA LABEL
             text: Istruzioni per importare i template delle lavagne collaborative in Tldraw o Figjam #C

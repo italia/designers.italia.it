@@ -72,7 +72,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -81,8 +80,8 @@ components:
     title: Insegnare #C
     subtitle: "Insegna i princìpi e le metodologie relative al design in ambito pubblico" #C
     tag:
-        label: Formazione  #C
-        addonClasses: mt-3 text-uppercase
+      label: Formazione #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -104,7 +103,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Cultura progettuale, Progettazione servizi, Ricerca utente, Visualizzazione dati]
+      tags:
+        [
+          Cultura progettuale,
+          Progettazione servizi,
+          Ricerca utente,
+          Visualizzazione dati,
+        ]
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -147,7 +152,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Design per la trasformazione digitale della PA" #C
         imgRatio: 16x9
@@ -184,7 +188,6 @@ components:
         tag:
           label: Materiali per insegnare #C
 
-
         # CARD CHILDREN
       - title: "Progettare servizi pubblici virtuosi" #C
         imgRatio: 16x9
@@ -197,7 +200,6 @@ components:
         tag:
           label: Materiali per insegnare #C
 
-
           # CARD CHILDREN
       - title: "Visualizzare dati della PA" #C
         imgRatio: 16x9
@@ -209,15 +211,11 @@ components:
         url: "visualizzare-dati-della-pa/" #M
         tag:
           label: Materiali per insegnare #C
-          
-
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -228,12 +226,11 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             Grazie ai materiali per insegnare potrai, in modo autonomo, integrare lezioni e laboratori sui principi del design nei servizi pubblici all’interno del tuo programma didattico.
-            I materiali includono presentazioni, casi studio e strumenti pratici per condurre esercitazioni, workshop o altri momenti di applicazione pratica, selezionati tra le risorse per progettare proposte da Designers Italia. 
+            I materiali includono presentazioni, casi studio e strumenti pratici per condurre esercitazioni, workshop o altri momenti di applicazione pratica, selezionati tra le risorse per progettare proposte da Designers Italia.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -241,14 +238,14 @@ components:
           text: | #C
             L’insegnamento del design per il settore pubblico può essere rilevante per numerosi ambiti accademici: focalizzarsi su un brief progettuale fornisce agli studenti un contesto di vita reale all’interno del quale operare e può  aiutarli a nella creazione di elaborati utili ad arricchire il loro portfolio, ma anche interessanti per le istituzioni.
           ctas:
-          - label: "Scopri di più sul progetto e sfoglia l’Atlante" #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
-            url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Scopri di più sul progetto e sfoglia l’Atlante" #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

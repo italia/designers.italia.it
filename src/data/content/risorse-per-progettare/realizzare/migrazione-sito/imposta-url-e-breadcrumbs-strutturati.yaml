@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -96,7 +95,7 @@ components:
     subtitle: Crea indirizzi e breadcrumbs chiari e leggibili per migliorare la navigazione e la reperibilità dei contenuti #C
     tag:
       label: Attività del kit #C
-      
+
     # #pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -143,7 +142,7 @@ components:
             label: Linee guida di design #C
             url: "/normativa/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,30 +165,31 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione, Progettazione dei contenuti, SEO, Sviluppo interfaccia]
-
+      tags:
+        [
+          Architettura informazione,
+          Progettazione dei contenuti,
+          SEO,
+          Sviluppo interfaccia,
+        ]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Organizzare percorsi chiari e coerenti #C
       menu: false
       centered: true
       background: null
       #text: | #C
-         
-      components:
 
+      components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             La struttura degli URL e delle breadcrumbs influisce direttamente sull’usabilità del sito, sulla facilità di navigazione e sulla reperibilità dei contenuti. **URL parlanti e ordinati aiutano a capire immediatamente dove ci si trova** e **come muoversi all’interno del sito**. **Breadcrumbs coerenti**, invece, **offrono un punto di riferimento costante**, utile soprattutto quando il contenuto è annidato in più livelli.
 
             Lo strumento ti permette di definire in modo semplice URL e breadcrumbs strutturati e leggibili. Puoi costruire la gerarchia delle pagine, generare automaticamente gli slug e ottenere subito l’indirizzo completo e il percorso di navigazione, così da mantenere ordine, coerenza e chiarezza in tutto il nuovo sito.
-
 
   # ///////////////////
   # RESOURCES
@@ -205,7 +205,7 @@ components:
           - label: Generatore di URL e breadcrumbs #C
             srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Uno strumento per mappare le pagine di un sito e creare automaticamente indirizzi e breadcrumbs chiari, leggibili e strutturati  #C
+            text: Uno strumento per mappare le pagine di un sito e creare automaticamente indirizzi e breadcrumbs chiari, leggibili e strutturati #C
             url: /files/resources/risorse-per-progettare/realizzare/migrazione-sito/DI-URL-e-breadcrumbs.ods #M
             blank: false
             actions:

@@ -23,18 +23,12 @@
     // TODO proper check for custom babel & plugins config
     // Currently when a babelrc is added to the project, it will override our babelOptions
     "babelOptions": {
-      "presets": [
-        "babel-preset-gatsby"
-      ]
+      "presets": ["babel-preset-gatsby"]
     },
     "requireConfigFile": false
   },
-  "plugins": [
-    "react"
-  ],
-  "ignorePatterns": [
-    "**/*.min*"
-  ],
+  "plugins": ["react"],
+  "ignorePatterns": ["**/*.min*"],
   "settings": {
     "react": {
       "version": "detect" // React version. "detect" automatically picks the version you have installed.
@@ -71,9 +65,7 @@
     // I would also assume that eslint-config-react-app will switch their flag to "off"
     // when jsx runtime is stable in all common versions of React.
     "react/react-in-jsx-scope": "error",
-    "import/no-webpack-loader-syntax": [
-      0
-    ],
+    "import/no-webpack-loader-syntax": [0],
     "react/jsx-pascal-case": [
       "warn",
       {
@@ -101,10 +93,7 @@
       "warn",
       {
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         },
         "ignoreElements": [
           "audio",
@@ -127,10 +116,7 @@
           "tree",
           "treegrid"
         ],
-        "includeRoles": [
-          "alert",
-          "dialog"
-        ]
+        "includeRoles": ["alert", "dialog"]
       }
     ],
     "jsx-a11y/heading-has-content": "warn",
@@ -158,10 +144,7 @@
       "warn",
       {
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         }
       }
     ],
@@ -175,18 +158,9 @@
     "jsx-a11y/no-noninteractive-element-interactions": [
       "warn",
       {
-        "body": [
-          "onError",
-          "onLoad"
-        ],
-        "iframe": [
-          "onError",
-          "onLoad"
-        ],
-        "img": [
-          "onError",
-          "onLoad"
-        ]
+        "body": ["onError", "onLoad"],
+        "iframe": ["onError", "onLoad"],
+        "img": ["onError", "onLoad"]
       }
     ],
     "jsx-a11y/no-noninteractive-element-to-interactive-role": "warn",
