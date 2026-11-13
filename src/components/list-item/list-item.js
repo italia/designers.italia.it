@@ -3,6 +3,7 @@ import Icon from "../icon/icon";
 import Avatar from "../avatar/avatar";
 import Link from "../link/link";
 import ImageResponsive from "../image-responsive/image-responsive";
+import "./list-item.scss";
 
 function ListItem({
   url, // link of item
@@ -157,27 +158,48 @@ function ListItem({
   }
   // -se è all'interno di un dropdown
   if (isDropdown) {
-    listContent = (
-      <Link
-        activeClassName={GATSBY_ACTIVE}
-        className={`list-item ${active ? " active" : ""} ${
-          addonClasses ? ` ${addonClasses}` : ""
-        } ${textLarge ? " large" : ""} ${iconLeft ? " left-icon" : ""} ${
-          iconRight ? " right-icon" : ""
-        } ${isDropdown ? "dropdown-item" : ""} ${disabled ? " disabled" : ""}`}
-        aria-label={ariaLabel ? `${ariaLabel}` : undefined}
-        aria-disabled={disabled ? "true" : undefined}
-        to={url}
-        target={blank ? "_blank" : undefined}
-        rel={blank ? "noreferrer" : undefined}
-        onClick={onClick}
-      >
-        {iconLeft && !disabled ? iconRendered : ""}
-        <span>{children}</span>
-        {iconRight ? iconRendered : ""}
-        {isActive}
-      </Link>
-    );
+    if (!url && onClick) {
+      listContent = (
+        <div className="d-grid px-2 pt-2">
+          <button
+            type="button"
+            className={`dropdown-item btn btn-primary ${
+              textLarge ? " large" : ""
+            } ${iconRight ? " btn-icon" : ""}`}
+            aria-label={ariaLabel || undefined}
+            onClick={onClick}
+          >
+            {iconLeft && !disabled ? iconRendered : ""}
+            <span>{children}</span>
+            {iconRight ? iconRendered : ""}
+          </button>
+        </div>
+      );
+    } else {
+      listContent = (
+        <Link
+          activeClassName={GATSBY_ACTIVE}
+          className={`list-item ${active ? " active" : ""} ${
+            addonClasses ? ` ${addonClasses}` : ""
+          } ${textLarge ? " large" : ""} ${iconLeft ? " left-icon" : ""} ${
+            iconRight ? " right-icon" : ""
+          } ${isDropdown ? "dropdown-item" : ""} ${
+            disabled ? " disabled" : ""
+          }`}
+          aria-label={ariaLabel ? `${ariaLabel}` : undefined}
+          aria-disabled={disabled ? "true" : undefined}
+          to={url}
+          target={blank ? "_blank" : undefined}
+          rel={blank ? "noreferrer" : undefined}
+          onClick={onClick}
+        >
+          {iconLeft && !disabled ? iconRendered : ""}
+          <span>{children}</span>
+          {iconRight ? iconRendered : ""}
+          {isActive}
+        </Link>
+      );
+    }
   }
   // - se è una lista semplice
   if (simpleList) {
