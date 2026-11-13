@@ -1,0 +1,128 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "Un kit per ogni ambiente di sviluppo: il nuovo Dev Kit Italia"
+  description: "Il futuro delle interfacce della PA, con Design system .italia e la tecnologia Web Components."
+  image:  https://designers.italia.it/images/community/202607-interoperabilita-1920x1080.png #I XXX
+  canonical: null
+  pathname: /community/notizie/202607-un-kit-per-ogni-ambiente-di-sviluppo-il-nuovo-dev-kit-italia/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Un kit per ogni ambiente di sviluppo: il nuovo Dev Kit Italia"
+    subtitle: "Il futuro delle interfacce della PA, con Design system .italia e la tecnologia Web Components"
+    tag:
+        label: Notizia
+        
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system, Open source, Sviluppo interfaccia]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 3 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 15 luglio 2026
+
+  imageIcons:
+   image: /images/community/202607-un-kit-per-ogni-ambiente-di-sviluppo-il-nuovo-dev-kit-italia-1920x923.png
+   alt: ""
+   background: null
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            È online la versione beta del nuovo Dev Kit Italia, il toolkit di sviluppo front-end del **Design system .italia** costruito sulla tecnologia standard dei Web Components: i componenti del Dev Kit Italia utilizzano le specifiche native dei browser e parlano la lingua del web, per questo sono comprensibili da qualsiasi ambiente di sviluppo moderno. Il nuovo kit permette di creare elementi HTML personalizzabili, riutilizzabili e pensati per durare nel tempo. Abbiamo parlato di cos’è e come utilizzarlo all’[ultimo Community Lab dedicato](https://designers.italia.it/community/media/202606-il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia/). 
+            
+            Con questo kit introduciamo un approccio allo sviluppo front-end ancora poco diffuso nella PA ma già ben validato in altri contesti: investire su componenti **agnostici dal framework** come infrastruttura condivisa per ridurre la frammentazione tecnologica tra le amministrazioni e i fornitori che lavorano per loro. Una direzione che, nel tempo, potrebbe portarlo a diventare il riferimento principale per lo sviluppo front-end di piattaforme pubbliche.
+            
+            ## I vantaggi
+
+            La scelta dei Web Components, affiancata dove utile al markup HTML diretto, porta con sé vantaggi concreti per chi sviluppa servizi digitali nella PA. 
+            
+            **Versatilità.** Per la community di developer della PA, questo kit permette di poter contare su un'unica fonte di verità per i componenti di interfaccia, da riusare in modo coerente su progetti diversi e con stack tecnologici diversi. Nella [cartella examples](https://github.com/italia/dev-kit-italia/tree/d47e6f11306ddfc3e886bb3d2ac9fb169a4a6469/examples) del progetto sono già disponibili applicazioni di test in Angular, React, Svelte e Vue. 
+            
+            **Adattabilità alle preferenze degli sviluppatori.** Il Dev Kit Italia non impone un framework, si integra in quello già scelto dal team, riducendo l'attrito nell'adozione del Design system .italia. È costruito con **Lit** e segue le convenzioni di **Open Web Components**. Adotta un approccio **HTML-first** e rende possibile l'utilizzo in ambienti con **rendering lato server (SSR)**.  
+            
+            **Coerenza nel tempo.** Componenti incapsulati e stabili sono meno esposti ai cicli di aggiornamento e alle rotture di compatibilità tipiche dei framework JavaScript, e sono più facili da aggiornare rispetto a Bootstrap Italia. 
+            
+            **Personalizzazione senza compromessi.** Il kit affianca la nuova versione di **Bootstrap Italia 3**, basata su Dart Sass 3, Custom Properties CSS e la disponibilità del nuovo carattere Titillium Pro Sans. Le stesse Custom Properties permettono di personalizzare gli stili dei componenti e loro parti specifiche, anche all’interno dello shadow DOM. 
+            
+            **Accessibilità verificata.** L'accessibilità è parte della progettazione, non un'aggiunta successiva. Ogni componente è verificato manualmente da esperti e con strumenti open source come axe-core, su più combinazioni di browser e tecnologie assistive. Una guida dedicata documenta anche i comportamenti noti di alcuni strumenti di verifica automatica sulle pagine implementate con i componenti di Dev Kit Italia, inclusi i falsi positivi, da non confondere con errori reali.
+
+        - name: TextImageCta
+          title: Un kit da costruire insieme
+          text: "Il progetto è pubblico per permetterne lo sviluppo condiviso: ogni segnalazione, test su casi d'uso reali e contributo di codice sarà prezioso per arrivare a una versione stabile che risponda alle esigenze di chi sviluppa ogni giorno servizi digitali pubblici."
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "Scopri il kit"
+            url: "https://italia.github.io/dev-kit-italia/?path=/docs/introduzione--documentazione"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+
+
+
+            
