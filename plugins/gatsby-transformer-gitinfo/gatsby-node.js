@@ -7,7 +7,6 @@
  * factory as `module.exports`, only as the named export `simpleGit`.
  * Behaviour is otherwise unchanged: it adds gitLogLatest* fields to File nodes.
  */
-"use strict";
 
 const path = require("path");
 const fs = require("fs");
@@ -54,7 +53,7 @@ async function onCreateNode({ node, actions }, pluginOptions) {
   }
 
   const gitRepo = simpleGit(
-    pluginOptions.dir || path.dirname(realPath(node.absolutePath))
+    pluginOptions.dir || path.dirname(realPath(node.absolutePath)),
   );
   const log = await getLogWithRetry(gitRepo, node, 2, pluginOptions.match);
   if (!log.latest) {
