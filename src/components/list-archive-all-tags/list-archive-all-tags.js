@@ -11,7 +11,7 @@ import Chip from "../chip/chip";
 function ListArchiveAllTags({ background, noSpace }) {
   const data = useStaticQuery(graphql`
     query {
-      tags: allContent {
+      tags: allContent(filter: { metadata: { unpublished: { ne: true } } }) {
         group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
           fieldValue
           totalCount

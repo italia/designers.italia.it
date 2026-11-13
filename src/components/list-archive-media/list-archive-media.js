@@ -11,7 +11,9 @@ function ListArchiveMedia({ background, noSpace }) {
   const data = useStaticQuery(graphql`
     query {
       allContent(
-        filter: { metadata: { archive: { in: "media" } } }
+        filter: {
+          metadata: { archive: { in: "media" }, unpublished: { ne: true } }
+        }
         sort: { seo: { pathname: DESC } }
       ) {
         totalCount
@@ -44,7 +46,7 @@ function ListArchiveMedia({ background, noSpace }) {
   `);
 
   const { edges } = data.allContent;
-  const tagHeader = "Esplora l’archivio";
+  const tagHeader = "Esplora i video";
 
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,

@@ -1,0 +1,92 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Progettare API di qualità per servizi pubblici interoperabili"
+  description: "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API."
+  image: https://designers.italia.it/images/community/media-thumbnails/202605-progettare-api-di-qualita-per-servizi-pubblici-interoperabili.jpg
+  canonical: null
+  pathname: /community/media/202605-progettare-api-di-qualita-per-servizi-pubblici-interoperabili/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Progettare API di qualità per servizi pubblici interoperabili"
+    subtitle: "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API"
+    tag:
+      label: Video - Community lab
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Open source, Cultura progettuale, Data driven design]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=dM5kb9pdVdU
+          poster: /images/community/media-thumbnails/202605-progettare-api-di-qualita-per-servizi-pubblici-interoperabili.jpg
+          subtitles: /files/community/subtitles/202605-progettare-api-di-qualita-per-servizi-pubblici-interoperabili.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=dM5kb9pdVdU)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Durante l'incontro abbiamo esplorato come progettare API di qualità che abilitano servizi pubblici interoperabili, seguendo gli step suggeriti da Developers Italia: ricerca, sviluppa, verifica, pubblica. Abbiamo presentato il [catalogo api.gov.it](https://www.api.gov.it/) per la ricerca delle API, il [catalogo nazionale della semantica dei dati schema.gov.it](https://www.schema.gov.it/) e le [buone pratiche per nominare e descrivere le API](https://italia.github.io/pdnd-guida-nomenclatura-eservice/).
+
+            A seguire, una sessione dimostrativa con gli strumenti per garantire la qualità sintattica e semantica delle API a disposizione degli sviluppatori: [API OAS Checker](https://italia.github.io/api-oas-checker/) per verificare la conformità al Modello d'Interoperabilità (ModI) definito dalle Linee Guida AgID, e [Schema Editor](https://teamdigitale.github.io/dati-semantic-schema-editor/latest/) per creare e modificare gli schemi dati OpenAPI con la semantica nazionale.
+          
+          ctas:
+          - label: Approfondisci il tema interoperabilità su Developers Italia
+            url: https://www.developers.italia.it/it/interoperabilita
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+              

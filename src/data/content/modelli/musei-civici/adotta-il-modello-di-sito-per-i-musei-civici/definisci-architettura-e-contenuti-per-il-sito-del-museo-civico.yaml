@@ -228,10 +228,9 @@ components:
           headingLevel: 3
           noSpace: false
           text: | #C
-            Le URL delle pagine sono un elemento fondamentale nell'esperienza utente del sito. Le URL ottimali vengono dette "parlanti": brevi, descrittive e che rispecchiano la struttura dei vari livelli del sito. Una buona URL, infatti, permette agli utenti e ai motori di ricerca di capire di cosa parla una pagina e dove si trova nel sito. Nel foglio "Sistema di navigazione" del Documento di architettura dell’informazione ([Versione ODS 82KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.ods), [Versione XLSX 216KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.xlsx)) trovi esempi di URL per ogni pagina del modello.
-
-            Prendi nota delle nuove URL e affiancale a quelle vecchie sul file CSV del [Modello di analisi dei contenuti (ODS 42KB)](/files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-Modello-analisi-contenuti.ods) creato nell’attività precedente. Questo documento ti servirà per impostare i reindirizzamenti (redirects) una volta che il nuovo sito è online. Se un pagina del sito precedente non ha una corrispondenza con una del nuovo, scegli una pagina che tratta un argomento affine.
-
+            Le URL delle pagine sono un elemento fondamentale nell'esperienza utente del sito. Le URL ottimali vengono dette "parlanti": brevi, descrittive e che rispecchiano la struttura dei vari livelli del sito. Una buona URL, infatti, permette agli utenti e ai motori di ricerca di capire di cosa parla una pagina e dove si trova nel sito. Una volta impostate, è necessario anche preparare i reindirizzamenti dai vecchi indirizzi del sito, per evitare link rotti e pagine 404.
+            
+            Nel foglio "Sistema di navigazione" del Documento di architettura dell’informazione ([Versione ODS 82KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.ods), [Versione XLSX 216KB](/files/resources/modelli/musei-civici/Architettura-ModelloMusei-DesignersItalia.xlsx)) trovi esempi di URL per ogni pagina del modello. Puoi usare il [kit Migrazione sito](/risorse-per-progettare/realizzare/migrazione-sito/) per generare URL per pagine o contenuti che non sono previsti nel modello e per preparare il documento per impostare i reindirizzamenti.
 
         # TXT BLOCK
         - name: TextImageCta
@@ -341,6 +340,17 @@ components:
               - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "/risorse-per-progettare/progettare/seo/" #M
                 ariaLabel: "SEO - Kit di design" #C
+                blank: false
+          - label: Migrazione sito - Kit di design #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Le indicazioni e le risorse per accompagnare la transizione da un vecchio a un nuovo sito predisponendo URL e breadcrumbs chiari e reindirizzamenti corretti. #M
+            url: "/risorse-per-progettare/realizzare/migrazione-sito/" #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/risorse-per-progettare/realizzare/migrazione-sito/" #M
+                ariaLabel: "Migrazione sito - Kit di design" #C
                 blank: false
           - label: Privacy - Kit di design #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
