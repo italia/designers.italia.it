@@ -89,7 +89,7 @@ const GATSBY_PLUGINS = [
     },
   },
   {
-    resolve: `@colliercz/gatsby-transformer-gitinfo`,
+    resolve: `gatsby-transformer-gitinfo`,
     options: {
       include: /\.ya?ml/i,
       match: {
