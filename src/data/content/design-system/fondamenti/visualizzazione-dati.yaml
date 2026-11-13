@@ -108,7 +108,7 @@ components:
           noSpace: true
           # title:
           text: |
-            La visualizzazione dati, in inglese *data visualization*, è la **rappresentazione di informazioni quantitative e qualitative** attraverso l’uso di punti, linee, coordinate, numeri, simboli, parole e colori. Ne sono esempi i grafici e i sistemi di grafici.
+            La visualizzazione dati, in inglese "data visualization", è la **rappresentazione di informazioni quantitative e qualitative** attraverso l’uso di punti, linee, coordinate, numeri, simboli, parole e colori. Ne sono esempi i grafici e i sistemi di grafici.
 
             Rappresentare i dati con forme e colori, invece che soltanto in tabelle, ti permette di:
             - rendere le informazioni più comprensibili e usabili;
@@ -118,16 +118,12 @@ components:
             Le amministrazioni, infatti, devono rendere i dati accessibili e riutilizzabili attraverso tecnologie digitali, come previsto dall'[articolo 50 del Codice dell’amministrazione digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_V-sezione_I-articolo_50.html).
 
     - full: true
-      noSpace: false
+      title: Come progettare una visualizzazione dati
+      noSpace: true
       paddingLeft: true
       background: null
       components:
 
-        - name: TextImageCta
-          title: Come progettare una visualizzazione dati
-          headingLevel: 2
-          #text: |
-            
         #1
         - name: TextImageCta
           title: Considera pubblico e obiettivo
@@ -155,6 +151,9 @@ components:
               - text: Analizzare, Monitorare
               - text: Visualizzazioni complesse con più viste o dashboard
               - text: Puoi usare tecnicismi, spiegandoli quando necessario
+
+        - name: TextImageCta
+          noSpace: false
 
         #2
         - name: TextImageCta
@@ -268,7 +267,7 @@ components:
 
         - name: TextImageCta
           title: Mantieni coerenza tra gli stili tipografici
-          noSpace: true
+          noSpace: false
           headingLevel: 3
           text: |
               Usa font leggibili e di dimensioni adeguate, definisci una gerarchia chiara tra gli elementi testuali e assicurati che abbiano sempre un contrasto adeguato rispetto allo sfondo (almeno 4.5:1).
@@ -305,4 +304,16 @@ components:
             - **Evita di mostrare informazioni solo al passaggio del mouse (hover)**: non sono accessibili alle tecnologie assistive e su dispositivi mobili.
             
             - Progetta **esperienze coerenti tra le diverse visualizzazioni**, ad esempio mantenendo la stessa posizione di filtri, menu o selettori.
+
+          ctas:
+          - label: Approfondisci nel fondamento Accessibilità #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
