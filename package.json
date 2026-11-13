@@ -35,6 +35,9 @@
     "clean": "gatsby clean",
     "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public"
   },
+  "engines": {
+    "node": ">=24 <25"
+  },
   "dependencies": {
     "@colliercz/gatsby-transformer-gitinfo": "github:CollierCZ/gatsby-transformer-gitinfo",
     "@loadable/component": "^5.16.4",
@@ -80,6 +83,7 @@
     "uuid": "^14.0.0"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
     "@babel/core": "^7.29.6",
     "@babel/eslint-parser": "^7.21.3",
     "eslint": "^8.39.0",
@@ -90,5 +94,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-webpack-plugin": "^4.0.1",
     "prettier": "3.0.3"
+  },
+  "overrides": {
+    "msgpackr": "^1.11.5"
   }
 }
