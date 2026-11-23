@@ -23,8 +23,8 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: 22
-          cache: 'npm'
+          node-version-file: '.nvmrc'
+          cache: npm
 
       - name: Cache Gatsby
         uses: actions/cache@v3

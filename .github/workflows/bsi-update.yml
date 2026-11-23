@@ -18,7 +18,8 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version-file: '.nvmrc'
+          cache: npm
       - name: Run Bootstrap Italia and content update
         run: |
           npm i bootstrap-italia@latest
