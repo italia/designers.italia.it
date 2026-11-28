@@ -1,0 +1,110 @@
+metadata:
+  template:
+    name: level3 
+  archive: notizie
+
+seo:
+  name: "Il design system per la visualizzazione dei dati pubblici"
+  description: "Le nuove indicazioni per rappresentare informazioni complesse in modo chiaro e coerente."
+  image: https://designers.italia.it/images/community/202611-il-design-system-per-la-visualizzazione-dei-dati-pubblici-1920x1080.png #I XXX
+  canonical: null
+  pathname: /community/notizie/202611-il-design-system-per-la-visualizzazione-dei-dati-pubblici/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Il design system per la visualizzazione dei dati pubblici"
+    subtitle: "Le nuove indicazioni per rappresentare informazioni complesse in modo chiaro e coerente"
+    tag:
+        label: Notizia
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Visualizzazione dati, Design system, Progettazione interfaccia]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 27 novembre 2026
+
+  imageIcons:
+   image: /images/community/202611-il-design-system-per-la-visualizzazione-dei-dati-pubblici-1920x1080.png #I #XXX
+   alt: ""
+   background: null
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Ogni giorno le pubbliche amministrazioni gestiscono e condividono grandi quantità di dati. Renderli comprensibili è fondamentale per aiutare le persone a trovare, interpretare e utilizzare le informazioni di cui hanno bisogno. 
+
+            Il **design system .italia** mette a disposizione fondamenti, componenti e modelli per progettare servizi pubblici digitali senza ripartire da zero. Da oggi, la sezione dei fondamenti, dedicata ai principi e alle indicazioni di base per la progettazione, si arricchisce di un **nuovo strumento che guida le PA nella visualizzazione dei dati**, per rappresentare informazioni complesse in modo chiaro, efficace e accessibile.
+      
+            ## Il nuovo strumento per orientare la visualizzazione dei dati
+
+            Grafici, mappe interattive e altre rappresentazioni visive permettono di comunicare informazioni quantitative e qualitative attraverso forme, simboli, numeri e colori, rendendo più immediata e trasparente la comprensione dei dati. 
+            
+            Il nuovo fondamento spiega **come scegliere il modello visivo più adatto al contenuto e al suo scopo**. Per esempio, per confrontare valori, mostrare andamenti nel tempo o rappresentare le parti di un totale. Offre inoltre indicazioni per progettare visualizzazioni efficaci e accessibili, curando struttura, colori e tipografia.
+
+            ## Perché è importante
+
+            Rappresentare i dati in modo comprensibile aiuta le amministrazioni a comunicare informazioni e risultati delle proprie attività, favorendo la trasparenza e la fiducia delle persone. Realizzare visualizzazioni chiare significa, inoltre, **rendere i dati più facili da comprendere e utili ad informare le decisioni strategiche**. Scopri di più su come rappresentazioni accessibili possono contribuire ai processi decisionali [nell’ultimo articolo di approfondimento di Designers Italia](https://medium.com/designers-italia/dalla-visualizzazione-dei-dati-alle-decisioni-il-design-al-servizio-delle-policy-04502c458227). 
+
+            La visualizzazione dei dati è chiave per **rendere pubblici i risultati del monitoraggio dei servizi digitali delle PA**, previsto dalle Linee guida di design per i siti internet e i servizi digitali della PA, che richiedono di analizzare i dati di utilizzo e i feedback degli utenti e pubblicarne i risultati in forma aggregata e anonima. 
+
+            Il nuovo fondamento si aggiunge alle risorse del design system .italia per supportare la progettazione di siti e servizi pubblici sempre più accessibili e vicini alle esigenze delle persone. Puoi approfondire il ruolo dei dati nella progettazione dei servizi pubblici nel corso di formazione di Designers Italia **“L’importanza dei dati per la PA”**.
+
+        - name: TextImageCta
+          title:  
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "Scopri il nuovo fondamento"
+            url: "/design-system/fondamenti/visualizzazione-dati/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
